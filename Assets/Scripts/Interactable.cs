@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour
 {
@@ -11,12 +12,15 @@ public class Interactable : MonoBehaviour
     [Tooltip("Tempo da mensagem na tela")] public float timer;
     [Tooltip("Objeto pode ser ampliado")] public bool zoom;
     [Tooltip("Popup a ser ampliado")] public GameObject zoomedUI;
+    [Tooltip("Painel padrao para o fade")] public Image fadeScreen;
     private bool timerStart = false;
     private float timerAux = 0;
     private Camera mainCamera;
     private float zoomIn = 4f;
     private bool zoomStart = false;
+    private bool zoomEnd = false;
     private float zoomSpeed = 3f;
+    private float actualColor;
     private void Awake()
     {
         mainCamera = Camera.main;
@@ -36,12 +40,21 @@ public class Interactable : MonoBehaviour
         if (zoomStart)
         {
             mainCamera.orthographicSize -= Time.deltaTime * zoomSpeed;
+            actualColor = fadeScreen.color.a + Time.deltaTime * zoomSpeed;
+            fadeScreen.color = new Color(0, 0, 0, actualColor);
             if (mainCamera.orthographicSize <= zoomIn)
             {
-                //fade();
-                mainCamera.orthographicSize = 5.0f;
+                mainCamera.orthographicSize = 5f;
                 zoomStart = false;
+                zoomEnd = true;
             }
+        }
+        if (zoomEnd)
+        {
+            actualColor = fadeScreen.color.a - Time.deltaTime * zoomSpeed;
+            fadeScreen.color = new Color(0, 0, 0, actualColor);
+            zoomedUI.SetActive(true);
+            if (actualColor <= 0) zoomEnd = false;
         }
     }
     public virtual void Action()
@@ -59,7 +72,6 @@ public class Interactable : MonoBehaviour
     public void Amplify()
     {
         zoomStart = true;
-        
         Debug.Log("ZOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM");
     }
 }
