@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Move",
+            "id": "4e3d4f31-7176-4bb4-a29d-1a6a045e926b",
+            "actions": [
+                {
+                    "name": "Destination",
+                    "type": "Button",
+                    "id": "5498bad8-9c65-4253-ac36-c69d0c6de56e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0cb47067-47c8-407f-9fbd-1b33eae855f8",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Destination",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
