@@ -16,7 +16,7 @@ public class RealityPostProcessing : MonoBehaviour
         myVolume = GetComponent<Volume>();
         if (RealityManager.Instance != null)
         {
-            await RealityManager.Instance.onRealityChanged.AddListener();
+            //await RealityManager.Instance.onRealityChanged.AddListener();
 
         }
     }
