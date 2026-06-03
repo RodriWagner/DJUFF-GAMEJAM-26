@@ -26,7 +26,7 @@ public class Interactable : MonoBehaviour
         }
     }
     public virtual void Action()
-    {
+    { // FAZER UM IF DEPENDENDO DA REALIDADE PARA QUE O OBJ TENHA 2 FUNCOES DIFERENTES
         Debug.Log("Fiz algo");
     }
     public virtual void ShowText()

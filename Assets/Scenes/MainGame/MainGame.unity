@@ -901,7 +901,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -924,6 +924,7 @@ MonoBehaviour:
   message: EU COMO COCOOOOO
   textUI: {fileID: 2011148097}
   textBox: {fileID: 1976837828}
+  timer: 5
   zoom: 0
 --- !u!212 &694103570
 SpriteRenderer:
@@ -1218,8 +1219,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1876632017}
   - component: {fileID: 1876632016}
-  - component: {fileID: 1876632019}
   - component: {fileID: 1876632018}
+  - component: {fileID: 1876632020}
   m_Layer: 0
   m_Name: botao generico
   m_TagString: Untagged
@@ -1331,13 +1332,13 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &1876632019
+--- !u!114 &1876632020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1346,14 +1347,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1876632015}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c5d5af988d22224781c733b41ca3ec4, type: 3}
+  m_Script: {fileID: 11500000, guid: e1beec9ace97ba54887bed07f5fdcd7a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  m_EditorClassIdentifier: Assembly-CSharp::Teste
   interactive: 1
   informative: 0
   message: 
-  textUI: {fileID: 2011148097}
-  textBox: {fileID: 1976837828}
+  textUI: {fileID: 0}
+  textBox: {fileID: 0}
+  timer: 0
   zoom: 0
 --- !u!1 &1928110086
 GameObject:
