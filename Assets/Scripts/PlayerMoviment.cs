@@ -29,10 +29,11 @@ public class PlayerMoviment : MonoBehaviour
             RaycastHit2D hit = Physics2D.GetRayIntersection(raio); //detecta que o mouse esta por cima de algum objeto
             if (hit.collider != null) //detecta que o objeto tem um colisor
             {
-                if (hit.collider.gameObject.TryGetComponent<Interactable>(out Interactable interagivel) ) //detecta se o objeto e o mesmo que tem o script
+                if (hit.collider.gameObject.TryGetComponent<Interactable>(out Interactable ActionObject) ) //detecta se o objeto e o mesmo que tem o script
                 {
-                    if (interagivel.Interactive == false) return;
-                    interagivel.action();
+                    if (ActionObject.interactive) ActionObject.Action();
+                    if (ActionObject.informative) ActionObject.ShowText();
+                    if (ActionObject.zoom) ActionObject.Amplify();
                 }
             }
         }
