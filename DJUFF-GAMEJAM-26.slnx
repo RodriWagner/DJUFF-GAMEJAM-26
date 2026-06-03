@@ -3,6 +3,6 @@
   <Project Path="FMODUnityEditor.csproj" />
   <Project Path="FMODUnity.csproj" />
   <Project Path="FMODUnityHaptics.csproj" />
-  <Project Path="FMODUnityResonance.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="FMODUnityResonance.csproj" />
 </Solution>

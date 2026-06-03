@@ -11,6 +11,32 @@ public class PlayerMoviment : MonoBehaviour
     {
         mainCamera = Camera.main;
     }
+    private void Update()
+    {
+        //MOVIMENTA O PLAYER
+        if ((Vector2)transform.position != destino)
+        {
+            // MoveTowards move de um ponto A para um ponto B em linha reta, numa velocidade constante
+            transform.position = Vector2.MoveTowards(transform.position, destino, velocidade * Time.deltaTime);
+        }
+    }
+    private void OnInteract(InputAction.CallbackContext contexto)
+    {
+        if (contexto.started)
+        {
+            Vector2 MousePos = Mouse.current.position.ReadValue();
+            Ray raio = mainCamera.ScreenPointToRay(MousePos);
+            RaycastHit2D hit = Physics2D.GetRayIntersection(raio); //detecta que o mouse esta por cima de algum objeto
+            if (hit.collider != null) //detecta que o objeto tem um colisor
+            {
+                if (hit.collider.gameObject.TryGetComponent<Interactable>(out Interactable interagivel) ) //detecta se o objeto e o mesmo que tem o script
+                {
+                    if (interagivel.Interactive == false) return;
+                    interagivel.action();
+                }
+            }
+        }
+    }
     private void OnMove(InputAction.CallbackContext contexto)
     {
         if (contexto.started)
@@ -22,13 +48,5 @@ public class PlayerMoviment : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         destino = transform.position;
-    }
-    private void Update()
-    {
-        if ((Vector2)transform.position != destino)
-        {
-            // MoveTowards move de um ponto A para um ponto B em linha reta, numa velocidade constante
-            transform.position = Vector2.MoveTowards(transform.position, destino, velocidade * Time.deltaTime);
-        }
     }
 }
