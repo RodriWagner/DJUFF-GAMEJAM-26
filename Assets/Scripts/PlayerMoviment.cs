@@ -31,9 +31,9 @@ public class PlayerMoviment : MonoBehaviour
             {
                 if (hit.collider.gameObject.TryGetComponent<Interactable>(out Interactable ActionObject) ) //detecta se o objeto e o mesmo que tem o script
                 {
-                    if (ActionObject.Interactive) ActionObject.action();
-                    if (ActionObject.Informative) ActionObject.text();
-                    if (ActionObject.Zoom) ActionObject.zoom();
+                    if (ActionObject.interactive) ActionObject.Action();
+                    if (ActionObject.informative) ActionObject.ShowText();
+                    if (ActionObject.zoom) ActionObject.Amplify();
                 }
             }
         }
