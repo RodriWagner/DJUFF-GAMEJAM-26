@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour
 {
@@ -10,8 +11,20 @@ public class Interactable : MonoBehaviour
     [Tooltip("Caixa de texto")] public TMP_Text textBox;
     [Tooltip("Tempo da mensagem na tela")] public float timer;
     [Tooltip("Objeto pode ser ampliado")] public bool zoom;
+    [Tooltip("Popup a ser ampliado")] public GameObject zoomedUI;
+    [Tooltip("Painel padrao para o fade")] public Image fadeScreen;
     private bool timerStart = false;
     private float timerAux = 0;
+    private Camera mainCamera;
+    private float zoomIn = 4f;
+    private bool zoomStart = false;
+    private bool zoomEnd = false;
+    private float zoomSpeed = 3f;
+    private float actualColor;
+    private void Awake()
+    {
+        mainCamera = Camera.main;
+    }
     private void Update()
     {
         if (timerStart)
@@ -24,9 +37,28 @@ public class Interactable : MonoBehaviour
                 timerStart = false;
             }
         }
+        if (zoomStart)
+        {
+            mainCamera.orthographicSize -= Time.deltaTime * zoomSpeed;
+            actualColor = fadeScreen.color.a + Time.deltaTime * zoomSpeed;
+            fadeScreen.color = new Color(0, 0, 0, actualColor);
+            if (mainCamera.orthographicSize <= zoomIn)
+            {
+                mainCamera.orthographicSize = 5f;
+                zoomStart = false;
+                zoomEnd = true;
+            }
+        }
+        if (zoomEnd)
+        {
+            actualColor = fadeScreen.color.a - Time.deltaTime * zoomSpeed;
+            fadeScreen.color = new Color(0, 0, 0, actualColor);
+            zoomedUI.SetActive(true);
+            if (actualColor <= 0) zoomEnd = false;
+        }
     }
     public virtual void Action()
-    { // FAZER UM IF DEPENDENDO DA REALIDADE PARA QUE O OBJ TENHA 2 FUNCOES DIFERENTES
+    {
         Debug.Log("Fiz algo");
     }
     public virtual void ShowText()
@@ -37,8 +69,9 @@ public class Interactable : MonoBehaviour
         textBox.text = message;
         timerStart = true;
     }
-    public virtual void Amplify()
+    public void Amplify()
     {
+        zoomStart = true;
         Debug.Log("ZOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM");
     }
 }
