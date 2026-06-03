@@ -19,6 +19,10 @@ public class PlayerMoviment : MonoBehaviour
             destino = mainCamera.ScreenToWorldPoint(mousePos);
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        destino = transform.position;
+    }
     private void Update()
     {
         if ((Vector2)transform.position != destino)
