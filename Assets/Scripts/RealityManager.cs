@@ -8,7 +8,7 @@ public class RealityManager : MonoBehaviour
     public RealityType currentReality = RealityType.BlackAndWhite;
     public UnityEvent onRealityChanged;
 
-    void Start()
+    void Awake()
     {
         //configurar a instancia
         if (Instance == null) Instance = this;
