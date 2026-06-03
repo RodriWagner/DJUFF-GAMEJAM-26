@@ -5,21 +5,23 @@ public class RealityManager : MonoBehaviour
 {
     public static RealityManager Instance; //instanciar o script
     public enum RealityType { BlackAndWhite, Colorful }
-    public RealityType currentReality = RealityType.BlackAndWhite;
+    public RealityType currentReality = RealityType.BlackAndWhite; //iniciar blackAndwhite
     public UnityEvent onRealityChanged;
 
-    void Start()
+    void Awake()
     {
         //configurar a instancia
+        Debug.Log("awake");
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
 
-    private void ChangeReality(InputAction.CallbackContext context)
+    public void ChangeReality(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.started)
         {
             //logica de inversao
+            Debug.Log("changereality");
             if (currentReality == RealityType.BlackAndWhite)
                 currentReality = RealityType.Colorful;
             else
