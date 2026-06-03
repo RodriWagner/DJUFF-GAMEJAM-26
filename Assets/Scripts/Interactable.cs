@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using TMPro;
 
 public class Interactable : MonoBehaviour
@@ -9,21 +8,36 @@ public class Interactable : MonoBehaviour
     [Tooltip("Texto a ser mostrado")] public string message;
     [Tooltip("Caixa de texto(UI)")] public GameObject textUI;
     [Tooltip("Caixa de texto")] public TMP_Text textBox;
+    [Tooltip("Tempo da mensagem na tela")] public float timer;
     [Tooltip("Objeto pode ser ampliado")] public bool zoom;
-    public void Action()
+    private bool timerStart = false;
+    private float timerAux = 0;
+    private void Update()
+    {
+        if (timerStart)
+        {
+            timerAux += Time.deltaTime;
+            if (timerAux >= timer)
+            {
+                textUI.SetActive(false);
+                timerAux = 0;
+                timerStart = false;
+            }
+        }
+    }
+    public virtual void Action()
     {
         Debug.Log("Fiz algo");
-        textUI.SetActive(false);
-        // placeholder enquanto nao defino um timer para desabilitar a textbox
     }
-    public void ShowText()
+    public virtual void ShowText()
     {
         Debug.Log("Mostrei algo na tela");
         Debug.Log(message);
         textUI.SetActive(true);
         textBox.text = message;
+        timerStart = true;
     }
-    public void Amplify()
+    public virtual void Amplify()
     {
         Debug.Log("ZOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM");
     }
