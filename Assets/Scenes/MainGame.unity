@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 71447847}
   - component: {fileID: 71447849}
   - component: {fileID: 71447848}
+  - component: {fileID: 71447850}
   m_Layer: 9
   m_Name: TestSquare
   m_TagString: Untagged
@@ -395,6 +396,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &71447850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71447846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d18c5d0fc2c6ab45990c13423cf8156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RealityObject
+  myReality: 0
 --- !u!1 &289252377
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,12 +648,24 @@ MonoBehaviour:
     m_ActionId: a186d171-82bb-45ed-8097-f6c21f580759
     m_ActionName: 'Move/Interact[/Mouse/rightButton]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1608005184}
+        m_TargetAssemblyTypeName: RealityManager, Assembly-CSharp
+        m_MethodName: ChangeReality
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 4505f6ce-b7ca-4794-96b1-93f94533506d
     m_ActionName: 'PlayerMap/ChangeReality[/Mouse/middleButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 
+  m_DefaultActionMap: 4e3d4f31-7176-4bb4-a29d-1a6a045e926b
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &636155305
@@ -654,7 +680,7 @@ GameObject:
   m_Layer: 10
   m_Name: Colorful
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -685,6 +711,7 @@ GameObject:
   - component: {fileID: 1418699067}
   - component: {fileID: 1418699069}
   - component: {fileID: 1418699068}
+  - component: {fileID: 1418699070}
   m_Layer: 10
   m_Name: TestTriangle
   m_TagString: Untagged
@@ -812,6 +839,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1418699070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418699066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d18c5d0fc2c6ab45990c13423cf8156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RealityObject
+  myReality: 1
 --- !u!1 &1608005183
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +912,7 @@ GameObject:
   m_Layer: 9
   m_Name: BlackAndWhite
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1183,7 +1223,7 @@ GameObject:
   m_Layer: 0
   m_Name: Shared
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

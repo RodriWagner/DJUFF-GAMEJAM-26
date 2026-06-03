@@ -67,6 +67,17 @@
                     "action": "ChangeReality",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "02fe2d68-bc6e-4f65-951e-b1115e8aa267",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeReality",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
