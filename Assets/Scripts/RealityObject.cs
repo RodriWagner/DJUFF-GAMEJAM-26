@@ -3,26 +3,30 @@ using UnityEngine;
 
 public class RealityObject : MonoBehaviour
 {
-    [Header("Which reality belogns?")]
+    //OBJETOS QUE EXISTEM EM APENAS UMA DAS REALIDADES
+
+    [Header("Qual realidade pertence?")]
     public RealityManager.RealityType myReality;
 
     private Renderer myrenderer;
     private Collider mycollider;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("start");
+        //pegar as componentes no start
         myrenderer = GetComponent<Renderer>();
         mycollider = GetComponent<Collider>();
+        //
         if (RealityManager.Instance != null)
         {
             RealityManager.Instance.onRealityChanged.AddListener(UpdateVisibility);
+            //aos curiosos: vou no script instanciado e dentro da caixa "onRealityChanged" adiciono esse objeto
+            //quando o "onRealityChanged" for invocado ("invoke"), todos os objetos dentro dessa caixa
+            //acionam a funcao que está passada em paramentro "UpdateVisibility"
         }
     }
 
     void UpdateVisibility()
     {
-        Debug.Log("updatevisibility");
         //boleana pra saber se deveria aparecer ou nao
         bool check_reality = (RealityManager.Instance.currentReality == myReality);
         //tratamento de null pra caso nao tenha colisao ou renderer
@@ -32,7 +36,6 @@ public class RealityObject : MonoBehaviour
 
     void Destroy()
     {
-        Debug.Log("deestroy");
         if (RealityManager.Instance != null)
         {
             RealityManager.Instance.onRealityChanged.RemoveListener(UpdateVisibility);

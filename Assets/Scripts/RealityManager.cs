@@ -1,17 +1,22 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
-public class RealityManager : MonoBehaviour
+public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE REALIDADE
 {
+
     public static RealityManager Instance; //instanciar o script
-    public enum RealityType { BlackAndWhite, Colorful }
-    public RealityType currentReality = RealityType.BlackAndWhite; //iniciar blackAndwhite
+    public enum RealityType { BlackAndWhite, Colorful } //enum das duas realidades
+
+    [Header("Realidade Inicial do Jogo")]
+    public RealityType currentReality = RealityType.BlackAndWhite; //inicia em blackAndwhite
+
+    [Header("Objetos (Lista Automática)")]
+    [Tooltip("Não é necessário adicionar manualmente, todos os objetos são adicionados aqui em suas funções de 'Start'!")]
     public UnityEvent onRealityChanged;
 
     void Awake()
     {
         //configurar a instancia
-        Debug.Log("awake");
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
@@ -21,7 +26,6 @@ public class RealityManager : MonoBehaviour
         if (context.started)
         {
             //logica de inversao
-            Debug.Log("changereality");
             if (currentReality == RealityType.BlackAndWhite)
                 currentReality = RealityType.Colorful;
             else
