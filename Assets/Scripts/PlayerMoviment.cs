@@ -41,20 +41,22 @@ public class PlayerMoviment : MonoBehaviour
                     Debug.Log("WOW O SCRIPT");
                     if (ActionObject.interactive) ActionObject.Action();
                     if (ActionObject.informative) ActionObject.ShowText();
-                    if (ActionObject.zoom) 
+                    if (ActionObject.zoom)
                     {
                         ActionObject.Amplify();
                         canMove = false;
                     }
                 }
-                if (hit.collider.gameObject.TryGetComponent<WindowClose>(out WindowClose Script))
-                {
-                    Script.Close();
-                    canMove = true;
-                }
+                //nao usaremos mais pq o GOBACK nao eh mais um gameobject com colisao, e sim um botao
+                // if (hit.collider.gameObject.TryGetComponent<WindowClose>(out WindowClose Script))
+                // {
+                //     Script.Close();
+                //     canMove = true;
+                // }
             }
         }
     }
+
     private void OnMove(InputAction.CallbackContext contexto)
     {
         if (!canMove) return;
