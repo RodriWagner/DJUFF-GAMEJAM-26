@@ -2554,6 +2554,7 @@ MonoBehaviour:
   textBox: {fileID: 0}
   timer: 0
   zoom: 1
+  zoomOut: {fileID: 0}
   zoomedUI: {fileID: 94257142}
   fadeScreen: {fileID: 1137617112}
   mainCamera: {fileID: 1928110088}
@@ -2872,7 +2873,7 @@ Transform:
   m_GameObject: {fileID: 1743043825}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -319.97574, y: -161.346, z: 0}
+  m_LocalPosition: {x: -218.9, y: -102.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
