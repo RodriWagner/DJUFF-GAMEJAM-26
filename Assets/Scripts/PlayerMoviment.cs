@@ -5,7 +5,7 @@ public class PlayerMoviment : MonoBehaviour
 {
     public float velocidade = 5f;
 
-    private Vector2 destino;
+    public Vector2 destino;
     private Camera mainCamera;
     private void Awake()
     {
@@ -15,8 +15,6 @@ public class PlayerMoviment : MonoBehaviour
     {
         if (RealityManager.Instance.cooldownTime > 0.0f)
         {
-            //set animator
-            //set sound
             return;
         }
         //MOVIMENTA O PLAYER
