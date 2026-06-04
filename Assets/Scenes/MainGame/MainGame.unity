@@ -1046,11 +1046,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 289252377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621aa8c513cfa7847974e8005bc6a66c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f1873a29bee27f44a4bea42c128b763, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RealityObjects
-  objectBlackAndWhite: {fileID: 1254204157}
-  objectColorful: {fileID: 287041639}
+  m_EditorClassIdentifier: Assembly-CSharp::RealityPlayer
+  playerBlackAndWhite: {fileID: 1254204157}
+  playerColorful: {fileID: 287041639}
+  playerAnimation: {fileID: 0}
 --- !u!1 &571697174
 GameObject:
   m_ObjectHideFlags: 0
