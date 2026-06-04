@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,13 +8,14 @@ public class PlayerMoviment : MonoBehaviour
 
     public Vector2 destino;
     private Camera mainCamera;
+    public bool canMove = true;
     private void Awake()
     {
         mainCamera = Camera.main;
     }
     private void Update()
     {
-        if (RealityManager.Instance.cooldownTime > 0.0f)
+        if (RealityManager.Instance.cooldownTime > 0.0f || !canMove)
         {
             return;
         }
@@ -39,7 +41,16 @@ public class PlayerMoviment : MonoBehaviour
                     Debug.Log("WOW O SCRIPT");
                     if (ActionObject.interactive) ActionObject.Action();
                     if (ActionObject.informative) ActionObject.ShowText();
-                    if (ActionObject.zoom) ActionObject.Amplify();
+                    if (ActionObject.zoom) 
+                    {
+                        ActionObject.Amplify();
+                        canMove = false;
+                    }
+                }
+                if (hit.collider.gameObject.TryGetComponent<WindowClose>(out WindowClose Script))
+                {
+                    Script.Close();
+                    canMove = true;
                 }
             }
         }
