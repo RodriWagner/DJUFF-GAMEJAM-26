@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class RealitySprites : MonoBehaviour
 {
-    //OBJETOS QUE EXISTEM EM AMBAS AS REALIDADES, MAS QUE ALGO MUDA NELES
+    //OBJETOS QUE EXISTEM EM AMBAS AS REALIDADES, MAS SOMENTE O SPRITE MUDA NELES
     [Header("Sprite das Realidades")]
     public Sprite spriteBlackAndWhite;
     public Sprite spriteColorful;

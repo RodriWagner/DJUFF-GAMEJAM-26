@@ -3,7 +3,6 @@ using UnityEngine.InputSystem;
 using UnityEngine.Events;
 public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE REALIDADE
 {
-
     public static RealityManager Instance; //instanciar o script
     public enum RealityType { BlackAndWhite, Colorful } //enum das duas realidades
 
@@ -12,7 +11,7 @@ public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE RE
 
     [Header("Tempo de Cooldown para Transições")]
     [Tooltip("Tempo, em segundos, que o jogador deve esperar para trocar de realidade")]
-    [SerializeField] float cooldownTime = 1.0f;
+    public float cooldownTime = 1.0f;
 
     [Header("Objetos (Lista Automática)")]
     [Tooltip("Não é necessário adicionar manualmente, todos os objetos são adicionados aqui em suas funções de 'Start'!")]

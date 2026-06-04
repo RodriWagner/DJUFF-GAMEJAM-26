@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerMoviment : MonoBehaviour
 {
     public float velocidade = 5f;
-    
+
     private Vector2 destino;
     private Camera mainCamera;
     private void Awake()
@@ -13,6 +13,12 @@ public class PlayerMoviment : MonoBehaviour
     }
     private void Update()
     {
+        if (RealityManager.Instance.cooldownTime > 0.0f)
+        {
+            //set animator
+            //set sound
+            return;
+        }
         //MOVIMENTA O PLAYER
         if ((Vector2)transform.position != destino)
         {
@@ -29,7 +35,7 @@ public class PlayerMoviment : MonoBehaviour
             RaycastHit2D hit = Physics2D.GetRayIntersection(raio); //detecta que o mouse esta por cima de algum objeto
             if (hit.collider != null) //detecta que o objeto tem um colisor
             {
-                if (hit.collider.gameObject.TryGetComponent<Interactable>(out Interactable ActionObject) ) //detecta se o objeto e o mesmo que tem o script
+                if (hit.collider.gameObject.TryGetComponent<Interactable>(out Interactable ActionObject)) //detecta se o objeto e o mesmo que tem o script
                 {
                     if (ActionObject.interactive) ActionObject.Action();
                     if (ActionObject.informative) ActionObject.ShowText();
