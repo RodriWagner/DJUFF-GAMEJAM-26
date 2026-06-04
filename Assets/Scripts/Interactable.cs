@@ -15,7 +15,7 @@ public class Interactable : MonoBehaviour
     [Tooltip("Painel padrao para o fade")] public Image fadeScreen;
     private bool timerStart = false;
     private float timerAux = 0;
-    private Camera mainCamera;
+    public Camera mainCamera;
     private float zoomIn = 4f;
     private bool zoomStart = false;
     private bool zoomEnd = false;
