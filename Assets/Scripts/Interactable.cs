@@ -82,7 +82,6 @@ public class Interactable : MonoBehaviour
         fadeScreen.color = new Color(0, 0, 0, actualColor);
         if (mainCamera.orthographicSize <= zoomIn)
         {
-            mainCamera.orthographicSize = 5f;
             zoomStart = false;
             SetVisibility(zoomAux);
         }
@@ -95,8 +94,13 @@ public class Interactable : MonoBehaviour
     }
     public void FadeOut()
     {
+        mainCamera.orthographicSize += Time.deltaTime * zoomSpeed;
         actualColor = fadeScreen.color.a - Time.deltaTime * zoomSpeed;
         fadeScreen.color = new Color(0, 0, 0, actualColor);
-        if (actualColor <= 0) zoomEnd = false;
+        if (actualColor <= 0) 
+        {
+            mainCamera.orthographicSize = 5f;
+            zoomEnd = false;
+        }
     }
 }
