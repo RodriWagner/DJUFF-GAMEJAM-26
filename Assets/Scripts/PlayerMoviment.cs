@@ -15,7 +15,7 @@ public class PlayerMoviment : MonoBehaviour
     }
     private void Update()
     {
-        if (RealityManager.Instance.cooldownTime > 0.0f || !canMove)
+        if (RealityManager.Instance.cooldownTime > 0.0f)
         {
             return;
         }
@@ -57,6 +57,7 @@ public class PlayerMoviment : MonoBehaviour
     }
     private void OnMove(InputAction.CallbackContext contexto)
     {
+        if (!canMove) return;
         if (contexto.started)
         {
             Vector2 mousePos = Mouse.current.position.ReadValue();
