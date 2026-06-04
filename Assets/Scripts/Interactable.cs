@@ -44,24 +44,11 @@ public class Interactable : MonoBehaviour
         }
         if (zoomStart)
         {
-            mainCamera.orthographicSize -= Time.deltaTime * zoomSpeed;
-            actualColor = fadeScreen.color.a + Time.deltaTime * zoomSpeed;
-            fadeScreen.color = new Color(0, 0, 0, actualColor);
-            if (mainCamera.orthographicSize <= zoomIn)
-            {
-                mainCamera.orthographicSize = 5f;
-                zoomStart = false;
-                zoomEnd = true;
-            }
+            FadeIn();
         }
         if (zoomEnd)
         {
-            actualColor = fadeScreen.color.a - Time.deltaTime * zoomSpeed;
-            fadeScreen.color = new Color(0, 0, 0, actualColor);
-            
-            if (zoom) zoomedUI.SetActive(true);
-            if (zoomAux) zoomedUI.SetActive(false);
-            if (actualColor <= 0) zoomEnd = false;
+            FadeOut();
         }
     }
     public virtual void Action()
@@ -87,5 +74,29 @@ public class Interactable : MonoBehaviour
         zoomAux = true;
         zoomStart = true;
         Debug.Log("not zoom ;c");
+    }
+    public void FadeIn()
+    {
+        mainCamera.orthographicSize -= Time.deltaTime * zoomSpeed;
+        actualColor = fadeScreen.color.a + Time.deltaTime * zoomSpeed;
+        fadeScreen.color = new Color(0, 0, 0, actualColor);
+        if (mainCamera.orthographicSize <= zoomIn)
+        {
+            mainCamera.orthographicSize = 5f;
+            zoomStart = false;
+            SetVisibility(zoomAux);
+        }
+    }
+    public void SetVisibility(bool exit)
+    {
+        if (exit) zoomedUI.SetActive(false);
+        else zoomedUI.SetActive(true);
+        zoomEnd = true;
+    }
+    public void FadeOut()
+    {
+        actualColor = fadeScreen.color.a - Time.deltaTime * zoomSpeed;
+        fadeScreen.color = new Color(0, 0, 0, actualColor);
+        if (actualColor <= 0) zoomEnd = false;
     }
 }
