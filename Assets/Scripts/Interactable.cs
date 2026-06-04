@@ -5,20 +5,25 @@ using UnityEngine.UI;
 public class Interactable : MonoBehaviour
 {
     [Tooltip("Objeto muda algo na fase")] public bool interactive;
+    [Header("Objeto de Texto")]
     [Tooltip("Objeto mostra um texto na tela")] public bool informative;
     [Tooltip("Texto a ser mostrado")] public string message;
     [Tooltip("Caixa de texto(UI)")] public GameObject textUI;
     [Tooltip("Caixa de texto")] public TMP_Text textBox;
     [Tooltip("Tempo da mensagem na tela")] public float timer;
+    [Header("Objeto de Zoom ou sair do Zoom")]
     [Tooltip("Objeto pode ser ampliado")] public bool zoom;
+    [Tooltip("Objeto para sair do zoom")] public GameObject zoomOut;
     [Tooltip("Popup a ser ampliado")] public GameObject zoomedUI;
     [Tooltip("Painel padrao para o fade")] public Image fadeScreen;
+    
     private bool timerStart = false;
     private float timerAux = 0;
     public Camera mainCamera;
     private float zoomIn = 4f;
     private bool zoomStart = false;
     private bool zoomEnd = false;
+    private bool zoomAux = false;
     private float zoomSpeed = 3f;
     private float actualColor;
     private void Awake()
@@ -53,7 +58,9 @@ public class Interactable : MonoBehaviour
         {
             actualColor = fadeScreen.color.a - Time.deltaTime * zoomSpeed;
             fadeScreen.color = new Color(0, 0, 0, actualColor);
-            zoomedUI.SetActive(true);
+            
+            if (zoom) zoomedUI.SetActive(true);
+            if (zoomAux) zoomedUI.SetActive(false);
             if (actualColor <= 0) zoomEnd = false;
         }
     }
@@ -71,7 +78,14 @@ public class Interactable : MonoBehaviour
     }
     public void Amplify()
     {
+        zoomAux = false;
         zoomStart = true;
         Debug.Log("ZOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM");
+    }
+    public void ExitZoom()
+    {
+        zoomAux = true;
+        zoomStart = true;
+        Debug.Log("not zoom ;c");
     }
 }
