@@ -47,12 +47,12 @@ public class PlayerMoviment : MonoBehaviour
                         canMove = false;
                     }
                 }
-                //nao usaremos mais pq o GOBACK nao eh mais um gameobject com colisao, e sim um botao
-                // if (hit.collider.gameObject.TryGetComponent<WindowClose>(out WindowClose Script))
-                // {
-                //     Script.Close();
-                //     canMove = true;
-                // }
+                //USANDO SO PRA PORTA
+                if (hit.collider.gameObject.TryGetComponent<WindowClose>(out WindowClose Script))
+                {
+                    Script.Close();
+                    canMove = true;
+                }
             }
         }
     }
