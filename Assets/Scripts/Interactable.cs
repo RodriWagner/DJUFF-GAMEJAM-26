@@ -16,7 +16,7 @@ public class Interactable : MonoBehaviour
     [Tooltip("Objeto para sair do zoom")] public GameObject zoomOut;
     [Tooltip("Popup a ser ampliado")] public GameObject zoomedUI;
     [Tooltip("Painel padrao para o fade")] public Image fadeScreen;
-    
+
     private bool timerStart = false;
     private float timerAux = 0;
     public Camera mainCamera;
@@ -97,7 +97,7 @@ public class Interactable : MonoBehaviour
         mainCamera.orthographicSize += Time.deltaTime * zoomSpeed;
         actualColor = fadeScreen.color.a - Time.deltaTime * zoomSpeed;
         fadeScreen.color = new Color(0, 0, 0, actualColor);
-        if (actualColor <= 0) 
+        if (actualColor <= 0)
         {
             mainCamera.orthographicSize = 5f;
             zoomEnd = false;
