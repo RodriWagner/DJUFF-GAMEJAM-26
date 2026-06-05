@@ -8,7 +8,7 @@ public class RingDrag : MonoBehaviour
     [Tooltip("TODOS os holders do puzzle aqui")] public Transform[] allHolders;
 
     [Header("Holder correto desse Ring")]
-    [Tooltip("Arraste apenas o holder que esse ring pertence")] public Transform targetPos;
+    [Tooltip("Arraste apenas o holder que esse ring pertence")] public Transform correctHolder;
 
     [SerializeField] private float distanceToFit = 1f;
 
@@ -18,8 +18,6 @@ public class RingDrag : MonoBehaviour
     [Header("Gerenciador do Puzzle")]
     public TonalLadderGerenciator puzzleGerence;
 
-    
-    private bool correct = false; //opcional caso TRAVE depois que vencer
     private RectTransform myRect;
     private Vector2 ringInicialPos;
     void Start()
@@ -32,7 +30,6 @@ public class RingDrag : MonoBehaviour
 
     public void CatchRing()
     {
-        if (correct) return;
         if (RealityManager.Instance != null && RealityManager.Instance.currentReality == RealityManager.RealityType.BlackAndWhite)
         {
             //AUDIO FMOD TOCAR
@@ -41,7 +38,6 @@ public class RingDrag : MonoBehaviour
     }
     public void DragRing() //ativada enquanto SEGURA o ring
     {
-        if (correct) return; 
         //pega a posicao (com o NOVO inputsystem)
         Vector2 mousePos = Mouse.current.position.ReadValue();
         //transforma em relacao a camera
@@ -52,23 +48,40 @@ public class RingDrag : MonoBehaviour
 
     public void DropRing() //ativada ao SOLTAR o ring
     {
-        if (correct) return;
+        //Aqui ha uma logica basica de achar o holder mais proximo do ring e colocar la
+        //OBS: tem que ser o mais proximo E que ainda esteja na distancia minima pra dar FIT
         Transform nearestHolder = null;
         float shortestDistance = Mathf.Infinity;
         
         foreach(Transform holder in allHolders)
         {
             float distance = Vector2.Distance(transform.position, holder.position);
-            if (distance < )
+            if (distance < distanceToFit && distance < shortestDistance) //logica que expliquei no OBS
+            {
+                shortestDistance = distance;
+                nearestHolder = holder;
+            }
         }
-        if (distance < lockDistance) //se a distancia for pequena, deixa correto e aloca na posicao em si
+        if (nearestHolder != null) //se achou o holder proximo o suficiente, aloca nele
         {
-            correct = true;
-            transform.position = targetPos.transform.position;
+            transform.position = nearestHolder.position;
         }
         else //se a distancia for grande, volta ele pra posicao inicial
         {
             myRect.anchoredPosition = ringInicialPos;
         }
+        //SEMPRE que mover um puzzle, checa se ganhou (analisa a posicao de todos os aneis)
+        if (puzzleGerence != null)
+        {
+            puzzleGerence.checkVictory();
+        }
+    }
+
+    //verifica se o ring esta na posicao correta (bem proximo ao holder certo)
+    public bool isOnCorrectHolder()
+    {
+        if (Vector2.Distance(transform.position, correctHolder.position) < 0.5f)
+            return true;
+        return false;
     }
 }
