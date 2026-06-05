@@ -9,6 +9,9 @@ public class PlayerMoviment : MonoBehaviour
     public Vector2 destino;
     private Camera mainCamera;
     public bool canMove = true;
+
+    [SerializeField] private float interaction_range = 3.5f;
+
     private void Awake()
     {
         mainCamera = Camera.main;
@@ -35,6 +38,12 @@ public class PlayerMoviment : MonoBehaviour
             RaycastHit2D hit = Physics2D.GetRayIntersection(raio); //detecta que o mouse esta por cima de algum objeto
             if (hit.collider != null) //detecta que o objeto tem um colisor
             {
+                float obj_distance = Vector2.Distance(transform.position, hit.collider.transform.position);
+                if(obj_distance > interaction_range)
+                {
+                    Debug.Log("Objeto muito longe para ser interagido.");
+                    return;
+                }
                 Debug.Log("colidi!");
                 if (hit.collider.gameObject.TryGetComponent<Interactable>(out Interactable ActionObject)) //detecta se o objeto e o mesmo que tem o script
                 {
