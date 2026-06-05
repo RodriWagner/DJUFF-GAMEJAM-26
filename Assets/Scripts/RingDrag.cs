@@ -12,7 +12,6 @@ public class RingDrag : MonoBehaviour
     {
         //guardar a posicao inicial do ring pra retornar (caso solte)
         ringInicialPos = transform.position;
-        Debug.Log(name + "local inicial de " + ringInicialPos);
     }
     public void DragRing() //ativada enquanto SEGURA o ring
     {
@@ -38,7 +37,6 @@ public class RingDrag : MonoBehaviour
         else //se a distancia for grande, volta ele pra posicao inicial
         {
             transform.position = ringInicialPos;
-            Debug.Log("local inicial (acabei de voltar pra ca): " + ringInicialPos);
         }
     }
 }
