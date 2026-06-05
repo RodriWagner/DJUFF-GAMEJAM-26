@@ -13,7 +13,7 @@ public class PlayerMoviment : MonoBehaviour
     {
         mainCamera = Camera.main;
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (RealityManager.Instance.cooldownTime > 0.0f)
         {
