@@ -10,6 +10,7 @@ public class PlayerMoviment : MonoBehaviour
     private Camera mainCamera;
     public bool canMove = true;
     private bool moving = false;
+    private Collider2D targetObject = null;
 
     [SerializeField] private float interaction_range = 3.5f;
 
@@ -20,9 +21,9 @@ public class PlayerMoviment : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
-        if (moving)
+        if (targetObject != null)
         {
-            DetectCollision();
+            DetectRange(targetObject);
         }
     }
     private void OnInteract(InputAction.CallbackContext contexto)
@@ -32,6 +33,7 @@ public class PlayerMoviment : MonoBehaviour
             if (!canMove) return;
             Vector2 mousePos = Mouse.current.position.ReadValue();
             destino = mainCamera.ScreenToWorldPoint(mousePos);
+            targetObject = DetectCollision();
         }
     }
     private void MovePlayer()
@@ -50,15 +52,12 @@ public class PlayerMoviment : MonoBehaviour
         }
         else moving = false;
     }
-    private void DetectCollision()
+    private Collider2D DetectCollision()
     {
         Vector2 MousePos = Mouse.current.position.ReadValue();
         Ray raio = mainCamera.ScreenPointToRay(MousePos);
         RaycastHit2D hit = Physics2D.GetRayIntersection(raio); //detecta que o mouse esta por cima de algum objeto
-        if (hit.collider != null) //detecta que o objeto tem um colisor
-        {
-            DetectRange(hit.collider);
-        }
+        return hit.collider;
     }
     private void DetectRange(Collider2D target)
     {
@@ -69,6 +68,7 @@ public class PlayerMoviment : MonoBehaviour
             return;
         }
         DoAction(target);
+        targetObject = null;
     }
     private void DoAction(Collider2D target)
     {
