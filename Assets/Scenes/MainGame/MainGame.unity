@@ -4309,10 +4309,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
+  allHolders:
+  - {fileID: 1871497591}
+  - {fileID: 1760702477}
+  - {fileID: 1855828686}
+  - {fileID: 1690683360}
+  - {fileID: 827770346}
+  correctHolder: {fileID: 1855828686}
   distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  puzzleGerence: {fileID: 1703788948}
 --- !u!114 &978313292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4781,10 +4786,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
+  allHolders:
+  - {fileID: 1871497591}
+  - {fileID: 1760702477}
+  - {fileID: 1855828686}
+  - {fileID: 1690683360}
+  - {fileID: 827770346}
+  correctHolder: {fileID: 1690683360}
   distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1077474759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6707,10 +6717,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
+  allHolders:
+  - {fileID: 1871497591}
+  - {fileID: 1760702477}
+  - {fileID: 1855828686}
+  - {fileID: 1690683360}
+  - {fileID: 827770346}
+  correctHolder: {fileID: 827770346}
   distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1739171983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7632,10 +7647,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
+  allHolders:
+  - {fileID: 1871497591}
+  - {fileID: 1760702477}
+  - {fileID: 1855828686}
+  - {fileID: 1690683360}
+  - {fileID: 827770346}
+  correctHolder: {fileID: 1871497591}
   distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1934566311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7803,10 +7823,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
+  allHolders:
+  - {fileID: 1871497591}
+  - {fileID: 1760702477}
+  - {fileID: 1855828686}
+  - {fileID: 1690683360}
+  - {fileID: 827770346}
+  correctHolder: {fileID: 1760702477}
   distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1951670868
 MonoBehaviour:
   m_ObjectHideFlags: 0

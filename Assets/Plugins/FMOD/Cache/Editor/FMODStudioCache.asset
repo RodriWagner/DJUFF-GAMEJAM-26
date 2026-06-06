@@ -80,7 +80,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639162621573003238
+  lastModified: 639162117263207845
   FileSizes: []
   Exists: 1
 --- !u!114 &-4463324507853532670
@@ -179,7 +179,7 @@ MonoBehaviour:
   Path: Banks/Desktop/BackgroundsMusics.bank
   Name: BackgroundsMusics
   StudioPath: bank:/BackgroundsMusics
-  lastModified: 639162621572992962
+  lastModified: 639162117263207845
   FileSizes: []
   Exists: 1
 --- !u!114 &-1971617486012863779
@@ -244,7 +244,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 6079080684040104072}
   cacheVersion: 131859
-  cacheTime: 639162621573003238
+  cacheTime: 639162117263207845
   SerializableEventsDict:
   - key: event:/MusicaTeste
     index: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639162621573003238
+  lastModified: 639162117263207845
   FileSizes:
   - Name: 
     Value: 832
