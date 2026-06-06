@@ -9,7 +9,6 @@ public class PlayerMoviment : MonoBehaviour
     public Vector2 destino;
     private Camera mainCamera;
     public bool canMove = true;
-    private bool moving = false;
     private Collider2D targetObject = null;
 
     [SerializeField] private float interaction_range = 3.5f;
@@ -40,7 +39,6 @@ public class PlayerMoviment : MonoBehaviour
     {
         if (RealityManager.Instance.cooldownTime > 0.0f)
         {
-            moving = false;
             return;
         }
         //MOVIMENTA O PLAYER
@@ -48,9 +46,7 @@ public class PlayerMoviment : MonoBehaviour
         {
             // MoveTowards move de um ponto A para um ponto B em linha reta, numa velocidade constante
             transform.position = Vector2.MoveTowards(transform.position, destino, velocidade * Time.deltaTime);
-            moving = true;
         }
-        else moving = false;
     }
     private Collider2D DetectCollision()
     {
