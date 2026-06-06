@@ -7,15 +7,6 @@
             "id": "4e3d4f31-7176-4bb4-a29d-1a6a045e926b",
             "actions": [
                 {
-                    "name": "Destination",
-                    "type": "Button",
-                    "id": "5498bad8-9c65-4253-ac36-c69d0c6de56e",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Interact",
                     "type": "Button",
                     "id": "a186d171-82bb-45ed-8097-f6c21f580759",
@@ -35,17 +26,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "0cb47067-47c8-407f-9fbd-1b33eae855f8",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Destination",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "73bbbab0-87ef-45d7-960a-ae9081657acb",
