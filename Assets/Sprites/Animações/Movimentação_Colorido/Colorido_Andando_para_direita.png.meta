@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 217d4673664f82648907016aac834c83
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 395018825366363970
+    second: Colorido_Andando_para_direita_0
+  - first:
+      213: 4585461820686403050
+    second: Colorido_Andando_para_direita_1
+  - first:
+      213: -5145783936500365029
+    second: Colorido_Andando_para_direita_2
+  - first:
+      213: -8110003672550728016
+    second: Colorido_Andando_para_direita_3
+  - first:
+      213: 3439935631727785207
+    second: Colorido_Andando_para_direita_4
+  - first:
+      213: 8778209746220119007
+    second: Colorido_Andando_para_direita_5
+  - first:
+      213: -2462392342253021392
+    second: Colorido_Andando_para_direita_6
+  - first:
+      213: -6354954814042007170
+    second: Colorido_Andando_para_direita_7
+  - first:
+      213: 1507402331071276558
+    second: Colorido_Andando_para_direita_8
+  - first:
+      213: -245966681304164742
+    second: Colorido_Andando_para_direita_9
+  - first:
+      213: -57796984683712542
+    second: Colorido_Andando_para_direita_10
+  - first:
+      213: 8825678736615064660
+    second: Colorido_Andando_para_direita_11
+  - first:
+      213: -8112217879111434250
+    second: Colorido_Andando_para_direita_12
+  - first:
+      213: 6941531482188179985
+    second: Colorido_Andando_para_direita_13
+  - first:
+      213: -8728112543876841877
+    second: Colorido_Andando_para_direita_14
+  - first:
+      213: 6793848143321718355
+    second: Colorido_Andando_para_direita_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 45
+        width: 98
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fdd8d57836b7500800000000000000
+      internalID: 395018825366363970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 47
+        width: 98
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae501292b35d2af30800000000000000
+      internalID: 4585461820686403050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 47
+        width: 98
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b190cf5f5c08698b0800000000000000
+      internalID: -5145783936500365029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_3
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 44
+        width: 98
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be1082e0aa737f80800000000000000
+      internalID: -8110003672550728016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_4
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 44
+        width: 98
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4f7534b3b1dbf20800000000000000
+      internalID: 3439935631727785207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_5
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 40
+        width: 98
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd37257514772d970800000000000000
+      internalID: 8778209746220119007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_6
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 38
+        width: 98
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037dd560633d3ddd0800000000000000
+      internalID: -2462392342253021392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_7
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 41
+        width: 98
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e791e51444aaec7a0800000000000000
+      internalID: -6354954814042007170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_8
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 25
+        width: 53
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06691dfe6e5be410800000000000000
+      internalID: 1507402331071276558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_9
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 24
+        width: 54
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7698464b96269cf0800000000000000
+      internalID: -245966681304164742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_10
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 23
+        width: 46
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efa6dad2f9a23ff0800000000000000
+      internalID: -57796984683712542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_11
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 22
+        width: 48
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454c8adec0c1b7a70800000000000000
+      internalID: 8825678736615064660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_12
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 22
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff7dfeb1dc9b6f80800000000000000
+      internalID: -8112217879111434250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_13
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 24
+        width: 53
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a6401fa16455060800000000000000
+      internalID: 6941531482188179985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_14
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 23
+        width: 47
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ef69682e38fd680800000000000000
+      internalID: -8728112543876841877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_direita_15
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 22
+        width: 45
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e53a814e8984e50800000000000000
+      internalID: 6793848143321718355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Colorido_Andando_para_direita_0: 395018825366363970
+      Colorido_Andando_para_direita_1: 4585461820686403050
+      Colorido_Andando_para_direita_10: -57796984683712542
+      Colorido_Andando_para_direita_11: 8825678736615064660
+      Colorido_Andando_para_direita_12: -8112217879111434250
+      Colorido_Andando_para_direita_13: 6941531482188179985
+      Colorido_Andando_para_direita_14: -8728112543876841877
+      Colorido_Andando_para_direita_15: 6793848143321718355
+      Colorido_Andando_para_direita_2: -5145783936500365029
+      Colorido_Andando_para_direita_3: -8110003672550728016
+      Colorido_Andando_para_direita_4: 3439935631727785207
+      Colorido_Andando_para_direita_5: 8778209746220119007
+      Colorido_Andando_para_direita_6: -2462392342253021392
+      Colorido_Andando_para_direita_7: -6354954814042007170
+      Colorido_Andando_para_direita_8: 1507402331071276558
+      Colorido_Andando_para_direita_9: -245966681304164742
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
