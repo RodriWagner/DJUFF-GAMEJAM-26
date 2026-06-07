@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: eb2120a02135dae46be07fc0f72b16d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3750667796431320033
+    second: Colorido_Andando_para_baixo_0
+  - first:
+      213: -7759230578300295764
+    second: Colorido_Andando_para_baixo_1
+  - first:
+      213: -3871435841075549510
+    second: Colorido_Andando_para_baixo_2
+  - first:
+      213: 1472033276084477607
+    second: Colorido_Andando_para_baixo_3
+  - first:
+      213: -4538031689305985134
+    second: Colorido_Andando_para_baixo_4
+  - first:
+      213: -6664799228181452316
+    second: Colorido_Andando_para_baixo_5
+  - first:
+      213: -658262719901642535
+    second: Colorido_Andando_para_baixo_6
+  - first:
+      213: -9012529706215915911
+    second: Colorido_Andando_para_baixo_7
+  - first:
+      213: 3679363608296389808
+    second: Colorido_Andando_para_baixo_8
+  - first:
+      213: -4234521976400719004
+    second: Colorido_Andando_para_baixo_9
+  - first:
+      213: -4123619960848341903
+    second: Colorido_Andando_para_baixo_10
+  - first:
+      213: -6997149165681187997
+    second: Colorido_Andando_para_baixo_11
+  - first:
+      213: -3546495628471181442
+    second: Colorido_Andando_para_baixo_12
+  - first:
+      213: -3715894634043184004
+    second: Colorido_Andando_para_baixo_13
+  - first:
+      213: 7229045049107296158
+    second: Colorido_Andando_para_baixo_14
+  - first:
+      213: -4947021645756528410
+    second: Colorido_Andando_para_baixo_15
+  - first:
+      213: 1494763248393558518
+    second: Colorido_Andando_para_baixo_16
+  - first:
+      213: -4734733476569968953
+    second: Colorido_Andando_para_baixo_17
+  - first:
+      213: 1586077387660907894
+    second: Colorido_Andando_para_baixo_18
+  - first:
+      213: 8042019961177001458
+    second: Colorido_Andando_para_baixo_19
+  - first:
+      213: 5804473127406189825
+    second: Colorido_Andando_para_baixo_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 56
+        width: 107
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1cc633d283f2fbc0800000000000000
+      internalID: -3750667796431320033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 55
+        width: 107
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5ef0236eca15490800000000000000
+      internalID: -7759230578300295764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 48
+        width: 107
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abae9f14d95e54ac0800000000000000
+      internalID: -3871435841075549510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_3
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 49
+        width: 107
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aed1962776bd6410800000000000000
+      internalID: 1472033276084477607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_4
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 56
+        width: 107
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f637bd83ca501c0800000000000000
+      internalID: -4538031689305985134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_5
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 53
+        width: 107
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e962f0e960e183a0800000000000000
+      internalID: -6664799228181452316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_6
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 52
+        width: 107
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0516b3b816dd6f0800000000000000
+      internalID: -658262719901642535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_7
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 45
+        width: 107
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e385d8bff0de280800000000000000
+      internalID: -9012529706215915911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 21
+        width: 52
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc710825b9bf0330800000000000000
+      internalID: 3679363608296389808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_9
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 22
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463dc0ba2b4fb35c0800000000000000
+      internalID: -4234521976400719004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_10
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 24
+        width: 46
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174ace45e75f5c6c0800000000000000
+      internalID: -4123619960848341903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_11
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 22
+        width: 52
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363e62308e125ee90800000000000000
+      internalID: -6997149165681187997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_12
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 23
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7fdf7b140158cec0800000000000000
+      internalID: -3546495628471181442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_13
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 26
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c631b948d7e6cc0800000000000000
+      internalID: -3715894634043184004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_14
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 26
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f2659cb2ab25460800000000000000
+      internalID: 7229045049107296158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_15
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 9
+        width: 59
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8838c0606a85bb0800000000000000
+      internalID: -4947021645756528410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_16
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 17
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f99ecb31477eb410800000000000000
+      internalID: 1494763248393558518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_17
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 17
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce85ee1df8da4eb0800000000000000
+      internalID: -4734733476569968953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_18
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 16
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675decd0bf0e20610800000000000000
+      internalID: 1586077387660907894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_19
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 16
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd4e86db8efa9f60800000000000000
+      internalID: 8042019961177001458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_baixo_20
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 16
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10db8535e81ad8050800000000000000
+      internalID: 5804473127406189825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Colorido_Andando_para_baixo_0: -3750667796431320033
+      Colorido_Andando_para_baixo_1: -7759230578300295764
+      Colorido_Andando_para_baixo_10: -4123619960848341903
+      Colorido_Andando_para_baixo_11: -6997149165681187997
+      Colorido_Andando_para_baixo_12: -3546495628471181442
+      Colorido_Andando_para_baixo_13: -3715894634043184004
+      Colorido_Andando_para_baixo_14: 7229045049107296158
+      Colorido_Andando_para_baixo_15: -4947021645756528410
+      Colorido_Andando_para_baixo_16: 1494763248393558518
+      Colorido_Andando_para_baixo_17: -4734733476569968953
+      Colorido_Andando_para_baixo_18: 1586077387660907894
+      Colorido_Andando_para_baixo_19: 8042019961177001458
+      Colorido_Andando_para_baixo_2: -3871435841075549510
+      Colorido_Andando_para_baixo_20: 5804473127406189825
+      Colorido_Andando_para_baixo_3: 1472033276084477607
+      Colorido_Andando_para_baixo_4: -4538031689305985134
+      Colorido_Andando_para_baixo_5: -6664799228181452316
+      Colorido_Andando_para_baixo_6: -658262719901642535
+      Colorido_Andando_para_baixo_7: -9012529706215915911
+      Colorido_Andando_para_baixo_8: 3679363608296389808
+      Colorido_Andando_para_baixo_9: -4234521976400719004
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

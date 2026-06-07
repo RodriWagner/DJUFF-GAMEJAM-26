@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 2c3f3d0ec56fc544f8b727446b81c64c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5263652935798910241
+    second: Colorido_Andando_para_cima_0
+  - first:
+      213: -2111679764888026442
+    second: Colorido_Andando_para_cima_1
+  - first:
+      213: -8716041983594905684
+    second: Colorido_Andando_para_cima_2
+  - first:
+      213: -8919620850403903956
+    second: Colorido_Andando_para_cima_3
+  - first:
+      213: 1604768536781577961
+    second: Colorido_Andando_para_cima_4
+  - first:
+      213: -7192739402172798236
+    second: Colorido_Andando_para_cima_5
+  - first:
+      213: 134850202510683878
+    second: Colorido_Andando_para_cima_6
+  - first:
+      213: 7971798828511422803
+    second: Colorido_Andando_para_cima_7
+  - first:
+      213: 967491398318190633
+    second: Colorido_Andando_para_cima_8
+  - first:
+      213: -6157944800793060935
+    second: Colorido_Andando_para_cima_9
+  - first:
+      213: 1982019059105261257
+    second: Colorido_Andando_para_cima_10
+  - first:
+      213: -3772104877899196379
+    second: Colorido_Andando_para_cima_11
+  - first:
+      213: 5292917509058854724
+    second: Colorido_Andando_para_cima_12
+  - first:
+      213: 2346607062172176067
+    second: Colorido_Andando_para_cima_13
+  - first:
+      213: -9128630055855860938
+    second: Colorido_Andando_para_cima_14
+  - first:
+      213: 8140794312111443457
+    second: Colorido_Andando_para_cima_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 53
+        width: 107
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd293ccfa8fb3f6b0800000000000000
+      internalID: -5263652935798910241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 55
+        width: 107
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b20876217ec1b2e0800000000000000
+      internalID: -2111679764888026442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 56
+        width: 107
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf3f68def56a0780800000000000000
+      internalID: -8716041983594905684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_3
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 63
+        width: 108
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26f1804814273480800000000000000
+      internalID: -8919620850403903956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_4
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 56
+        width: 112
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eed6955b78454610800000000000000
+      internalID: 1604768536781577961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_5
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 56
+        width: 107
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eae88b5f914e2c90800000000000000
+      internalID: -7192739402172798236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_6
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 48
+        width: 107
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eee9827b851fd100800000000000000
+      internalID: 134850202510683878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_7
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 52
+        width: 107
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3596c425cc481ae60800000000000000
+      internalID: 7971798828511422803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 21
+        width: 54
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92070000d483d6d00800000000000000
+      internalID: 967491398318190633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_9
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 21
+        width: 53
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9144274d59a8aa0800000000000000
+      internalID: -6157944800793060935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_10
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 20
+        width: 56
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6e50445db818b10800000000000000
+      internalID: 1982019059105261257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_11
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 20
+        width: 54
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528dc49599ac6abc0800000000000000
+      internalID: -3772104877899196379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_12
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 20
+        width: 54
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ff5e07e68347940800000000000000
+      internalID: 5292917509058854724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_13
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 22
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce0230b0b2d09020800000000000000
+      internalID: 2346607062172176067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_14
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 23
+        width: 50
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633d1ca6457905180800000000000000
+      internalID: -9128630055855860938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colorido_Andando_para_cima_15
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 22
+        width: 55
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e4cea8b49e9f070800000000000000
+      internalID: 8140794312111443457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Colorido_Andando_para_cima_0: -5263652935798910241
+      Colorido_Andando_para_cima_1: -2111679764888026442
+      Colorido_Andando_para_cima_10: 1982019059105261257
+      Colorido_Andando_para_cima_11: -3772104877899196379
+      Colorido_Andando_para_cima_12: 5292917509058854724
+      Colorido_Andando_para_cima_13: 2346607062172176067
+      Colorido_Andando_para_cima_14: -9128630055855860938
+      Colorido_Andando_para_cima_15: 8140794312111443457
+      Colorido_Andando_para_cima_2: -8716041983594905684
+      Colorido_Andando_para_cima_3: -8919620850403903956
+      Colorido_Andando_para_cima_4: 1604768536781577961
+      Colorido_Andando_para_cima_5: -7192739402172798236
+      Colorido_Andando_para_cima_6: 134850202510683878
+      Colorido_Andando_para_cima_7: 7971798828511422803
+      Colorido_Andando_para_cima_8: 967491398318190633
+      Colorido_Andando_para_cima_9: -6157944800793060935
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
