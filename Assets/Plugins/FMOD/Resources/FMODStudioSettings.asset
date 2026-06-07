@@ -271,6 +271,9 @@ MonoBehaviour:
   - Master
   Banks:
   - BackgroundsMusics
+  - Ball
+  - Book
+  - Interactions
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
