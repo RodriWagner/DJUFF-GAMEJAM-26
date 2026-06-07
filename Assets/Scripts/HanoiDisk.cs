@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using Unity.VisualScripting;
 using UnityEngine.U2D.IK;
 using UnityEngine.EventSystems;
+using FMODUnity;
 
 public class HanoiDisk : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class HanoiDisk : MonoBehaviour
 
     private RectTransform myRect;
     private bool canMove = false;
+
+    [Header("Áudio ao Clicar")]
+    [SerializeField] private EventReference diskSound;
 
     void Start()
     {
@@ -44,6 +48,7 @@ public class HanoiDisk : MonoBehaviour
         {
             Debug.Log("Toquei uma musiquinha");
             //AUDIO FMOD TOCAR
+            AudioManager.Instance.PlayOneShot(diskSound, transform.position);
         }
     }
 
