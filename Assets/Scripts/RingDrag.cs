@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,7 +14,7 @@ public class RingDrag : MonoBehaviour
     [SerializeField] private float distanceToFit = 1f;
 
     [Header("Áudio ao Clicar")]
-    //AUDIO FMOD TOCAR
+    [SerializeField] private EventReference ringSound;
     
     [Header("Gerenciador do Puzzle")]
     public TonalLadderGerenciator puzzleGerence;
@@ -33,6 +34,7 @@ public class RingDrag : MonoBehaviour
         if (RealityManager.Instance != null && RealityManager.Instance.currentReality == RealityManager.RealityType.BlackAndWhite)
         {
             //AUDIO FMOD TOCAR
+            AudioManager.Instance.PlayOneShot(ringSound, transform.position);
             Debug.Log("Toquei meu sonzinhooooo ding ding!");
         }
     }

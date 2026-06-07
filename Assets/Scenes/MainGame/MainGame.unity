@@ -1163,6 +1163,8 @@ GameObject:
   - component: {fileID: 289252382}
   - component: {fileID: 289252383}
   - component: {fileID: 289252384}
+  - component: {fileID: 289252386}
+  - component: {fileID: 289252385}
   m_Layer: 8
   m_Name: PlayerManager
   m_TagString: Player
@@ -1353,6 +1355,32 @@ MonoBehaviour:
   playerBlackAndWhite: {fileID: 1254204157}
   playerColorful: {fileID: 287041639}
   playerAnimation: {fileID: 0}
+--- !u!114 &289252385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289252377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
+--- !u!114 &289252386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289252377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df577300a5339e4890305a7932f6b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &290901336
 GameObject:
   m_ObjectHideFlags: 0
@@ -4657,6 +4685,13 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1855828686}
   distanceToFit: 1
+  ringSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   puzzleGerence: {fileID: 1703788948}
 --- !u!114 &978313292
 MonoBehaviour:
@@ -5224,6 +5259,13 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1690683360}
   distanceToFit: 1
+  ringSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1077474759
 MonoBehaviour:
@@ -7530,6 +7572,13 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 827770346}
   distanceToFit: 1
+  ringSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1739171983
 MonoBehaviour:
@@ -8602,6 +8651,13 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1871497591}
   distanceToFit: 1
+  ringSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1934566311
 MonoBehaviour:
@@ -8778,6 +8834,13 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1760702477}
   distanceToFit: 1
+  ringSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1951670868
 MonoBehaviour:
