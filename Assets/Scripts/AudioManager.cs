@@ -9,9 +9,9 @@ public class AudioManager : MonoBehaviour
     private EventInstance musicInstance;
 
     // Bus para regular os volumes
-    private Bus generalBus;
+    private Bus masterBus;
     private Bus musicBus;
-    private Bus effectsBus;
+    private Bus sfxBus;
 
     private void Awake()
     {
@@ -23,14 +23,14 @@ public class AudioManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        generalBus = RuntimeManager.GetBus("bus:/");
-        musicBus = RuntimeManager.GetBus("bus:/");
-        effectsBus = RuntimeManager.GetBus("bus:/");
+        masterBus = RuntimeManager.GetBus("bus:/");
+        musicBus = RuntimeManager.GetBus("bus:/Music");
+        sfxBus = RuntimeManager.GetBus("bus:/SFX");
     }
 
     public void SetGeneralVolume(float volume)
     {
-        generalBus.setVolume(volume);
+        masterBus.setVolume(volume);
     }
 
     public void SetMusicVolume(float volume)
@@ -40,7 +40,7 @@ public class AudioManager : MonoBehaviour
 
     public void SetEffectsVolume(float volume)
     {
-        effectsBus.setVolume(volume);
+        sfxBus.setVolume(volume);
     }
 
     public void PlayOneShot(EventReference soundEvent, Vector3 soundPosition)
