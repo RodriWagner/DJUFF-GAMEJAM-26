@@ -26,6 +26,15 @@ public class HanoiDisk : MonoBehaviour
         myRect = GetComponent<RectTransform>();
     }
 
+    //(fix bug) caso esteja segurando e troque de realidade (desabilita esse objeto) volta pra pilha anterior
+    void OnDisable()
+    {
+        if (canMove)
+        {
+            canMove = false;
+            myRect.anchoredPosition = currentStem.TopPosition(currentStem.disksHere.Count - 1);
+        }
+    }
     public void CatchDisk() //ao clicar no disco (pointer UP)
     {
         //se for o do topo, pode mover
