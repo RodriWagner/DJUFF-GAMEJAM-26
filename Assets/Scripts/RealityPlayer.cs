@@ -11,8 +11,11 @@ public class RealityPlayer : MonoBehaviour
     public GameObject playerColorful;
 
     [Header("Animação de Transição")]
-    public Animator playerAnimation;
-
+    private Animator playerAnimation;
+    void Awake()
+    {
+        playerAnimation = GetComponent<Animator>();
+    }
     void Start()
     {
         if (RealityManager.Instance != null)
@@ -34,15 +37,14 @@ public class RealityPlayer : MonoBehaviour
     }
     void UpdateObject()
     {
+        
         if (RealityManager.Instance.currentReality == RealityManager.RealityType.BlackAndWhite)
         {
-            if (playerBlackAndWhite != null) playerBlackAndWhite.SetActive(true);
-            if (playerColorful != null) playerColorful.SetActive(false);
+            playerAnimation.SetBool("Colorful", false);
         }
         else
         {
-            if (playerBlackAndWhite != null) playerBlackAndWhite.SetActive(false);
-            if (playerColorful != null) playerColorful.SetActive(true);
+            playerAnimation.SetBool("Colorful", true);
         }
     }
     void Destroy()

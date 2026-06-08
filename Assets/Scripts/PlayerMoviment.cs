@@ -9,22 +9,26 @@ public class PlayerMoviment : MonoBehaviour
     public Vector2 destino;
     private Camera mainCamera;
     public bool canMove = true;
-    private bool moving = false;
     private Collider2D targetObject = null;
 
     [SerializeField] private float interaction_range = 3.5f;
+    private Animator anim;
 
     private void Awake()
     {
         mainCamera = Camera.main;
+        anim = GetComponent<Animator>();
+        anim.SetFloat("Direction", 1f);
     }
     private void FixedUpdate()
     {
         MovePlayer();
+        CheckDirection();
         if (targetObject != null)
         {
             DetectRange(targetObject);
         }
+        
     }
     private void OnInteract(InputAction.CallbackContext contexto)
     {
@@ -40,17 +44,44 @@ public class PlayerMoviment : MonoBehaviour
     {
         if (RealityManager.Instance.cooldownTime > 0.0f)
         {
-            moving = false;
             return;
         }
         //MOVIMENTA O PLAYER
         if ((Vector2)transform.position != destino)
         {
+            anim.SetBool("Moving", true);
             // MoveTowards move de um ponto A para um ponto B em linha reta, numa velocidade constante
             transform.position = Vector2.MoveTowards(transform.position, destino, velocidade * Time.deltaTime);
-            moving = true;
         }
-        else moving = false;
+        else anim.SetBool("Moving", false);
+    }
+    private void CheckDirection()
+    {
+        float diffX = destino.x - transform.position.x;
+        float diffY = destino.y - transform.position.y;
+
+        // qual eixo tem o movimento mais forte
+        if (Mathf.Abs(diffX) > Mathf.Abs(diffY))
+        {
+            // O MOVIMENTO DOMINANTE É NA HORIZONTAL
+            float dirX = diffX > 0 ? 1f : -1f;
+            anim.SetFloat("Horizontal", dirX);
+            anim.SetFloat("Vertical", 0f);
+        }
+        else if (Mathf.Abs(diffY) > Mathf.Abs(diffX))
+        {
+            // O MOVIMENTO DOMINANTE É NA VERTICAL
+            float dirY = diffY > 0 ? 1f : -1f;
+            anim.SetFloat("Vertical", dirY);
+            anim.SetFloat("Horizontal", 0f);
+            
+            anim.SetFloat("Direction", -dirY); 
+        }
+        else
+        {
+            anim.SetFloat("Horizontal", 0f);
+            anim.SetFloat("Vertical", 0f);
+        }
     }
     private Collider2D DetectCollision()
     {
@@ -92,5 +123,6 @@ public class PlayerMoviment : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         destino = transform.position;
+        anim.SetBool("Moving", false);
     }
 }
