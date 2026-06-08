@@ -13,6 +13,7 @@ public class PlayerMoviment : MonoBehaviour
 
     [SerializeField] private float interaction_range = 3.5f;
     private Animator anim;
+    private bool colidi = false;
 
     private void Awake()
     {
@@ -46,10 +47,12 @@ public class PlayerMoviment : MonoBehaviour
         {
             return;
         }
+        
         //MOVIMENTA O PLAYER
         if ((Vector2)transform.position != destino)
         {
-            anim.SetBool("Moving", true);
+            if (colidi) anim.SetBool("Moving", false);
+            else anim.SetBool("Moving", true);
             // MoveTowards move de um ponto A para um ponto B em linha reta, numa velocidade constante
             transform.position = Vector2.MoveTowards(transform.position, destino, velocidade * Time.deltaTime);
         }
@@ -122,7 +125,12 @@ public class PlayerMoviment : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        destino = transform.position;
+        destino = (Vector2)transform.position;
+        colidi = true;
         anim.SetBool("Moving", false);
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        colidi = false;
     }
 }

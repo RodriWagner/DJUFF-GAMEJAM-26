@@ -103,12 +103,12 @@ TextureImporter:
       name: POTE_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 136
+        x: 431
+        y: 121
         width: 1118
         height: 887
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 68e5d897fc21dd14a802eb55b8f8f6d4
     internalID: 0
     vertices: []
     indices: 

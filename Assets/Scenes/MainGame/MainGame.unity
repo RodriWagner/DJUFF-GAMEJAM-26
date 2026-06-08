@@ -1730,17 +1730,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.07771808}
+  m_Offset: {x: 0, y: -1.2162892}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.11, y: 3.33}
-    newSize: {x: 1.11, y: 3.33}
+    oldSize: {x: 0.94, y: 3.04}
+    newSize: {x: 0.94, y: 3.04}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 2.981813}
+  m_Size: {x: 1, y: 0.3937986}
   m_EdgeRadius: 0
 --- !u!114 &289252382
 MonoBehaviour:
@@ -5142,7 +5142,6 @@ GameObject:
   m_Component:
   - component: {fileID: 978313287}
   - component: {fileID: 978313289}
-  - component: {fileID: 978313288}
   - component: {fileID: 978313291}
   - component: {fileID: 978313290}
   - component: {fileID: 978313292}
@@ -5174,36 +5173,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000015259, y: -263}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &978313288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978313286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.44950753, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &978313289
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5614,7 +5583,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1077474754}
   - component: {fileID: 1077474756}
-  - component: {fileID: 1077474755}
   - component: {fileID: 1077474758}
   - component: {fileID: 1077474757}
   - component: {fileID: 1077474759}
@@ -5646,36 +5614,6 @@ RectTransform:
   m_AnchoredPosition: {x: 270, y: -263}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1077474755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077474753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.9142746, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1077474756
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8128,7 +8066,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1739171980}
   - component: {fileID: 1739171984}
-  - component: {fileID: 1739171983}
   - component: {fileID: 1739171982}
   - component: {fileID: 1739171981}
   - component: {fileID: 1739171985}
@@ -8237,36 +8174,6 @@ MonoBehaviour:
   correctHolder: {fileID: 0}
   distanceToFit: 1
   puzzleGerence: {fileID: 0}
---- !u!114 &1739171983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739171979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.039559364, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1739171984
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9384,7 +9291,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1934566306}
   - component: {fileID: 1934566308}
-  - component: {fileID: 1934566307}
   - component: {fileID: 1934566310}
   - component: {fileID: 1934566309}
   - component: {fileID: 1934566311}
@@ -9416,36 +9322,6 @@ RectTransform:
   m_AnchoredPosition: {x: -556.77, y: -263}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1934566307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934566305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1934566308
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9588,7 +9464,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1951670863}
   - component: {fileID: 1951670865}
-  - component: {fileID: 1951670864}
   - component: {fileID: 1951670867}
   - component: {fileID: 1951670866}
   - component: {fileID: 1951670868}
@@ -9620,36 +9495,6 @@ RectTransform:
   m_AnchoredPosition: {x: -268, y: -263}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1951670864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951670862}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.10208259, g: 0.6981132, b: 0.13801686, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1951670865
 CanvasRenderer:
   m_ObjectHideFlags: 0
