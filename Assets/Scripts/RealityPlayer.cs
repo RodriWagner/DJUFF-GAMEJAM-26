@@ -3,14 +3,6 @@ using UnityEngine;
 public class RealityPlayer : MonoBehaviour
 {
     //OBJETOS QUE EXISTEM EM AMBAS AS REALIDADES, MAS O GAMEplayer EM SI MUDA NELES
-
-    [Header("Player das Realidades")]
-    [Tooltip("Arraste o player do Preto e Branco aqui")]
-    public GameObject playerBlackAndWhite;
-    [Tooltip("Arraste o player do Colorido aqui")]
-    public GameObject playerColorful;
-
-    [Header("Animação de Transição")]
     private Animator playerAnimation;
     void Awake()
     {
