@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
@@ -56,7 +57,10 @@ public class AudioManager : MonoBehaviour
 
     public void StopMusic()
     {
-        musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        musicInstance.release(); // isso  libera a memoria
+        if (musicInstance.isValid())
+        {
+            musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            musicInstance.release(); // isso  libera a memoria
+        }
     }
 }

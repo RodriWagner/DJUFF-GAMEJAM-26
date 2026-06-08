@@ -118,7 +118,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2650
+  Length: 1751
 --- !u!114 &-7725676923852995726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2650
+  Length: 1751
 --- !u!114 &-6556669325344360298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639164548171135937
+  lastModified: 639164586371577056
   FileSizes: []
   Exists: 1
 --- !u!114 &-5066053165712067949
@@ -190,7 +190,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2650
+  Length: 1750
 --- !u!114 &-4847921302939809398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2650
+  Length: 1751
 --- !u!114 &-4751433007038191245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2650
+  Length: 1751
 --- !u!114 &-4463324507853532670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +314,7 @@ MonoBehaviour:
   Path: Banks/Desktop/BackgroundsMusics.bank
   Name: BackgroundsMusics
   StudioPath: bank:/BackgroundsMusics
-  lastModified: 639164548170426895
+  lastModified: 639164586371447137
   FileSizes: []
   Exists: 1
 --- !u!114 &-2061251673531146831
@@ -416,13 +416,14 @@ MonoBehaviour:
   - {fileID: -4751433007038191245}
   - {fileID: -4847921302939809398}
   - {fileID: 2612794590987897137}
+  - {fileID: 7321043213042573076}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6556669325344360298}
   StringsBanks:
   - {fileID: 6079080684040104072}
   cacheVersion: 131859
-  cacheTime: 639164548171315764
+  cacheTime: 639164586371597047
   SerializableEventsDict:
   - key: event:/GameMusic
     index: 0
@@ -452,6 +453,8 @@ MonoBehaviour:
     index: 12
   - key: event:/Steps
     index: 13
+  - key: event:/Clack
+    index: 14
 --- !u!114 &11185986088925477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,7 +497,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Ball.bank
   Name: Ball
   StudioPath: bank:/Ball
-  lastModified: 639164548170649867
+  lastModified: 639164586371487115
   FileSizes: []
   Exists: 1
 --- !u!114 &2052484225769114442
@@ -539,7 +542,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Book.bank
   Name: Book
   StudioPath: bank:/Book
-  lastModified: 639164548170886193
+  lastModified: 639164586371557070
   FileSizes: []
   Exists: 1
 --- !u!114 &2612794590987897137
@@ -584,7 +587,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Interactions.bank
   Name: Interactions
   StudioPath: bank:/Interactions
-  lastModified: 639164548171008591
+  lastModified: 639164586371567068
   FileSizes: []
   Exists: 1
 --- !u!114 &4386533727090523453
@@ -629,10 +632,10 @@ MonoBehaviour:
   Path: Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639164548171315764
+  lastModified: 639164586371597047
   FileSizes:
   - Name: 
-    Value: 1534
+    Value: 1570
   Exists: 1
 --- !u!114 &6685553981988704761
 MonoBehaviour:
@@ -715,6 +718,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2194
+--- !u!114 &7321043213042573076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Clack
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Clack
+  Guid:
+    Data1: -161824619
+    Data2: 1239508931
+    Data3: -119225198
+    Data4: 1811057279
+  Banks:
+  - {fileID: 728741464715202305}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 752
 --- !u!114 &7469987524951801892
 MonoBehaviour:
   m_ObjectHideFlags: 0
