@@ -3236,11 +3236,10 @@ MonoBehaviour:
   textBox: {fileID: 0}
   timer: 0
   zoom: 1
-  zoomOut: {fileID: 0}
-  zoomedUI: {fileID: 2069398537}
+  zoomedUI: {fileID: 0}
   fadeScreen: {fileID: 1137617112}
   mainCamera: {fileID: 1928110088}
-  roomPosition: {fileID: 938829552}
+  roomPosition: {fileID: 1888461660}
   player: {fileID: 289252377}
   playerNextPosition: {fileID: 1531518212}
 --- !u!212 &521992324
@@ -4492,7 +4491,6 @@ MonoBehaviour:
   textBox: {fileID: 6311948018971086967}
   timer: 5
   zoom: 0
-  zoomOut: {fileID: 0}
   zoomedUI: {fileID: 0}
   fadeScreen: {fileID: 0}
   mainCamera: {fileID: 0}
@@ -8488,7 +8486,6 @@ MonoBehaviour:
   textBox: {fileID: 0}
   timer: 0
   zoom: 1
-  zoomOut: {fileID: 0}
   zoomedUI: {fileID: 559409183}
   fadeScreen: {fileID: 1137617112}
   mainCamera: {fileID: 0}
@@ -11882,7 +11879,6 @@ MonoBehaviour:
   textBox: {fileID: 0}
   timer: 0
   zoom: 0
-  zoomOut: {fileID: 0}
   zoomedUI: {fileID: 0}
   fadeScreen: {fileID: 0}
   mainCamera: {fileID: 0}
@@ -12459,8 +12455,7 @@ MonoBehaviour:
   textBox: {fileID: 0}
   timer: 0
   zoom: 1
-  zoomOut: {fileID: 0}
-  zoomedUI: {fileID: 2069398537}
+  zoomedUI: {fileID: 0}
   fadeScreen: {fileID: 1137617112}
   mainCamera: {fileID: 1928110088}
   roomPosition: {fileID: 689374277}
@@ -12803,7 +12798,6 @@ MonoBehaviour:
   textBox: {fileID: 0}
   timer: 0
   zoom: 1
-  zoomOut: {fileID: 0}
   zoomedUI: {fileID: 800061468}
   fadeScreen: {fileID: 1137617112}
   mainCamera: {fileID: 0}
@@ -14122,6 +14116,7 @@ GameObject:
   - component: {fileID: 2125244580}
   - component: {fileID: 2125244579}
   - component: {fileID: 2125244581}
+  - component: {fileID: 2125244582}
   m_Layer: 0
   m_Name: Porta_0
   m_TagString: Untagged
@@ -14249,6 +14244,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.89, y: 4.32}
   m_EdgeRadius: 0
+--- !u!114 &2125244582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125244578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd96555f805432840a0d0aea47204302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelTransition
+  interactive: 1
+  informative: 0
+  message: 
+  textUI: {fileID: 0}
+  textBox: {fileID: 0}
+  timer: 0
+  zoom: 1
+  zoomedUI: {fileID: 0}
+  fadeScreen: {fileID: 1137617112}
+  mainCamera: {fileID: 1928110088}
+  roomPosition: {fileID: 689374277}
+  player: {fileID: 289252377}
+  playerNextPosition: {fileID: 2145447563}
 --- !u!1 &2143750333
 GameObject:
   m_ObjectHideFlags: 0
@@ -16689,7 +16709,6 @@ SceneRoots:
   - {fileID: 993157043}
   - {fileID: 265133359}
   - {fileID: 19932315}
-  - {fileID: 2069398538}
   - {fileID: 559409184}
   - {fileID: 1354212486}
   - {fileID: 800061469}
