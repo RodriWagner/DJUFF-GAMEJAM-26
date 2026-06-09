@@ -19,7 +19,6 @@ public class PlayerMoviment : MonoBehaviour
     {
         mainCamera = Camera.main;
         anim = GetComponent<Animator>();
-        anim.SetFloat("Direction", 1f);
     }
     private void FixedUpdate()
     {
@@ -77,8 +76,6 @@ public class PlayerMoviment : MonoBehaviour
             float dirY = diffY > 0 ? 1f : -1f;
             anim.SetFloat("Vertical", dirY);
             anim.SetFloat("Horizontal", 0f);
-            
-            anim.SetFloat("Direction", -dirY); 
         }
         else
         {

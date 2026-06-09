@@ -29,15 +29,7 @@ public class RealityPlayer : MonoBehaviour
     }
     void UpdateObject()
     {
-        
-        if (RealityManager.Instance.currentReality == RealityManager.RealityType.BlackAndWhite)
-        {
-            playerAnimation.SetBool("Colorful", false);
-        }
-        else
-        {
-            playerAnimation.SetBool("Colorful", true);
-        }
+        playerAnimation.SetTrigger("Transition");
     }
     void Destroy()
     {

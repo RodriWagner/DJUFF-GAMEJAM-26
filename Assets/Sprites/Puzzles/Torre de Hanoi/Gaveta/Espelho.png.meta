@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d767343502ca68a4c919c80f04c01690
+guid: 6328b1ca3737a8a40a59f3520d41476a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2533871447564209614
-    second: pote invertido_0
+      213: 1135128499231249344
+    second: Espelho_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pote invertido_0
+      name: Espelho_0
       rect:
         serializedVersion: 2
-        x: 425
-        y: 117
-        width: 1118
-        height: 887
+        x: 0
+        y: 0
+        width: 436
+        height: 715
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2323e6de751e5dcd0800000000000000
-      internalID: -2533871447564209614
+      spriteID: 0c3d91b1b59c0cf00800000000000000
+      internalID: 1135128499231249344
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f6a8588af86784c46b16101872f566a8
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pote invertido_0: -2533871447564209614
+      Espelho_0: 1135128499231249344
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
