@@ -18,4 +18,12 @@ public class LevelTransition : Interactable
         mainCamera.transform.position = new Vector3(roomPosition.transform.position.x, roomPosition.transform.position.y, -10);
         player.transform.position = new Vector2(playerNextPosition.transform.position.x, playerNextPosition.transform.position.y);
     }
+    public override void FadeOut()
+    {
+        base.FadeOut();
+        if (player.TryGetComponent<PlayerMoviment>(out PlayerMoviment script))
+        {
+            script.canMove = true;
+        }
+    }
 }
