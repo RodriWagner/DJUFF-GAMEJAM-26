@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: 2a5450fc5b0c6194bbf33d2afcb63c41
+guid: d289740cef7c2fd48974c66a0f204fb7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8696199947462172409
-    second: Andando_para_cima_0
+      213: -7817761209246291207
+    second: escada quarto colorido_0
   - first:
-      213: -2518195957154879471
-    second: Andando_para_cima_1
+      213: 3292963094021625001
+    second: escada quarto colorido_1
   - first:
-      213: -2766246954977515741
-    second: Andando_para_cima_2
+      213: 3051924824713544231
+    second: escada quarto colorido_2
   - first:
-      213: -2351908941757267764
-    second: Andando_para_cima_3
+      213: -4719825828652992517
+    second: escada quarto colorido_3
   - first:
-      213: -8872122582577926243
-    second: Andando_para_cima_4
+      213: 6755200130049792695
+    second: escada quarto colorido_4
   - first:
-      213: 6818874681856423098
-    second: Andando_para_cima_5
-  - first:
-      213: -3682922808234123761
-    second: Andando_para_cima_6
-  - first:
-      213: 8544601508899970061
-    second: Andando_para_cima_7
-  - first:
-      213: -2217965283730542486
-    second: Andando_para_cima_8
+      213: 8529134230519331787
+    second: escada quarto colorido_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -124,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Andando_para_cima_0
+      name: escada quarto colorido_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 23
-        width: 107
-        height: 315
+        x: 212
+        y: 134
+        width: 48
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9fed04c17cb1fa870800000000000000
-      internalID: 8696199947462172409
+      spriteID: 9faeb08b99bb18390800000000000000
+      internalID: -7817761209246291207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andando_para_cima_1
+      name: escada quarto colorido_1
       rect:
         serializedVersion: 2
-        x: 162
-        y: 23
-        width: 107
-        height: 321
+        x: 266
+        y: 153
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11865f27e129d0dd0800000000000000
-      internalID: -2518195957154879471
+      spriteID: 9a451a5bc74f2bd20800000000000000
+      internalID: 3292963094021625001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andando_para_cima_2
+      name: escada quarto colorido_2
       rect:
         serializedVersion: 2
-        x: 312
-        y: 23
-        width: 107
-        height: 321
+        x: 159
+        y: 56
+        width: 70
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3272f87fc015c99d0800000000000000
-      internalID: -2766246954977515741
+      spriteID: 7224f32557d9a5a20800000000000000
+      internalID: 3051924824713544231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andando_para_cima_3
+      name: escada quarto colorido_3
       rect:
         serializedVersion: 2
-        x: 462
-        y: 35
-        width: 107
-        height: 309
+        x: 243
+        y: 89
+        width: 31
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc04e7647475c5fd0800000000000000
-      internalID: -2351908941757267764
+      spriteID: bf7bc616a6fcf7eb0800000000000000
+      internalID: -4719825828652992517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andando_para_cima_4
+      name: escada quarto colorido_4
       rect:
         serializedVersion: 2
-        x: 537
-        y: 33
-        width: 9
-        height: 10
+        x: 276
+        y: 116
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9fa8b58483efd480800000000000000
-      internalID: -8872122582577926243
+      spriteID: 7ba5a4a4aba4fbd50800000000000000
+      internalID: 6755200130049792695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andando_para_cima_5
+      name: escada quarto colorido_5
       rect:
         serializedVersion: 2
-        x: 612
-        y: 33
-        width: 107
-        height: 311
+        x: 285
+        y: 71
+        width: 42
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,74 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab4f4fb256281ae50800000000000000
-      internalID: 6818874681856423098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Andando_para_cima_6
-      rect:
-        serializedVersion: 2
-        x: 762
-        y: 23
-        width: 107
-        height: 321
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f0e55080831a3ecc0800000000000000
-      internalID: -3682922808234123761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Andando_para_cima_7
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 23
-        width: 107
-        height: 321
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0cdf351dc5849670800000000000000
-      internalID: 8544601508899970061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Andando_para_cima_8
-      rect:
-        serializedVersion: 2
-        x: 1062
-        y: 23
-        width: 107
-        height: 321
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a60b71363543831e0800000000000000
-      internalID: -2217965283730542486
+      spriteID: bcbbab3b4629d5670800000000000000
+      internalID: 8529134230519331787
       vertices: []
       indices: 
       edges: []
@@ -335,15 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Andando_para_cima_0: 8696199947462172409
-      Andando_para_cima_1: -2518195957154879471
-      Andando_para_cima_2: -2766246954977515741
-      Andando_para_cima_3: -2351908941757267764
-      Andando_para_cima_4: -8872122582577926243
-      Andando_para_cima_5: 6818874681856423098
-      Andando_para_cima_6: -3682922808234123761
-      Andando_para_cima_7: 8544601508899970061
-      Andando_para_cima_8: -2217965283730542486
+      escada quarto colorido_0: -7817761209246291207
+      escada quarto colorido_1: 3292963094021625001
+      escada quarto colorido_2: 3051924824713544231
+      escada quarto colorido_3: -4719825828652992517
+      escada quarto colorido_4: 6755200130049792695
+      escada quarto colorido_5: 8529134230519331787
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

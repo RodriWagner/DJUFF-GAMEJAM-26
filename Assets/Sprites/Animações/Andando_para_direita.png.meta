@@ -127,12 +127,12 @@ TextureImporter:
       name: Andando_para_direita_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 29
-        width: 94
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 4
+        width: 150
+        height: 360
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -149,12 +149,12 @@ TextureImporter:
       name: Andando_para_direita_1
       rect:
         serializedVersion: 2
-        x: 170
-        y: 29
-        width: 99
-        height: 311
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 150
+        y: 4
+        width: 150
+        height: 360
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: Andando_para_direita_2
       rect:
         serializedVersion: 2
-        x: 321
-        y: 32
-        width: 98
-        height: 308
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 4
+        width: 150
+        height: 360
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: Andando_para_direita_3
       rect:
         serializedVersion: 2
-        x: 471
-        y: 37
-        width: 98
-        height: 303
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 450
+        y: 4
+        width: 150
+        height: 360
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: Andando_para_direita_4
       rect:
         serializedVersion: 2
-        x: 516
-        y: 24
-        width: 18
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 4
+        width: 150
+        height: 360
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: Andando_para_direita_5
       rect:
         serializedVersion: 2
-        x: 619
-        y: 32
-        width: 100
-        height: 302
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 750
+        y: 4
+        width: 150
+        height: 360
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: Andando_para_direita_6
       rect:
         serializedVersion: 2
-        x: 771
-        y: 32
-        width: 98
-        height: 308
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 900
+        y: 4
+        width: 150
+        height: 360
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: Andando_para_direita_7
       rect:
         serializedVersion: 2
-        x: 920
-        y: 29
-        width: 99
-        height: 311
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1050
+        y: 4
+        width: 150
+        height: 360
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,33 +299,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Andando_para_direita_8
-      rect:
-        serializedVersion: 2
-        x: 1071
-        y: 30
-        width: 98
-        height: 310
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 36da7f3d7f0c87eb0800000000000000
-      internalID: -4721812038652285597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d687c14ab3b740b4c9aafdaea3966a8f
     internalID: 0
     vertices: []
     indices: 
@@ -333,7 +311,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":150.0,"y":360.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.15000000596046449},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Andando_para_direita_0: 5120101516245016817
       Andando_para_direita_1: -1200628920270209049
@@ -343,7 +323,6 @@ TextureImporter:
       Andando_para_direita_5: 7664755578413825729
       Andando_para_direita_6: -6484079882868027439
       Andando_para_direita_7: 1112024388049925283
-      Andando_para_direita_8: -4721812038652285597
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
