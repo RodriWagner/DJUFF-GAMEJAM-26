@@ -268,8 +268,8 @@ GameObject:
   - component: {fileID: 59228888}
   - component: {fileID: 59228893}
   - component: {fileID: 59228892}
-  - component: {fileID: 59228891}
   - component: {fileID: 59228890}
+  - component: {fileID: 59228894}
   m_Layer: 0
   m_Name: DisckBlackAndWhite (5)
   m_TagString: Untagged
@@ -293,7 +293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 548, y: 75.18466}
+  m_AnchoredPosition: {x: 222.55971, y: -110.00003}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &59228890
@@ -313,25 +313,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 59228891}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DragRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 59228891}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DropRing
+        - m_Target: {fileID: 59228894}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DragDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -345,9 +329,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 59228891}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: CatchRing
+        - m_Target: {fileID: 59228894}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: CatchDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -357,22 +341,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &59228891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59228887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
-  distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 59228894}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DropDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &59228892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,6 +395,163 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59228887}
   m_CullTransparentMesh: 1
+--- !u!114 &59228894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59228887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad886778291c60488524cbfdfcf0567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiDisk
+  allStems:
+  - {fileID: 2050713704}
+  - {fileID: 1179133374}
+  - {fileID: 304713235}
+  currentStem: {fileID: 0}
+  gerenciator: {fileID: 2143750335}
+  distanceToFit: 1
+--- !u!1 &71447846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71447847}
+  - component: {fileID: 71447849}
+  - component: {fileID: 71447848}
+  m_Layer: 9
+  m_Name: TestSquare
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &71447847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71447846}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.5100193, y: 1.9199299, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1527765568}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &71447848
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71447846}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &71447849
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71447846}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &74089976
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,8 +881,9 @@ GameObject:
   - component: {fileID: 216605523}
   - component: {fileID: 216605525}
   - component: {fileID: 216605524}
+  - component: {fileID: 216605526}
   m_Layer: 0
-  m_Name: Pin (1)
+  m_Name: PinC (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -763,7 +905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 229.09424, y: 246.99573}
+  m_AnchoredPosition: {x: -96.346054, y: 61.81103}
   m_SizeDelta: {x: 297.8, y: 342.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216605524
@@ -804,6 +946,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216605522}
   m_CullTransparentMesh: 1
+--- !u!114 &216605526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216605522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246586bd652511740b43c615123a6294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiStem
+  disksHere: []
+  distanceInY: 18
 --- !u!1 &245466833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,8 +1653,8 @@ GameObject:
   - component: {fileID: 287714036}
   - component: {fileID: 287714041}
   - component: {fileID: 287714040}
-  - component: {fileID: 287714039}
   - component: {fileID: 287714038}
+  - component: {fileID: 287714042}
   m_Layer: 0
   m_Name: DisckBlackAndWhite (3)
   m_TagString: Untagged
@@ -1522,7 +1678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 337.79996, y: 75.18466}
+  m_AnchoredPosition: {x: 12.359669, y: -110.00003}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &287714038
@@ -1542,25 +1698,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 287714039}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DragRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 287714039}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DropRing
+        - m_Target: {fileID: 287714042}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DragDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1574,9 +1714,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 287714039}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: CatchRing
+        - m_Target: {fileID: 287714042}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: CatchDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1586,22 +1726,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &287714039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287714035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
-  distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 287714042}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DropDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &287714040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1640,6 +1780,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287714035}
   m_CullTransparentMesh: 1
+--- !u!114 &287714042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287714035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad886778291c60488524cbfdfcf0567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiDisk
+  allStems:
+  - {fileID: 2050713704}
+  - {fileID: 1179133374}
+  - {fileID: 304713235}
+  currentStem: {fileID: 0}
+  gerenciator: {fileID: 2143750335}
+  distanceToFit: 1
 --- !u!1 &289252377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,8 +2092,8 @@ GameObject:
   - component: {fileID: 290901337}
   - component: {fileID: 290901342}
   - component: {fileID: 290901341}
-  - component: {fileID: 290901340}
   - component: {fileID: 290901339}
+  - component: {fileID: 290901343}
   m_Layer: 0
   m_Name: DiskColorful (5)
   m_TagString: Untagged
@@ -1958,7 +2117,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 548, y: 75.18463}
+  m_AnchoredPosition: {x: 222.55971, y: -110.00003}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &290901339
@@ -1978,9 +2137,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 290901340}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DragRing
+        - m_Target: {fileID: 290901343}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DragDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1990,13 +2149,13 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 14
+  - eventID: 3
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 290901340}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DropRing
+        - m_Target: {fileID: 290901343}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DropDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2010,9 +2169,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 290901340}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: CatchRing
+        - m_Target: {fileID: 290901343}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: CatchDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2022,22 +2181,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &290901340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290901336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
-  distanceToFit: 1
-  puzzleGerence: {fileID: 0}
 --- !u!114 &290901341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2076,6 +2219,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290901336}
   m_CullTransparentMesh: 1
+--- !u!114 &290901343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290901336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad886778291c60488524cbfdfcf0567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiDisk
+  allStems:
+  - {fileID: 216605526}
+  - {fileID: 757058186}
+  - {fileID: 1165860065}
+  currentStem: {fileID: 0}
+  gerenciator: {fileID: 924966687}
+  distanceToFit: 1
 --- !u!1 &304713231
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,8 +2249,9 @@ GameObject:
   - component: {fileID: 304713232}
   - component: {fileID: 304713234}
   - component: {fileID: 304713233}
+  - component: {fileID: 304713235}
   m_Layer: 0
-  m_Name: Pin (3)
+  m_Name: PinB&W (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2110,7 +2273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 423.86215, y: 246.99573}
+  m_AnchoredPosition: {x: 98.42186, y: 61.81103}
   m_SizeDelta: {x: 307.84, y: 342.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304713233
@@ -2151,6 +2314,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304713231}
   m_CullTransparentMesh: 1
+--- !u!114 &304713235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304713231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246586bd652511740b43c615123a6294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  disksHere: []
+  distanceInY: 18
 --- !u!1 &365024425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,8 +2374,8 @@ GameObject:
   - component: {fileID: 372229297}
   - component: {fileID: 372229302}
   - component: {fileID: 372229301}
-  - component: {fileID: 372229300}
   - component: {fileID: 372229299}
+  - component: {fileID: 372229303}
   m_Layer: 0
   m_Name: DiskColorful (3)
   m_TagString: Untagged
@@ -2222,7 +2399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 337.8, y: 75.18463}
+  m_AnchoredPosition: {x: 12.359669, y: -110.00003}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372229299
@@ -2238,45 +2415,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
   m_Delegates:
-  - eventID: 5
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 372229300}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DragRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 372229300}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DropRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   - eventID: 2
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 372229300}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: CatchRing
+        - m_Target: {fileID: 372229303}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: CatchDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2286,22 +2431,38 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &372229300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372229296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
-  distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 372229303}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DragDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 372229303}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DropDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &372229301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2340,6 +2501,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372229296}
   m_CullTransparentMesh: 1
+--- !u!114 &372229303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372229296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad886778291c60488524cbfdfcf0567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiDisk
+  allStems:
+  - {fileID: 216605526}
+  - {fileID: 757058186}
+  - {fileID: 1165860065}
+  currentStem: {fileID: 0}
+  gerenciator: {fileID: 924966687}
+  distanceToFit: 1
 --- !u!1 &401396594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,8 +2699,8 @@ GameObject:
   - component: {fileID: 413970176}
   - component: {fileID: 413970181}
   - component: {fileID: 413970180}
-  - component: {fileID: 413970179}
   - component: {fileID: 413970178}
+  - component: {fileID: 413970182}
   m_Layer: 0
   m_Name: DisckBlackAndWhite (1)
   m_TagString: Untagged
@@ -2544,7 +2724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 140.44025, y: 75.18466}
+  m_AnchoredPosition: {x: -185, y: -110}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413970178
@@ -2564,25 +2744,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 413970179}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DragRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 413970179}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DropRing
+        - m_Target: {fileID: 413970182}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DragDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2596,9 +2760,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 413970179}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: CatchRing
+        - m_Target: {fileID: 413970182}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: CatchDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2608,22 +2772,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &413970179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413970175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
-  distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 413970182}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DropDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &413970180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3560,8 +3724,8 @@ GameObject:
   - component: {fileID: 629162467}
   - component: {fileID: 629162472}
   - component: {fileID: 629162471}
-  - component: {fileID: 629162470}
   - component: {fileID: 629162469}
+  - component: {fileID: 629162473}
   m_Layer: 0
   m_Name: DisckBlackAndWhite (2)
   m_TagString: Untagged
@@ -3585,7 +3749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 236.40521, y: 75.18466}
+  m_AnchoredPosition: {x: -89.03508, y: -110.00003}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629162469
@@ -3605,25 +3769,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 629162470}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DragRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 629162470}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DropRing
+        - m_Target: {fileID: 629162473}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DragDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3637,9 +3785,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 629162470}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: CatchRing
+        - m_Target: {fileID: 629162473}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: CatchDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3649,22 +3797,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &629162470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 629162466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
-  distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 629162473}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DropDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &629162471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3703,6 +3851,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629162466}
   m_CullTransparentMesh: 1
+--- !u!114 &629162473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629162466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad886778291c60488524cbfdfcf0567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiDisk
+  allStems:
+  - {fileID: 2050713704}
+  - {fileID: 1179133374}
+  - {fileID: 304713235}
+  currentStem: {fileID: 0}
+  gerenciator: {fileID: 2143750335}
+  distanceToFit: 1
 --- !u!1 &654583982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4418,8 +4585,9 @@ GameObject:
   - component: {fileID: 757058183}
   - component: {fileID: 757058185}
   - component: {fileID: 757058184}
+  - component: {fileID: 757058186}
   m_Layer: 0
-  m_Name: Pin (2)
+  m_Name: PinC (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4441,7 +4609,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 325.46793, y: 246.65009}
+  m_AnchoredPosition: {x: 0.027637482, y: 61.46539}
   m_SizeDelta: {x: 284.31, y: 340.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &757058184
@@ -4482,6 +4650,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757058182}
   m_CullTransparentMesh: 1
+--- !u!114 &757058186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757058182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246586bd652511740b43c615123a6294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiStem
+  disksHere: []
+  distanceInY: 18
 --- !u!1 &800061468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4675,8 +4857,8 @@ GameObject:
   - component: {fileID: 830938164}
   - component: {fileID: 830938169}
   - component: {fileID: 830938168}
-  - component: {fileID: 830938167}
   - component: {fileID: 830938166}
+  - component: {fileID: 830938170}
   m_Layer: 0
   m_Name: DiskColorful (4)
   m_TagString: Untagged
@@ -4700,7 +4882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 452.9, y: 75.18463}
+  m_AnchoredPosition: {x: 127.4597, y: -110.00003}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &830938166
@@ -4720,25 +4902,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 830938167}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DragRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 830938167}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DropRing
+        - m_Target: {fileID: 830938170}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DragDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4752,9 +4918,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 830938167}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: CatchRing
+        - m_Target: {fileID: 830938170}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: CatchDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4764,22 +4930,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &830938167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830938163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
-  distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 830938170}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DropDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &830938168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4818,6 +4984,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830938163}
   m_CullTransparentMesh: 1
+--- !u!114 &830938170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830938163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad886778291c60488524cbfdfcf0567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiDisk
+  allStems:
+  - {fileID: 216605526}
+  - {fileID: 757058186}
+  - {fileID: 1165860065}
+  currentStem: {fileID: 0}
+  gerenciator: {fileID: 924966687}
+  distanceToFit: 1
 --- !u!1 &832723806
 GameObject:
   m_ObjectHideFlags: 0
@@ -4951,6 +5136,7 @@ GameObject:
   - component: {fileID: 834348711}
   - component: {fileID: 834348710}
   - component: {fileID: 834348712}
+  - component: {fileID: 834348713}
   m_Layer: 0
   m_Name: Mesa_0
   m_TagString: Untagged
@@ -5078,6 +5264,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.6353655, y: 2.778765}
   m_EdgeRadius: 0
+--- !u!114 &834348713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834348708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5d5af988d22224781c733b41ca3ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  interactive: 0
+  informative: 0
+  message: 
+  textUI: {fileID: 0}
+  textBox: {fileID: 0}
+  timer: 0
+  zoom: 1
+  zoomedUI: {fileID: 1648133920}
+  fadeScreen: {fileID: 1137617112}
+  mainCamera: {fileID: 0}
 --- !u!1 &858369010
 GameObject:
   m_ObjectHideFlags: 0
@@ -5471,13 +5679,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 924966686}
+  - component: {fileID: 924966687}
   m_Layer: 0
   m_Name: Colorful
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &924966686
 Transform:
   m_ObjectHideFlags: 0
@@ -5487,20 +5696,48 @@ Transform:
   m_GameObject: {fileID: 924966685}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -979.3714, y: -489.2394, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.0091186, y: 3.0091186, z: 3.0091186}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 216605523}
+  - {fileID: 757058183}
+  - {fileID: 1165860062}
   - {fileID: 1276274665}
   - {fileID: 1795771357}
   - {fileID: 372229297}
   - {fileID: 830938164}
   - {fileID: 290901337}
-  - {fileID: 216605523}
-  - {fileID: 757058183}
-  - {fileID: 1165860062}
   m_Father: {fileID: 1378103429}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &924966687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924966685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b518b8f86c89ca241a18022529f49421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiGerenciator
+  allStems:
+  - {fileID: 216605526}
+  - {fileID: 757058186}
+  - {fileID: 1165860065}
+  initialOrder:
+  - {fileID: 372229303}
+  - {fileID: 830938170}
+  - {fileID: 1276274671}
+  - {fileID: 1795771363}
+  - {fileID: 290901343}
+  correctOrder:
+  - {fileID: 830938170}
+  - {fileID: 1795771363}
+  - {fileID: 372229303}
+  - {fileID: 290901343}
+  - {fileID: 1276274671}
 --- !u!1 &926541018
 GameObject:
   m_ObjectHideFlags: 0
@@ -6005,10 +6242,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
+  allHolders:
+  - {fileID: 1871497591}
+  - {fileID: 1760702477}
+  - {fileID: 1855828686}
+  - {fileID: 1690683360}
+  - {fileID: 827770346}
+  correctHolder: {fileID: 1871497591}
   distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  puzzleGerence: {fileID: 1703788948}
 --- !u!114 &978313292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6614,10 +6856,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
+  allHolders:
+  - {fileID: 1871497591}
+  - {fileID: 1760702477}
+  - {fileID: 1855828686}
+  - {fileID: 1690683360}
+  - {fileID: 827770346}
+  correctHolder: {fileID: 1855828686}
   distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1077474759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6935,8 +7182,9 @@ GameObject:
   - component: {fileID: 1165860062}
   - component: {fileID: 1165860064}
   - component: {fileID: 1165860063}
+  - component: {fileID: 1165860065}
   m_Layer: 0
-  m_Name: Pin (3)
+  m_Name: PinC (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6958,7 +7206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 423.86215, y: 246.99573}
+  m_AnchoredPosition: {x: 98.42186, y: 61.81103}
   m_SizeDelta: {x: 307.84, y: 342.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1165860063
@@ -6999,6 +7247,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165860061}
   m_CullTransparentMesh: 1
+--- !u!114 &1165860065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165860061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246586bd652511740b43c615123a6294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiStem
+  disksHere: []
+  distanceInY: 18
 --- !u!1 &1179133370
 GameObject:
   m_ObjectHideFlags: 0
@@ -7010,8 +7272,9 @@ GameObject:
   - component: {fileID: 1179133371}
   - component: {fileID: 1179133373}
   - component: {fileID: 1179133372}
+  - component: {fileID: 1179133374}
   m_Layer: 0
-  m_Name: Pin (2)
+  m_Name: PinB&W (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7033,7 +7296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 325.46796, y: 246.65009}
+  m_AnchoredPosition: {x: 0.027668, y: 61.46539}
   m_SizeDelta: {x: 284.31, y: 340.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1179133372
@@ -7074,6 +7337,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179133370}
   m_CullTransparentMesh: 1
+--- !u!114 &1179133374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179133370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246586bd652511740b43c615123a6294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiStem
+  disksHere: []
+  distanceInY: 18
 --- !u!1 &1186310295
 GameObject:
   m_ObjectHideFlags: 0
@@ -7576,8 +7853,8 @@ GameObject:
   - component: {fileID: 1276274665}
   - component: {fileID: 1276274670}
   - component: {fileID: 1276274669}
-  - component: {fileID: 1276274668}
   - component: {fileID: 1276274667}
+  - component: {fileID: 1276274671}
   m_Layer: 0
   m_Name: DiskColorful (1)
   m_TagString: Untagged
@@ -7594,14 +7871,14 @@ RectTransform:
   m_GameObject: {fileID: 1276274664}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.36, y: 0.1, z: 0.33236355}
+  m_LocalScale: {x: 0.36, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 924966686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 140.44025, y: 75.18463}
+  m_AnchoredPosition: {x: -185, y: -110}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276274667
@@ -7617,45 +7894,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
   m_Delegates:
-  - eventID: 5
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1276274668}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DragRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1276274668}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DropRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   - eventID: 2
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1276274668}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: CatchRing
+        - m_Target: {fileID: 1276274671}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: CatchDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7665,22 +7910,38 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1276274668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1276274664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
-  distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1276274671}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DragDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1276274671}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DropDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1276274669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7719,6 +7980,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276274664}
   m_CullTransparentMesh: 1
+--- !u!114 &1276274671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276274664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad886778291c60488524cbfdfcf0567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiDisk
+  allStems:
+  - {fileID: 216605526}
+  - {fileID: 757058186}
+  - {fileID: 1165860065}
+  currentStem: {fileID: 0}
+  gerenciator: {fileID: 924966687}
+  distanceToFit: 1
 --- !u!1 &1343940550
 GameObject:
   m_ObjectHideFlags: 0
@@ -8150,7 +8430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36489cfb09ca2745bb240bb1edfa5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
-  pai: {fileID: 0}
+  pai: {fileID: 834348708}
   player: {fileID: 289252377}
 --- !u!114 &1386621049
 MonoBehaviour:
@@ -8575,8 +8855,8 @@ GameObject:
   - component: {fileID: 1504316210}
   - component: {fileID: 1504316215}
   - component: {fileID: 1504316214}
-  - component: {fileID: 1504316213}
   - component: {fileID: 1504316212}
+  - component: {fileID: 1504316216}
   m_Layer: 0
   m_Name: DisckBlackAndWhite (4)
   m_TagString: Untagged
@@ -8600,7 +8880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 452.9, y: 75.18466}
+  m_AnchoredPosition: {x: 127.4597, y: -110.00003}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1504316212
@@ -8620,25 +8900,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1504316213}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DragRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1504316213}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DropRing
+        - m_Target: {fileID: 1504316216}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DragDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -8652,9 +8916,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1504316213}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: CatchRing
+        - m_Target: {fileID: 1504316216}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: CatchDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -8664,22 +8928,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1504316213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1504316209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
-  distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1504316216}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DropDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1504316214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8718,6 +8982,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504316209}
   m_CullTransparentMesh: 1
+--- !u!114 &1504316216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504316209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad886778291c60488524cbfdfcf0567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiDisk
+  allStems:
+  - {fileID: 2050713704}
+  - {fileID: 1179133374}
+  - {fileID: 304713235}
+  currentStem: {fileID: 0}
+  gerenciator: {fileID: 2143750335}
+  distanceToFit: 1
+--- !u!1 &1527765567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1527765568}
+  m_Layer: 0
+  m_Name: BlackAndWhite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1527765568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527765567}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 71447847}
+  m_Father: {fileID: 2015214723}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531518212
 GameObject:
   m_ObjectHideFlags: 0
@@ -9742,7 +10057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1648133921
 Transform:
   m_ObjectHideFlags: 0
@@ -10259,10 +10574,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
+  allHolders:
+  - {fileID: 1871497591}
+  - {fileID: 1760702477}
+  - {fileID: 1855828686}
+  - {fileID: 1690683360}
+  - {fileID: 827770346}
+  correctHolder: {fileID: 827770346}
   distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  puzzleGerence: {fileID: 1703788948}
 --- !u!222 &1739171984
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10537,8 +10857,8 @@ GameObject:
   - component: {fileID: 1795771357}
   - component: {fileID: 1795771362}
   - component: {fileID: 1795771361}
-  - component: {fileID: 1795771360}
   - component: {fileID: 1795771359}
+  - component: {fileID: 1795771363}
   m_Layer: 0
   m_Name: DiskColorful (2)
   m_TagString: Untagged
@@ -10555,14 +10875,14 @@ RectTransform:
   m_GameObject: {fileID: 1795771356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.1, z: 0.33236355}
+  m_LocalScale: {x: 0.3, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 924966686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 236.40521, y: 75.18463}
+  m_AnchoredPosition: {x: -89.03508, y: -110.00003}
   m_SizeDelta: {x: 208.34, y: 185.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1795771359
@@ -10578,45 +10898,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
   m_Delegates:
-  - eventID: 5
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1795771360}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DragRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1795771360}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: DropRing
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   - eventID: 2
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1795771360}
-          m_TargetAssemblyTypeName: RingDrag, Assembly-CSharp
-          m_MethodName: CatchRing
+        - m_Target: {fileID: 1795771363}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: CatchDisk
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -10626,22 +10914,38 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1795771360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795771356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
-  distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1795771363}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DragDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1795771363}
+          m_TargetAssemblyTypeName: HanoiDisk, Assembly-CSharp
+          m_MethodName: DropDisk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1795771361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10680,6 +10984,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795771356}
   m_CullTransparentMesh: 1
+--- !u!114 &1795771363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795771356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad886778291c60488524cbfdfcf0567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiDisk
+  allStems:
+  - {fileID: 216605526}
+  - {fileID: 757058186}
+  - {fileID: 1165860065}
+  currentStem: {fileID: 0}
+  gerenciator: {fileID: 924966687}
+  distanceToFit: 1
 --- !u!1 &1803522142
 GameObject:
   m_ObjectHideFlags: 0
@@ -11649,10 +11972,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
+  allHolders:
+  - {fileID: 1871497591}
+  - {fileID: 1760702477}
+  - {fileID: 1855828686}
+  - {fileID: 1690683360}
+  - {fileID: 827770346}
+  correctHolder: {fileID: 1760702477}
   distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1934566311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11824,10 +12152,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a968cb276d33f1c42ae5768bc23f688a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingDrag
-  allHolders: []
-  correctHolder: {fileID: 0}
+  allHolders:
+  - {fileID: 1871497591}
+  - {fileID: 1760702477}
+  - {fileID: 1855828686}
+  - {fileID: 1690683360}
+  - {fileID: 827770346}
+  correctHolder: {fileID: 1690683360}
   distanceToFit: 1
-  puzzleGerence: {fileID: 0}
+  puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1951670868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12308,8 +12641,9 @@ GameObject:
   - component: {fileID: 2050713701}
   - component: {fileID: 2050713703}
   - component: {fileID: 2050713702}
+  - component: {fileID: 2050713704}
   m_Layer: 0
-  m_Name: Pin (1)
+  m_Name: PinB&W (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12331,7 +12665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 229.09421, y: 246.99573}
+  m_AnchoredPosition: {x: -96.346085, y: 61.81103}
   m_SizeDelta: {x: 297.8, y: 342.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2050713702
@@ -12372,6 +12706,158 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050713700}
   m_CullTransparentMesh: 1
+--- !u!114 &2050713704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050713700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246586bd652511740b43c615123a6294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiStem
+  disksHere: []
+  distanceInY: 18
+--- !u!1 &2074044329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2074044330}
+  - component: {fileID: 2074044332}
+  - component: {fileID: 2074044331}
+  m_Layer: 9
+  m_Name: TestSquare
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2074044330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074044329}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.79, y: -1.54, z: 0}
+  m_LocalScale: {x: 1, y: 1.0506, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1432426031}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2074044331
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074044329}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &2074044332
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074044329}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &2087245193
 GameObject:
   m_ObjectHideFlags: 0
@@ -13008,6 +13494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2143750334}
+  - component: {fileID: 2143750335}
   m_Layer: 0
   m_Name: BlackAndWhite
   m_TagString: Untagged
@@ -13024,20 +13511,43 @@ Transform:
   m_GameObject: {fileID: 2143750333}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -979.3714, y: -489.2394, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.0091186, y: 3.0091186, z: 3.0091186}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2050713701}
+  - {fileID: 1179133371}
+  - {fileID: 304713232}
   - {fileID: 413970176}
   - {fileID: 629162467}
   - {fileID: 287714036}
   - {fileID: 1504316210}
   - {fileID: 59228888}
-  - {fileID: 2050713701}
-  - {fileID: 1179133371}
-  - {fileID: 304713232}
   m_Father: {fileID: 1378103429}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2143750335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143750333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b518b8f86c89ca241a18022529f49421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiGerenciator
+  allStems:
+  - {fileID: 2050713704}
+  - {fileID: 1179133374}
+  - {fileID: 304713235}
+  initialOrder:
+  - {fileID: 287714042}
+  - {fileID: 1504316216}
+  - {fileID: 413970182}
+  - {fileID: 629162473}
+  - {fileID: 59228894}
+  correctOrder: []
 --- !u!1 &2145447563
 GameObject:
   m_ObjectHideFlags: 0
@@ -15416,6 +15926,7 @@ SceneRoots:
   - {fileID: 265133359}
   - {fileID: 559409184}
   - {fileID: 800061469}
+  - {fileID: 1977356365}
   - {fileID: 1648133921}
   - {fileID: 1888461661}
   - {fileID: 1742168226}
