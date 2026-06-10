@@ -33,6 +33,8 @@ public class RingDrag : MonoBehaviour
     private RectTransform myRect;
     private Vector2 ringInicialPos;
     private bool locked = false;
+    private bool holdingRing = false;
+
     void Start()
     {
         if (RealityManager.Instance != null)
@@ -68,6 +70,10 @@ public class RingDrag : MonoBehaviour
 
     public void CatchRing()
     {
+        //fix bug: se estivr segurando e trocar a realidade, essa funcao NAO deve rodar novamente
+        if (holdingRing) return;
+        holdingRing = true; //passa a "estar segurando" o disco
+
         if (RealityManager.Instance != null && RealityManager.Instance.currentReality == RealityManager.RealityType.BlackAndWhite)
         {
             //AUDIO FMOD TOCAR
@@ -90,6 +96,8 @@ public class RingDrag : MonoBehaviour
 
     public void DropRing() //ativada ao SOLTAR o ring
     {
+        holdingRing = false;
+
         //Acha o holder mais proximo E que ainda esteja na distancia minima pra dar FIT
         Transform nearestHolder = null;
         float shortestDistance = Mathf.Infinity;
