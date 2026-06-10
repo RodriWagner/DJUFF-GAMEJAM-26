@@ -553,6 +553,13 @@ MonoBehaviour:
   currentStem: {fileID: 0}
   hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
+  diskSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &74089976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,6 +1882,13 @@ MonoBehaviour:
   currentStem: {fileID: 0}
   hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
+  diskSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &289252377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2314,6 +2328,13 @@ MonoBehaviour:
   currentStem: {fileID: 0}
   hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
+  diskSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &303334461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,6 +2756,13 @@ MonoBehaviour:
   currentStem: {fileID: 0}
   hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
+  diskSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &401396594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3060,6 +3088,13 @@ MonoBehaviour:
   currentStem: {fileID: 0}
   hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
+  diskSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &433341738
 GameObject:
   m_ObjectHideFlags: 0
@@ -4285,6 +4320,13 @@ MonoBehaviour:
   currentStem: {fileID: 0}
   hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
+  diskSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &654583982
 GameObject:
   m_ObjectHideFlags: 0
@@ -5488,6 +5530,13 @@ MonoBehaviour:
   currentStem: {fileID: 0}
   hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
+  diskSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &832723806
 GameObject:
   m_ObjectHideFlags: 0
@@ -6738,6 +6787,13 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1871497591}
   distanceToFit: 1
+  ringSound:
+    Guid:
+      Data1: 205590175
+      Data2: 1196837540
+      Data3: -414121036
+      Data4: 1635386035
+    Path: event:/BallC
   puzzleGerence: {fileID: 1703788948}
 --- !u!114 &978313292
 MonoBehaviour:
@@ -7352,6 +7408,13 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1855828686}
   distanceToFit: 1
+  ringSound:
+    Guid:
+      Data1: -130503275
+      Data2: 1293966016
+      Data3: -37209676
+      Data4: 2126775228
+    Path: event:/BallE
   puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1077474759
 MonoBehaviour:
@@ -8683,6 +8746,13 @@ MonoBehaviour:
   currentStem: {fileID: 0}
   hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
+  diskSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1339462657
 GameObject:
   m_ObjectHideFlags: 0
@@ -10113,6 +10183,13 @@ MonoBehaviour:
   currentStem: {fileID: 0}
   hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
+  diskSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1518432397
 GameObject:
   m_ObjectHideFlags: 0
@@ -11828,6 +11905,13 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 827770346}
   distanceToFit: 1
+  ringSound:
+    Guid:
+      Data1: 362477389
+      Data2: 1263173057
+      Data3: -833259088
+      Data4: 1513253146
+    Path: event:/BallG
   puzzleGerence: {fileID: 1703788948}
 --- !u!222 &1739171984
 CanvasRenderer:
@@ -12383,6 +12467,13 @@ MonoBehaviour:
   currentStem: {fileID: 0}
   hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
+  diskSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1803522142
 GameObject:
   m_ObjectHideFlags: 0
@@ -13363,6 +13454,13 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1760702477}
   distanceToFit: 1
+  ringSound:
+    Guid:
+      Data1: 786835676
+      Data2: 1154318128
+      Data3: -1275605328
+      Data4: -1293623873
+    Path: event:/BallD
   puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1934566311
 MonoBehaviour:
@@ -13543,6 +13641,13 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1690683360}
   distanceToFit: 1
+  ringSound:
+    Guid:
+      Data1: 1654699212
+      Data2: 1111374590
+      Data3: 940628905
+      Data4: 1719731613
+    Path: event:/BallF
   puzzleGerence: {fileID: 1703788948}
 --- !u!114 &1951670868
 MonoBehaviour:
