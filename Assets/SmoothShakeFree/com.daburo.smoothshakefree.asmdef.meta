@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bc1b8f0e3cb90d240ba190494e205c0f
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271263
+  packageName: Smooth Shake Free
+  packageVersion: 1.0.2
+  assetPath: Assets/SmoothShakeFree/com.daburo.smoothshakefree.asmdef
+  uploadId: 656168

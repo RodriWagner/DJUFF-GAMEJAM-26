@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d8a457f7dad96bb4aa3ede48b0e3fa98
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271263
+  packageName: Smooth Shake Free
+  packageVersion: 1.0.2
+  assetPath: Assets/SmoothShakeFree/Presets/CameraHit.asset
+  uploadId: 656168
