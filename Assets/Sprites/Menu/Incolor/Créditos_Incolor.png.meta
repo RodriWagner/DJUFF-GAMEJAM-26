@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: ad34c111e5925ca4885c7e2c8735de8a
+guid: e6a0804ec94375147959ef584aeb2d59
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2742715300562056075
-    second: Rack_0
+      213: 3184944129952587482
+    second: "Cr\xE9ditos_Incolor_0"
+  - first:
+      213: -7949711270933878478
+    second: "Cr\xE9ditos_Incolor_1"
+  - first:
+      213: 4676905699134743066
+    second: "Cr\xE9ditos_Incolor_2"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rack_0
+      name: "Cr\xE9ditos_Incolor_0"
       rect:
         serializedVersion: 2
-        x: 37
-        y: 0
-        width: 216
-        height: 489
+        x: 0
+        y: 78
+        width: 16
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b83b70ac805101620800000000000000
-      internalID: 2742715300562056075
+      spriteID: ade1a47cfc1333c20800000000000000
+      internalID: 3184944129952587482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cr\xE9ditos_Incolor_1"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 451
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239211de7b3fca190800000000000000
+      internalID: -7949711270933878478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cr\xE9ditos_Incolor_2"
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 78
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a122dec34f4b7e040800000000000000
+      internalID: 4676905699134743066
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 83cf8011c01f37e4ebf89e3a5a6958cc
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rack_0: 2742715300562056075
+      "Cr\xE9ditos_Incolor_0": 3184944129952587482
+      "Cr\xE9ditos_Incolor_1": -7949711270933878478
+      "Cr\xE9ditos_Incolor_2": 4676905699134743066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

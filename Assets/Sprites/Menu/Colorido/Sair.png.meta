@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: ad34c111e5925ca4885c7e2c8735de8a
+guid: 8b9dcc0dce7996448af8ba29914146ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2742715300562056075
-    second: Rack_0
+      213: 171238231740521945
+    second: Sair_0
+  - first:
+      213: 7359041045344315663
+    second: Sair_1
+  - first:
+      213: 5378766040025228198
+    second: Sair_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rack_0
+      name: Sair_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 0
-        width: 216
-        height: 489
+        x: 0
+        y: 78
+        width: 16
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b83b70ac805101620800000000000000
-      internalID: 2742715300562056075
+      spriteID: 9dd1cd6b34c506200800000000000000
+      internalID: 171238231740521945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sair_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 451
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09644347d0902660800000000000000
+      internalID: 7359041045344315663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sair_2
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 78
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a363a9273735aa40800000000000000
+      internalID: 5378766040025228198
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 83cf8011c01f37e4ebf89e3a5a6958cc
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rack_0: 2742715300562056075
+      Sair_0: 171238231740521945
+      Sair_1: 7359041045344315663
+      Sair_2: 5378766040025228198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

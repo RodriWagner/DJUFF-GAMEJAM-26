@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: ad34c111e5925ca4885c7e2c8735de8a
+guid: ba06c5d9a8c74fd4da63dd15df30667c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2742715300562056075
-    second: Rack_0
+      213: -651191329980273457
+    second: Iniciar_0
+  - first:
+      213: 958487657644156737
+    second: Iniciar_1
+  - first:
+      213: -2653777730071503963
+    second: Iniciar_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rack_0
+      name: Iniciar_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 0
-        width: 216
-        height: 489
+        x: 0
+        y: 78
+        width: 16
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b83b70ac805101620800000000000000
-      internalID: 2742715300562056075
+      spriteID: fcc26bf7fe086f6f0800000000000000
+      internalID: -651191329980273457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iniciar_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 451
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147e973427b3d4d00800000000000000
+      internalID: 958487657644156737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iniciar_2
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 78
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abde3ef633eb2bd0800000000000000
+      internalID: -2653777730071503963
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 83cf8011c01f37e4ebf89e3a5a6958cc
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rack_0: 2742715300562056075
+      Iniciar_0: -651191329980273457
+      Iniciar_1: 958487657644156737
+      Iniciar_2: -2653777730071503963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

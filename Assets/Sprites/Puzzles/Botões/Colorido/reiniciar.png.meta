@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ad34c111e5925ca4885c7e2c8735de8a
+guid: 1c16684b7c522ce42b22ac590fc613de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2742715300562056075
-    second: Rack_0
+      213: 5257738460244464006
+    second: reiniciar_0
+  - first:
+      213: 1508506319581142935
+    second: reiniciar_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rack_0
+      name: reiniciar_0
       rect:
         serializedVersion: 2
-        x: 37
+        x: 0
         y: 0
-        width: 216
-        height: 489
+        width: 158
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b83b70ac805101620800000000000000
-      internalID: 2742715300562056075
+      spriteID: 681d7ccd54d37f840800000000000000
+      internalID: 5257738460244464006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reiniciar_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 62
+        width: 158
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fd018518a4fe410800000000000000
+      internalID: 1508506319581142935
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 83cf8011c01f37e4ebf89e3a5a6958cc
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rack_0: 2742715300562056075
+      reiniciar_0: 5257738460244464006
+      reiniciar_1: 1508506319581142935
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,7 +13,6 @@ public class RealityPlayer : MonoBehaviour
         if (RealityManager.Instance != null)
         {
             RealityManager.Instance.onRealityChanged.AddListener(UpdateObject);
-            OnRealityChanged();
         }
     }
 
