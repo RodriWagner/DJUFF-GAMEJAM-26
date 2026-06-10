@@ -3,7 +3,7 @@ using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class HanoiGerenciator : MonoBehaviour
+public class HanoiRealityGerenciator : MonoBehaviour
 {
     [Header("Hastes do Hanoi [EM ORDEM]")]
     [Tooltip("Coloque todas as hastes em ordem (esquerda = 0")] public List<HanoiStem> allStems;
@@ -35,7 +35,7 @@ public class HanoiGerenciator : MonoBehaviour
             rectDisk.anchoredPosition = leftStem.TopPosition(i);
         }
     }
-    public void CheckVictory()
+    public bool CheckRealityVictory() //checar vitoria de apenas apenas dessa realidade
     {
         HanoiStem rightStem = allStems[2]; //pegar a direita (facilitar a leitura do codigo)
         if (rightStem.disksHere.Count == correctOrder.Count) //se a haste da direita tiver a msm quantidade que a ordem correta
@@ -43,9 +43,11 @@ public class HanoiGerenciator : MonoBehaviour
             for (int i = 0; i < correctOrder.Count; i++)
             {
                 if (rightStem.disksHere[i] != correctOrder[i])
-                    return;
+                    return false; //se houver algum fora da ordem, eh falso
             }
             Debug.Log("PUZZLE CORRETO NA REALIDADE: " + RealityManager.Instance.currentReality);
+            return true;
         }
+        return false; //se a quantidade for diferente, ja eh falso
     }
 }

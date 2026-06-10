@@ -551,7 +551,7 @@ MonoBehaviour:
   - {fileID: 1179133374}
   - {fileID: 304713235}
   currentStem: {fileID: 0}
-  gerenciator: {fileID: 2143750335}
+  hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
 --- !u!1 &74089976
 GameObject:
@@ -1873,7 +1873,7 @@ MonoBehaviour:
   - {fileID: 1179133374}
   - {fileID: 304713235}
   currentStem: {fileID: 0}
-  gerenciator: {fileID: 2143750335}
+  hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
 --- !u!1 &289252377
 GameObject:
@@ -2312,7 +2312,7 @@ MonoBehaviour:
   - {fileID: 757058186}
   - {fileID: 1165860065}
   currentStem: {fileID: 0}
-  gerenciator: {fileID: 924966687}
+  hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
 --- !u!1 &303334461
 GameObject:
@@ -2733,7 +2733,7 @@ MonoBehaviour:
   - {fileID: 757058186}
   - {fileID: 1165860065}
   currentStem: {fileID: 0}
-  gerenciator: {fileID: 924966687}
+  hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
 --- !u!1 &401396594
 GameObject:
@@ -3058,7 +3058,7 @@ MonoBehaviour:
   - {fileID: 1179133374}
   - {fileID: 304713235}
   currentStem: {fileID: 0}
-  gerenciator: {fileID: 2143750335}
+  hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
 --- !u!1 &433341738
 GameObject:
@@ -4283,7 +4283,7 @@ MonoBehaviour:
   - {fileID: 1179133374}
   - {fileID: 304713235}
   currentStem: {fileID: 0}
-  gerenciator: {fileID: 2143750335}
+  hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
 --- !u!1 &654583982
 GameObject:
@@ -5100,7 +5100,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2143750335}
-        m_TargetAssemblyTypeName: HanoiGerenciator, Assembly-CSharp
+        m_TargetAssemblyTypeName: HanoiRealityGerenciator, Assembly-CSharp
         m_MethodName: InitialSetter
         m_Mode: 1
         m_Arguments:
@@ -5486,7 +5486,7 @@ MonoBehaviour:
   - {fileID: 757058186}
   - {fileID: 1165860065}
   currentStem: {fileID: 0}
-  gerenciator: {fileID: 924966687}
+  hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
 --- !u!1 &832723806
 GameObject:
@@ -6207,9 +6207,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 924966685}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b518b8f86c89ca241a18022529f49421, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a7f5498e257d9c4f9c0fe25a8c7f59b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HanoiGerenciator
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiRealityGerenciator
   allStems:
   - {fileID: 216605526}
   - {fileID: 757058186}
@@ -6221,11 +6221,11 @@ MonoBehaviour:
   - {fileID: 1795771363}
   - {fileID: 290901343}
   correctOrder:
-  - {fileID: 830938170}
-  - {fileID: 1795771363}
-  - {fileID: 372229303}
-  - {fileID: 290901343}
   - {fileID: 1276274671}
+  - {fileID: 290901343}
+  - {fileID: 372229303}
+  - {fileID: 1795771363}
+  - {fileID: 830938170}
 --- !u!1 &926541018
 GameObject:
   m_ObjectHideFlags: 0
@@ -8681,7 +8681,7 @@ MonoBehaviour:
   - {fileID: 757058186}
   - {fileID: 1165860065}
   currentStem: {fileID: 0}
-  gerenciator: {fileID: 924966687}
+  hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
 --- !u!1 &1339462657
 GameObject:
@@ -9258,6 +9258,7 @@ GameObject:
   - component: {fileID: 1378103432}
   - component: {fileID: 1378103431}
   - component: {fileID: 1378103430}
+  - component: {fileID: 1378103434}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -9367,6 +9368,20 @@ Canvas:
   m_SortingLayerID: -519303187
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &1378103434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378103428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304bc6cc16c5d5142a8bafb4b7f83b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiCheck
+  gerenciatorColorful: {fileID: 924966687}
+  gerenciatorBlackAndWhite: {fileID: 2143750335}
 --- !u!1 &1386621046
 GameObject:
   m_ObjectHideFlags: 0
@@ -10096,7 +10111,7 @@ MonoBehaviour:
   - {fileID: 1179133374}
   - {fileID: 304713235}
   currentStem: {fileID: 0}
-  gerenciator: {fileID: 2143750335}
+  hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
 --- !u!1 &1518432397
 GameObject:
@@ -11209,7 +11224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1648133921
 Transform:
   m_ObjectHideFlags: 0
@@ -11996,7 +12011,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 924966687}
-        m_TargetAssemblyTypeName: HanoiGerenciator, Assembly-CSharp
+        m_TargetAssemblyTypeName: HanoiRealityGerenciator, Assembly-CSharp
         m_MethodName: InitialSetter
         m_Mode: 1
         m_Arguments:
@@ -12366,7 +12381,7 @@ MonoBehaviour:
   - {fileID: 757058186}
   - {fileID: 1165860065}
   currentStem: {fileID: 0}
-  gerenciator: {fileID: 924966687}
+  hanoicheck: {fileID: 1378103434}
   distanceToFit: 3
 --- !u!1 &1803522142
 GameObject:
@@ -14830,7 +14845,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2143750335}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HanoiGerenciator, Assembly-CSharp
         m_MethodName: InitialSetter
         m_Mode: 1
@@ -14932,9 +14947,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2143750333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b518b8f86c89ca241a18022529f49421, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a7f5498e257d9c4f9c0fe25a8c7f59b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HanoiGerenciator
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiRealityGerenciator
   allStems:
   - {fileID: 2050713704}
   - {fileID: 1179133374}
@@ -14945,7 +14960,12 @@ MonoBehaviour:
   - {fileID: 413970182}
   - {fileID: 629162473}
   - {fileID: 59228894}
-  correctOrder: []
+  correctOrder:
+  - {fileID: 413970182}
+  - {fileID: 59228894}
+  - {fileID: 287714042}
+  - {fileID: 629162473}
+  - {fileID: 1504316216}
 --- !u!1 &2145447563
 GameObject:
   m_ObjectHideFlags: 0
