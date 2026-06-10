@@ -11,6 +11,7 @@ public class HanoiRealityGerenciator : MonoBehaviour
     [Tooltip("Coloque todos os discos do MAIOR pro MENOR (maior disco (da base) = índice 0)")] public List<HanoiDisk> initialOrder;
     [Header("Ordem Correta [FINAL]")]
     [Tooltip("Coloque a ordem certa para o puzzle estar correto (disco da base = índice 0)")] public List<HanoiDisk> correctOrder;
+    public bool RealityWin = false;
     void Start()
     {
         InitialSetter();

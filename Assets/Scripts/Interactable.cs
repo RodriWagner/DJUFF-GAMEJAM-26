@@ -62,7 +62,7 @@ public class Interactable : MonoBehaviour
         textBox.text = message;
         timerStart = true;
     }
-    public void Amplify()
+    public virtual void Amplify()
     {
         zoomAux = false;
         zoomStart = true;

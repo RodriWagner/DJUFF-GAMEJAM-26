@@ -6,41 +6,22 @@ public class HanoiCheck : MonoBehaviour
     [Header("Gerenciador de cada Realidade")]
     public HanoiRealityGerenciator gerenciatorColorful;
     public HanoiRealityGerenciator gerenciatorBlackAndWhite;
-
-    private bool winPuzzle = false; //caso ganhar seja vitalicio
-    private bool winC = false;
-    private bool winBW = false;
-
     public void CheckVictoryInBoth() //checa se ganhou nas DUAS realidades
     {
         //if (winPuzzle) return;
         if (gerenciatorColorful != null)
         {
             if (gerenciatorColorful.CheckRealityVictory())
-                winC = true;
+                gerenciatorColorful.RealityWin = true;
             else
-                winC = false;
-
+                gerenciatorColorful.RealityWin = false;
         }
-
         if (gerenciatorBlackAndWhite != null)
         {
             if (gerenciatorBlackAndWhite.CheckRealityVictory())
-                winBW = true;
+                gerenciatorBlackAndWhite.RealityWin = true;
             else
-                winBW = false;
-
+                gerenciatorBlackAndWhite.RealityWin = false;
         }
-        Debug.Log("BlackAndWhite: " + winBW + "Colorful: " + winC);
-        if (winC && winBW)
-        {
-            //winPuzzle = true;
-            WinHanoi();
-        }
-    }
-
-    public void WinHanoi()
-    {
-        Debug.Log("GANHOU O JOGO TODOOO");
     }
 }
