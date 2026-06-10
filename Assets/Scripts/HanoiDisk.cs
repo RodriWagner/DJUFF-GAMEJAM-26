@@ -14,8 +14,8 @@ public class HanoiDisk : MonoBehaviour
     public List<HanoiStem> allStems;
     [Header("Haste Atual (NÃO aloque nada)")]
     [Tooltip("HanoiGerenciator ja lida com a inicialização")] public HanoiStem currentStem;
-    [Header("Hanoi Gerenciator")]
-    public HanoiGerenciator gerenciator;
+    [Header("Hanoi Check")]
+    public HanoiCheck hanoicheck;
 
     public float distanceToFit = 1.0f;
 
@@ -99,9 +99,9 @@ public class HanoiDisk : MonoBehaviour
         }
 
 
-        //toda vez que soltar, verifica se esta tudo correto
-        if (gerenciator != null)
-            gerenciator.CheckVictory();
+        //toda vez que soltar, verifica se esta tudo correto (em ambas)
+        if (hanoicheck != null)
+            hanoicheck.CheckVictoryInBoth();
     }
 }
 

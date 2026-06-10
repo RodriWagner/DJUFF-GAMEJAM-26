@@ -20,33 +20,6 @@ MonoBehaviour:
   - Name: 
     Value: 832
   Exists: 1
---- !u!114 &-8370541668112555059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BookPage
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BookPage
-  Guid:
-    Data1: -1341928104
-    Data2: 1230170467
-    Data3: 1061637255
-    Data4: -1792645955
-  Banks:
-  - {fileID: 2206957820198405017}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &-8061130188643384467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,60 +65,6 @@ MonoBehaviour:
   lastModified: 639161952266630997
   FileSizes: []
   Exists: 1
---- !u!114 &-7861077350119727259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BookPz5
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BookPz5
-  Guid:
-    Data1: 1148413233
-    Data2: 1091632109
-    Data3: 1800518046
-    Data4: -1185772040
-  Banks:
-  - {fileID: 2206957820198405017}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1751
---- !u!114 &-7725676923852995726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BookPz3
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BookPz3
-  Guid:
-    Data1: -1120847251
-    Data2: 1174135518
-    Data3: 661257910
-    Data4: -714126979
-  Banks:
-  - {fileID: 2206957820198405017}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1751
 --- !u!114 &-6556669325344360298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,90 +80,9 @@ MonoBehaviour:
   Path: Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639164586371577056
+  lastModified: 639165569542950799
   FileSizes: []
   Exists: 1
---- !u!114 &-5066053165712067949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BookPz2
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BookPz2
-  Guid:
-    Data1: -2101324969
-    Data2: 1085787224
-    Data3: -2075774281
-    Data4: -1454458393
-  Banks:
-  - {fileID: 2206957820198405017}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1750
---- !u!114 &-4847921302939809398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BookPz4
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BookPz4
-  Guid:
-    Data1: 1339412971
-    Data2: 1303370776
-    Data3: 2016878464
-    Data4: -2144374552
-  Banks:
-  - {fileID: 2206957820198405017}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1751
---- !u!114 &-4751433007038191245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BookPz1
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BookPz1
-  Guid:
-    Data1: -1065998430
-    Data2: 1275486927
-    Data3: 708950695
-    Data4: 231237747
-  Banks:
-  - {fileID: 2206957820198405017}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1751
 --- !u!114 &-4463324507853532670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,6 +119,33 @@ MonoBehaviour:
   lastModified: 639161952278646714
   FileSizes: []
   Exists: 1
+--- !u!114 &-3806952048429640925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicaTeste
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MusicaTeste
+  Guid:
+    Data1: 1181654044
+    Data2: 1236824174
+    Data3: -91184216
+    Data4: -253225558
+  Banks:
+  - {fileID: -2300894135488274352}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 33140
 --- !u!114 &-3637271755459218193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,36 +179,9 @@ MonoBehaviour:
   Path: Banks/Desktop/BackgroundsMusics.bank
   Name: BackgroundsMusics
   StudioPath: bank:/BackgroundsMusics
-  lastModified: 639164586371447137
+  lastModified: 639165569542940807
   FileSizes: []
   Exists: 1
---- !u!114 &-2061251673531146831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BallE
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BallE
-  Guid:
-    Data1: -130503275
-    Data2: 1293966016
-    Data3: -37209676
-    Data4: 2126775228
-  Banks:
-  - {fileID: 728741464715202305}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2194
 --- !u!114 &-1971617486012863779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,225 +236,18 @@ MonoBehaviour:
   - {fileID: 6079080684040104072}
   - {fileID: -2300894135488274352}
   - {fileID: -6556669325344360298}
-  - {fileID: 728741464715202305}
-  - {fileID: 2206957820198405017}
-  - {fileID: 2883390564050551764}
   EditorEvents:
-  - {fileID: 11185986088925477}
-  - {fileID: 7469987524951801892}
-  - {fileID: 4386533727090523453}
-  - {fileID: -2061251673531146831}
-  - {fileID: 2052484225769114442}
-  - {fileID: 7107605943355941501}
-  - {fileID: 7120204200857813854}
-  - {fileID: -7861077350119727259}
-  - {fileID: -5066053165712067949}
-  - {fileID: -8370541668112555059}
-  - {fileID: -7725676923852995726}
-  - {fileID: -4751433007038191245}
-  - {fileID: -4847921302939809398}
-  - {fileID: 2612794590987897137}
-  - {fileID: 7321043213042573076}
+  - {fileID: -3806952048429640925}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6556669325344360298}
   StringsBanks:
   - {fileID: 6079080684040104072}
   cacheVersion: 131859
-  cacheTime: 639164586371597047
+  cacheTime: 639165569542970802
   SerializableEventsDict:
-  - key: event:/GameMusic
+  - key: event:/MusicaTeste
     index: 0
-  - key: event:/MenuMusic
-    index: 1
-  - key: event:/BallG
-    index: 2
-  - key: event:/BallE
-    index: 3
-  - key: event:/BallC
-    index: 4
-  - key: event:/BallF
-    index: 5
-  - key: event:/BallD
-    index: 6
-  - key: event:/BookPz5
-    index: 7
-  - key: event:/BookPz2
-    index: 8
-  - key: event:/BookPage
-    index: 9
-  - key: event:/BookPz3
-    index: 10
-  - key: event:/BookPz1
-    index: 11
-  - key: event:/BookPz4
-    index: 12
-  - key: event:/Steps
-    index: 13
-  - key: event:/Clack
-    index: 14
---- !u!114 &11185986088925477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/GameMusic
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/GameMusic
-  Guid:
-    Data1: 1181654044
-    Data2: 1236824174
-    Data3: -91184216
-    Data4: -253225558
-  Banks:
-  - {fileID: -2300894135488274352}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 31500
---- !u!114 &728741464715202305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ball.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: Banks/Desktop/Ball.bank
-  Name: Ball
-  StudioPath: bank:/Ball
-  lastModified: 639164586371487115
-  FileSizes: []
-  Exists: 1
---- !u!114 &2052484225769114442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BallC
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BallC
-  Guid:
-    Data1: 205590175
-    Data2: 1196837540
-    Data3: -414121036
-    Data4: 1635386035
-  Banks:
-  - {fileID: 728741464715202305}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2194
---- !u!114 &2206957820198405017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Book.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: Banks/Desktop/Book.bank
-  Name: Book
-  StudioPath: bank:/Book
-  lastModified: 639164586371557070
-  FileSizes: []
-  Exists: 1
---- !u!114 &2612794590987897137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Steps
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Steps
-  Guid:
-    Data1: -530666557
-    Data2: 1189553179
-    Data3: 935826
-    Data4: 1733615514
-  Banks:
-  - {fileID: 2883390564050551764}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &2883390564050551764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Interactions.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: Banks/Desktop/Interactions.bank
-  Name: Interactions
-  StudioPath: bank:/Interactions
-  lastModified: 639164586371567068
-  FileSizes: []
-  Exists: 1
---- !u!114 &4386533727090523453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BallG
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BallG
-  Guid:
-    Data1: 362477389
-    Data2: 1263173057
-    Data3: -833259088
-    Data4: 1513253146
-  Banks:
-  - {fileID: 728741464715202305}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2194
 --- !u!114 &6079080684040104072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,10 +263,10 @@ MonoBehaviour:
   Path: Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639164586371597047
+  lastModified: 639165569542970802
   FileSizes:
   - Name: 
-    Value: 1570
+    Value: 832
   Exists: 1
 --- !u!114 &6685553981988704761
 MonoBehaviour:
@@ -664,114 +295,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 33140
---- !u!114 &7107605943355941501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BallF
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BallF
-  Guid:
-    Data1: 1654699212
-    Data2: 1111374590
-    Data3: 940628905
-    Data4: 1719731613
-  Banks:
-  - {fileID: 728741464715202305}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2194
---- !u!114 &7120204200857813854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BallD
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/BallD
-  Guid:
-    Data1: 786835676
-    Data2: 1154318128
-    Data3: -1275605328
-    Data4: -1293623873
-  Banks:
-  - {fileID: 728741464715202305}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2194
---- !u!114 &7321043213042573076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Clack
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Clack
-  Guid:
-    Data1: -161824619
-    Data2: 1239508931
-    Data3: -119225198
-    Data4: 1811057279
-  Banks:
-  - {fileID: 728741464715202305}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 752
---- !u!114 &7469987524951801892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MenuMusic
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/MenuMusic
-  Guid:
-    Data1: -388256977
-    Data2: 1264009081
-    Data3: -193434957
-    Data4: 1592589826
-  Banks:
-  - {fileID: -2300894135488274352}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 106000
 --- !u!114 &7512007657630204884
 MonoBehaviour:
   m_ObjectHideFlags: 0

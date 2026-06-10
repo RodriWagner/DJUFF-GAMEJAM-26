@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 32b176facc82e34419aab8958f58de40
+guid: e4b15a2f060015141ad4e866bd575819
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,10 +103,10 @@ TextureImporter:
       name: Pag_2_0
       rect:
         serializedVersion: 2
-        x: 352
-        y: 184
-        width: 1217
-        height: 706
+        x: 0
+        y: 0
+        width: 607
+        height: 704
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
