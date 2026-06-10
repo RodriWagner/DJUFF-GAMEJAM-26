@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d046c715bae8ac24e9bfdd590ad68665
+guid: 0bd2363f43bca334ebdfa76d3f9e4c2d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3972105434344664834
-    second: Player_Teste1_0
+      213: 1628158031654308300
+    second: Haste01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Teste1_0
+      name: Haste01_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 0
-        width: 42
-        height: 62
+        width: 58
+        height: 710
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef0dc7f072f30e8c0800000000000000
-      internalID: -3972105434344664834
+      spriteID: cc944fa7a11689610800000000000000
+      internalID: 1628158031654308300
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8b875c1cf93091049bd5aeb0d2a3d0e6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Player_Teste1_0: -3972105434344664834
+      Haste01_0: 1628158031654308300
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

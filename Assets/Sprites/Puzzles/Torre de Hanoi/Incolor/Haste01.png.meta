@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d8b73bc774a2e2044b7f9192be40db30
+guid: cfa1c604fe2082f4c9d58f5ec8b8a801
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4943781208998344190
-    second: placeholder_capa_0
+      213: 1628158031654308300
+    second: Haste01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: placeholder_capa_0
+      name: Haste01_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 412
-        height: 615
+        width: 58
+        height: 710
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20a07660f29246bb0800000000000000
-      internalID: -4943781208998344190
+      spriteID: cc944fa7a11689610800000000000000
+      internalID: 1628158031654308300
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      placeholder_capa_0: -4943781208998344190
+      Haste01_0: 1628158031654308300
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

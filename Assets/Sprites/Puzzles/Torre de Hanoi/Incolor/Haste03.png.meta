@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f8ffdbffef01fa4439706c48d7900aa7
+guid: fcdb033771c962e49b80dce625548b8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4644034915272644688
-    second: PinTeste_0
+      213: 1613447376216030934
+    second: Haste03_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PinTeste_0
+      name: Haste03_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 130
-        height: 500
+        width: 56
+        height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0585659762de27040800000000000000
-      internalID: 4644034915272644688
+      spriteID: 6de742b17dd146610800000000000000
+      internalID: 1613447376216030934
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PinTeste_0: 4644034915272644688
+      Haste03_0: 1613447376216030934
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

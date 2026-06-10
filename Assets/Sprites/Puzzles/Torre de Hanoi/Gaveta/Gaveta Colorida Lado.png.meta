@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cddcbf6a42cabf548b1c77c0ac319210
+guid: dfd49826c19b5a34b8e8c76ff90548d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3578623644606953138
-    second: RingTeste_0
+      213: -4686718987711230892
+    second: Gaveta Colorida Lado_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RingTeste_0
+      name: Gaveta Colorida Lado_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 118
-        width: 437
-        height: 149
+        x: 20
+        y: 545
+        width: 1045
+        height: 824
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e49836e61cc265ec0800000000000000
-      internalID: -3578623644606953138
+      spriteID: 45cc46779ed65feb0800000000000000
+      internalID: -4686718987711230892
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RingTeste_0: -3578623644606953138
+      Gaveta Colorida Lado_0: -4686718987711230892
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

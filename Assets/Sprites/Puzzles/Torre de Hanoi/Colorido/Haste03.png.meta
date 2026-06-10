@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cbe27d44f69689c4b91533a3626da54a
+guid: ba11d3a4bf289b043b4225798ee89833
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1463616580384943888
-    second: SpriteTest2_0
+      213: 1613447376216030934
+    second: Haste03_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteTest2_0
+      name: Haste03_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 56
+        height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f098c6897030bbe0800000000000000
-      internalID: -1463616580384943888
+      spriteID: 6de742b17dd146610800000000000000
+      internalID: 1613447376216030934
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SpriteTest2_0: -1463616580384943888
+      Haste03_0: 1613447376216030934
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

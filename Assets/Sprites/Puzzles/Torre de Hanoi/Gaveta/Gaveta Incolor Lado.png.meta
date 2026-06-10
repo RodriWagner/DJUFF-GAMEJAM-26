@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5f25ad42f2322144aab0e6d830540a37
+guid: 6472848a55e60c64d8a67ebc7a8c9d3b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1520511069886840319
-    second: MesaTeste1_0
+      213: -8475590777050790356
+    second: Gaveta Incolor Lado_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MesaTeste1_0
+      name: Gaveta Incolor Lado_0
       rect:
         serializedVersion: 2
-        x: 101
-        y: 10
-        width: 394
-        height: 579
+        x: 20
+        y: 551
+        width: 1045
+        height: 824
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 102885aec3f06eae0800000000000000
-      internalID: -1520511069886840319
+      spriteID: c268f480817a06a80800000000000000
+      internalID: -8475590777050790356
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MesaTeste1_0: -1520511069886840319
+      Gaveta Incolor Lado_0: -8475590777050790356
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

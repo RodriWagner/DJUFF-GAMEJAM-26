@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 63d1979c30fd2734db9a752bb622f920
+guid: d1d5a1f9b507fcd43bda82a620ac627b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9175434520666940704
-    second: Player_Teste2_0
+      213: 7052119699842749789
+    second: gaveta_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Teste2_0
+      name: gaveta_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 2
-        width: 52
-        height: 46
+        x: 0
+        y: 0
+        width: 925
+        height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 025a5304511b55f70800000000000000
-      internalID: 9175434520666940704
+      spriteID: d5559a6d0892ed160800000000000000
+      internalID: 7052119699842749789
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a9c5f7be93fb52c42822f6b3486e89bd
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Player_Teste2_0: 9175434520666940704
+      gaveta_0: 7052119699842749789
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
