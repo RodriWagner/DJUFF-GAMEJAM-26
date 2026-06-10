@@ -4,12 +4,14 @@ public class RealityPlayer : MonoBehaviour
 {
     //OBJETOS QUE EXISTEM EM AMBAS AS REALIDADES, MAS O GAMEplayer EM SI MUDA NELES
     private Animator playerAnimation;
+    private Camera mainCamera;
     void Awake()
     {
         playerAnimation = GetComponent<Animator>();
     }
     void Start()
     {
+        mainCamera = Camera.main;
         if (RealityManager.Instance != null)
         {
             RealityManager.Instance.onRealityChanged.AddListener(UpdateObject);
@@ -29,6 +31,7 @@ public class RealityPlayer : MonoBehaviour
     void UpdateObject()
     {
         playerAnimation.SetTrigger("Transition");
+        
     }
     void Destroy()
     {

@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using SmoothShakeFree;
+
 public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE REALIDADE
 {
     public static RealityManager Instance; //instanciar o script
@@ -16,6 +18,10 @@ public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE RE
     [Header("Objetos (Lista Automática)")]
     [Tooltip("Não é necessário adicionar manualmente, todos os objetos são adicionados aqui em suas funções de 'Start'!")]
     public UnityEvent onRealityChanged; //"lista" dos objetos que precisam "saber" que a realidade mudou
+    public SmoothShake cameraShake;
+    private float ShakeTimer = 0f;
+    private bool TimerTillShake = false;
+    private bool onSwitch = true;
 
     void Awake()
     {
@@ -27,6 +33,9 @@ public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE RE
     void Update()
     {
         cooldownTime -= Time.deltaTime;
+        if (TimerTillShake) ShakeTimer += Time.deltaTime;
+        if (ShakeTimer >= (cameraShake.timeSettings.holdDuration / 2)) SwitchStart();
+        if (ShakeTimer >= cameraShake.timeSettings.holdDuration) ShakeEnd();
     }
 
     public void ChangeReality(InputAction.CallbackContext context)
@@ -35,19 +44,30 @@ public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE RE
         {
             if (cooldownTime < 0.0f)
             {
-                //logica de inversao
-                if (currentReality == RealityType.BlackAndWhite)
-                    currentReality = RealityType.Colorful;
-                else
-                    currentReality = RealityType.BlackAndWhite;
-
-                //invoke da troca de realidade (avisar globalmente)
-                if (onRealityChanged != null)
-                    onRealityChanged.Invoke();
-
-                cooldownTime = 1.0f;
+                TimerTillShake = true;
+                cameraShake.StartShake();
             }
         }
     }
-
+    public void SwitchStart()
+    {
+        if (!onSwitch) return;
+        //logica de inversao
+        if (currentReality == RealityType.BlackAndWhite)
+            currentReality = RealityType.Colorful;
+        else
+            currentReality = RealityType.BlackAndWhite;
+        //invoke da troca de realidade (avisar globalmente)
+        if (onRealityChanged != null)
+            onRealityChanged.Invoke();
+        onSwitch = false;
+    }
+    public void ShakeEnd()
+    {
+        onSwitch = true;
+        TimerTillShake = false;
+        cooldownTime = 1.0f;
+        ShakeTimer = 0;
+        cameraShake.StopShake();
+    }
 }
