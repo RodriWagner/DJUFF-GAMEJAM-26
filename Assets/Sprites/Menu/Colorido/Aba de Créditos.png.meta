@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 6319416736c46ca41be497f69a06cde0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6393218729124849266
+    second: "Aba de Cr\xE9ditos_0"
+  - first:
+      213: -7550872204446873633
+    second: "Aba de Cr\xE9ditos_1"
+  - first:
+      213: 1325715345633867261
+    second: "Aba de Cr\xE9ditos_2"
+  - first:
+      213: 7383010523328548870
+    second: "Aba de Cr\xE9ditos_3"
+  - first:
+      213: 4526394375446460649
+    second: "Aba de Cr\xE9ditos_4"
+  - first:
+      213: 235285753930183894
+    second: "Aba de Cr\xE9ditos_5"
+  - first:
+      213: -491499871014203792
+    second: "Aba de Cr\xE9ditos_6"
+  - first:
+      213: 7485574044631838455
+    second: "Aba de Cr\xE9ditos_7"
+  - first:
+      213: -3970896874603655943
+    second: "Aba de Cr\xE9ditos_8"
+  - first:
+      213: 6957467759986470386
+    second: "Aba de Cr\xE9ditos_9"
+  - first:
+      213: -166950540801737042
+    second: "Aba de Cr\xE9ditos_10"
+  - first:
+      213: 9215179982271753309
+    second: "Aba de Cr\xE9ditos_11"
+  - first:
+      213: 5185945386162051073
+    second: "Aba de Cr\xE9ditos_12"
+  - first:
+      213: -1199801993498733573
+    second: "Aba de Cr\xE9ditos_13"
+  - first:
+      213: 7163546892909428763
+    second: "Aba de Cr\xE9ditos_14"
+  - first:
+      213: -4332197056410726
+    second: "Aba de Cr\xE9ditos_15"
+  - first:
+      213: -3671428079223470907
+    second: "Aba de Cr\xE9ditos_16"
+  - first:
+      213: -6084225579153666565
+    second: "Aba de Cr\xE9ditos_17"
+  - first:
+      213: 6639068881689708829
+    second: "Aba de Cr\xE9ditos_18"
+  - first:
+      213: -6056823414483201998
+    second: "Aba de Cr\xE9ditos_19"
+  - first:
+      213: 5934056593922295293
+    second: "Aba de Cr\xE9ditos_20"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_0"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 795
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8993274079b647a0800000000000000
+      internalID: -6393218729124849266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_1"
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 791
+        width: 300
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7c29d7cb9e53790800000000000000
+      internalID: -7550872204446873633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_2"
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 806
+        width: 189
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df57ac93513e56210800000000000000
+      internalID: 1325715345633867261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_3"
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 801
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60018ff34f8b57660800000000000000
+      internalID: 7383010523328548870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_4"
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 662
+        width: 115
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8ffcdd3bbf0de30800000000000000
+      internalID: 4526394375446460649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_5"
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 763
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d4f7b78527e34300800000000000000
+      internalID: 235285753930183894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_6"
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 69
+        width: 932
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e4c0da877dd29f0800000000000000
+      internalID: -491499871014203792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_7"
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 757
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe2a2eeee912e760800000000000000
+      internalID: 7485574044631838455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_8"
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 424
+        width: 142
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc4a8dc45a84e8c0800000000000000
+      internalID: -3970896874603655943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_9"
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 541
+        width: 96
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fde932c014ed8060800000000000000
+      internalID: 6957467759986470386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_10"
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 181
+        width: 17
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaef3702e5fdeadf0800000000000000
+      internalID: -166950540801737042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_11"
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 221
+        width: 13
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c2998ae55e2ef70800000000000000
+      internalID: 9215179982271753309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_12"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 311
+        width: 117
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108d3c63add28f740800000000000000
+      internalID: 5185945386162051073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_13"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 393
+        width: 9
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3d3b89172795fe0800000000000000
+      internalID: -1199801993498733573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_14"
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 403
+        width: 9
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1048bbe1f70a6360800000000000000
+      internalID: 7163546892909428763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_15"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 164
+        width: 149
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b0b55c3eb90fff0800000000000000
+      internalID: -4332197056410726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_16"
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 113
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c48d7f2d977c0dc0800000000000000
+      internalID: -3671428079223470907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_17"
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 30
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd4335421d709ba0800000000000000
+      internalID: -6084225579153666565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_18"
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 45
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19077cf8f5b22c50800000000000000
+      internalID: 6639068881689708829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_19"
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 45
+        width: 300
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230d578e137d1fba0800000000000000
+      internalID: -6056823414483201998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Aba de Cr\xE9ditos_20"
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 0
+        width: 189
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df58dcd38010a5250800000000000000
+      internalID: 5934056593922295293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Aba de Cr\xE9ditos_0": -6393218729124849266
+      "Aba de Cr\xE9ditos_1": -7550872204446873633
+      "Aba de Cr\xE9ditos_10": -166950540801737042
+      "Aba de Cr\xE9ditos_11": 9215179982271753309
+      "Aba de Cr\xE9ditos_12": 5185945386162051073
+      "Aba de Cr\xE9ditos_13": -1199801993498733573
+      "Aba de Cr\xE9ditos_14": 7163546892909428763
+      "Aba de Cr\xE9ditos_15": -4332197056410726
+      "Aba de Cr\xE9ditos_16": -3671428079223470907
+      "Aba de Cr\xE9ditos_17": -6084225579153666565
+      "Aba de Cr\xE9ditos_18": 6639068881689708829
+      "Aba de Cr\xE9ditos_19": -6056823414483201998
+      "Aba de Cr\xE9ditos_2": 1325715345633867261
+      "Aba de Cr\xE9ditos_20": 5934056593922295293
+      "Aba de Cr\xE9ditos_3": 7383010523328548870
+      "Aba de Cr\xE9ditos_4": 4526394375446460649
+      "Aba de Cr\xE9ditos_5": 235285753930183894
+      "Aba de Cr\xE9ditos_6": -491499871014203792
+      "Aba de Cr\xE9ditos_7": 7485574044631838455
+      "Aba de Cr\xE9ditos_8": -3970896874603655943
+      "Aba de Cr\xE9ditos_9": 6957467759986470386
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
