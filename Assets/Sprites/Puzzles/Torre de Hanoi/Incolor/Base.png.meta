@@ -104,11 +104,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 639
-        height: 1079
+        y: 0
+        width: 1575
+        height: 108
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -117,50 +117,6 @@ TextureImporter:
       bones: []
       spriteID: d5d8bdad92e348650800000000000000
       internalID: 6234176133674011997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Base_1
-      rect:
-        serializedVersion: 2
-        x: 639
-        y: 1
-        width: 639
-        height: 1079
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09c27d82ccf69484193f19cd8c4dba18
-      internalID: -347571439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Base_2
-      rect:
-        serializedVersion: 2
-        x: 1278
-        y: 1
-        width: 639
-        height: 1079
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 268cd22411c05c647835bf9c73a290be
-      internalID: -590455297
       vertices: []
       indices: 
       edges: []
