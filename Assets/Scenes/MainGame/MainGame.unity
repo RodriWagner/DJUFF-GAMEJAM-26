@@ -2743,8 +2743,10 @@ MonoBehaviour:
   zoomedUI: {fileID: 559409183}
   fadeScreen: {fileID: 1137617112}
   mainCamera: {fileID: 1928110088}
-  ClosedDrawer: {fileID: 332794361}
-  OpenedDrawer: {fileID: 753235906}
+  ClosedDrawerBW: {fileID: 1343228612}
+  ClosedDrawerC: {fileID: 332794361}
+  OpenedDrawerBW: {fileID: 1101628418}
+  OpenedDrawerC: {fileID: 753235906}
   isClosed: 1
 --- !u!212 &332794364
 SpriteRenderer:
@@ -4725,18 +4727,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1648133920}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &572999701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4761,7 +4751,6 @@ MonoBehaviour:
   mainCamera: {fileID: 1928110088}
   gerenciatorColorful: {fileID: 924966687}
   gerenciatorBlackAndWhite: {fileID: 2143750335}
-  oldUI: {fileID: 0}
 --- !u!1 &597709326
 GameObject:
   m_ObjectHideFlags: 0
@@ -6182,7 +6171,7 @@ Transform:
   m_GameObject: {fileID: 753235906}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.61, y: -2.37, z: 0}
+  m_LocalPosition: {x: 6.44, y: -2.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6256,8 +6245,10 @@ MonoBehaviour:
   zoomedUI: {fileID: 559409183}
   fadeScreen: {fileID: 1137617112}
   mainCamera: {fileID: 1928110088}
-  ClosedDrawer: {fileID: 332794361}
-  OpenedDrawer: {fileID: 753235906}
+  ClosedDrawerBW: {fileID: 0}
+  ClosedDrawerC: {fileID: 0}
+  OpenedDrawerBW: {fileID: 0}
+  OpenedDrawerC: {fileID: 0}
   isClosed: 0
 --- !u!212 &753235910
 SpriteRenderer:
@@ -7212,7 +7203,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7121819778050679306, guid: 291e24616d262c74b9ba9f3588f9aec6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7532,6 +7523,7 @@ GameObject:
   - component: {fileID: 895059470}
   - component: {fileID: 895059469}
   - component: {fileID: 895059468}
+  - component: {fileID: 895059471}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -7601,7 +7593,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 895059469}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 895059471}
+        m_TargetAssemblyTypeName: GameEnd, Assembly-CSharp
+        m_MethodName: Action
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &895059469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7640,6 +7644,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895059466}
   m_CullTransparentMesh: 1
+--- !u!114 &895059471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895059466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c532a5487f5a974f9c16809fedb92c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEnd
+  interactive: 1
+  informative: 0
+  message: 
+  textUI: {fileID: 0}
+  textBox: {fileID: 0}
+  timer: 0
+  zoom: 0
+  zoomedUI: {fileID: 0}
+  fadeScreen: {fileID: 0}
+  mainCamera: {fileID: 0}
 --- !u!1 &896890304
 GameObject:
   m_ObjectHideFlags: 0
@@ -9317,7 +9343,7 @@ Transform:
   m_GameObject: {fileID: 1101628418}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.61, y: -2.37, z: 0}
+  m_LocalPosition: {x: 6.44, y: -2.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9404,8 +9430,10 @@ MonoBehaviour:
   zoomedUI: {fileID: 559409183}
   fadeScreen: {fileID: 1137617112}
   mainCamera: {fileID: 1928110088}
-  ClosedDrawer: {fileID: 1343228612}
-  OpenedDrawer: {fileID: 1101628418}
+  ClosedDrawerBW: {fileID: 0}
+  ClosedDrawerC: {fileID: 0}
+  OpenedDrawerBW: {fileID: 0}
+  OpenedDrawerC: {fileID: 0}
   isClosed: 0
 --- !u!61 &1101628423
 BoxCollider2D:
@@ -10866,8 +10894,10 @@ MonoBehaviour:
   zoomedUI: {fileID: 559409183}
   fadeScreen: {fileID: 1137617112}
   mainCamera: {fileID: 1928110088}
-  ClosedDrawer: {fileID: 1343228612}
-  OpenedDrawer: {fileID: 1101628418}
+  ClosedDrawerBW: {fileID: 1343228612}
+  ClosedDrawerC: {fileID: 332794361}
+  OpenedDrawerBW: {fileID: 1101628418}
+  OpenedDrawerC: {fileID: 753235906}
   isClosed: 1
 --- !u!61 &1343228617
 BoxCollider2D:
@@ -12328,18 +12358,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1648133920}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &1518432403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12364,7 +12382,6 @@ MonoBehaviour:
   mainCamera: {fileID: 1928110088}
   gerenciatorColorful: {fileID: 924966687}
   gerenciatorBlackAndWhite: {fileID: 2143750335}
-  oldUI: {fileID: 0}
 --- !u!1 &1531518212
 GameObject:
   m_ObjectHideFlags: 0
@@ -15529,7 +15546,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1888461661
 Transform:
   m_ObjectHideFlags: 0
@@ -19896,6 +19913,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5431478428713724899}
+  - component: {fileID: 7819397572331244225}
   m_Layer: 0
   m_Name: FinalDrawer
   m_TagString: Untagged
@@ -19903,6 +19921,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &7819397572331244225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7819397572331244224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140153b870de17346b9c808e955c32f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FinalDrawerOpen
+  HanoiUI: {fileID: 1648133920}
 --- !u!222 &7853361543413486140
 CanvasRenderer:
   m_ObjectHideFlags: 0
