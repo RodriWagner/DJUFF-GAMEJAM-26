@@ -1524,7 +1524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &265133356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3092,7 +3092,7 @@ Transform:
   m_GameObject: {fileID: 332794361}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.88, y: -2.37, z: 0}
+  m_LocalPosition: {x: 6.73, y: -2.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4372,6 +4372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
   pai: {fileID: 521992320}
+  pai2: {fileID: 0}
   player: {fileID: 289252377}
 --- !u!1 &541114931
 GameObject:
@@ -4988,6 +4989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
   pai: {fileID: 1664173262}
+  pai2: {fileID: 0}
   player: {fileID: 289252377}
 --- !u!114 &611826400
 MonoBehaviour:
@@ -7343,7 +7345,7 @@ MonoBehaviour:
   zoom: 1
   zoomedUI: {fileID: 1648133920}
   fadeScreen: {fileID: 1137617112}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 1928110088}
 --- !u!1 &840615019
 GameObject:
   m_ObjectHideFlags: 0
@@ -8603,6 +8605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
   pai: {fileID: 1101628418}
+  pai2: {fileID: 753235906}
   player: {fileID: 289252377}
 --- !u!1 &1039643588
 GameObject:
@@ -8946,7 +8949,7 @@ MonoBehaviour:
   zoom: 1
   zoomedUI: {fileID: 1648133920}
   fadeScreen: {fileID: 1137617112}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 1928110088}
 --- !u!61 &1074674479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9457,6 +9460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
   pai: {fileID: 0}
+  pai2: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &1142978903
 GameObject:
@@ -10694,7 +10698,7 @@ Transform:
   m_GameObject: {fileID: 1343228612}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.88, y: -2.37, z: 0}
+  m_LocalPosition: {x: 6.73, y: -2.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11278,6 +11282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
   pai: {fileID: 834348708}
+  pai2: {fileID: 1074674476}
   player: {fileID: 289252377}
 --- !u!114 &1386621049
 MonoBehaviour:
