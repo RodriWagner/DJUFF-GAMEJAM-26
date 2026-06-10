@@ -9,4 +9,9 @@ public class MenuBGMusic : MonoBehaviour
     {
         AudioManager.Instance.StartMusic(music);
     }
+
+    public void StopBGMusic()
+    {
+        AudioManager.Instance.StopMusic();
+    }
 }

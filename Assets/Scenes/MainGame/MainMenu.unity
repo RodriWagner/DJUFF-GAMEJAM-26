@@ -148,6 +148,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9237f1e22a150c4cac8a317aa5c16fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  music:
+    Guid:
+      Data1: -388256977
+      Data2: 1264009081
+      Data3: -193434957
+      Data4: 1592589826
+    Path: event:/MenuMusic
 --- !u!4 &138140549
 Transform:
   m_ObjectHideFlags: 0
@@ -1153,7 +1160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   slider: {fileID: 1125533607}
-  sliderType: 0
+  sliderType: 2
   geralTestSound:
     Guid:
       Data1: 205590175
@@ -1775,7 +1782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   slider: {fileID: 1386764724}
-  sliderType: 0
+  sliderType: 1
   geralTestSound:
     Guid:
       Data1: 205590175
@@ -3077,6 +3084,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1642455436}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: SceneChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 138140548}
+        m_TargetAssemblyTypeName: MenuBGMusic, Assembly-CSharp
+        m_MethodName: StopBGMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
