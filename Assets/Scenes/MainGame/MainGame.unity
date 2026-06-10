@@ -744,7 +744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &124691828
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4259,7 +4259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &541114932
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4534,7 +4534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &567553237
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6460,7 +6460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &800061469
 Transform:
   m_ObjectHideFlags: 0
@@ -6494,7 +6494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &827743047
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6563,6 +6563,7 @@ GameObject:
   - component: {fileID: 827770346}
   - component: {fileID: 827770348}
   - component: {fileID: 827770347}
+  - component: {fileID: 827770349}
   m_Layer: 0
   m_Name: RingHolder (5)
   m_TagString: Untagged
@@ -6586,9 +6587,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 696.9999, y: 323.3199}
-  m_SizeDelta: {x: 189.2, y: 155.36}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 660, y: 383.34393}
+  m_SizeDelta: {x: 207, y: 170}
+  m_Pivot: {x: 0.5, y: 0.89}
 --- !u!114 &827770347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6627,6 +6628,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827770345}
   m_CullTransparentMesh: 1
+--- !u!114 &827770349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827770345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8e27ac26b989c44ab56dc3b1893253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RealitySprites
+  spriteBlackAndWhite: {fileID: -2533871447564209614, guid: d767343502ca68a4c919c80f04c01690, type: 3}
+  spriteColorful: {fileID: 4778079602250274511, guid: 4894681b4b4a0874bbae30432c34c695, type: 3}
 --- !u!1 &830938163
 GameObject:
   m_ObjectHideFlags: 0
@@ -7442,7 +7457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &896890305
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8105,9 +8120,9 @@ GameObject:
   m_Component:
   - component: {fileID: 978313287}
   - component: {fileID: 978313289}
+  - component: {fileID: 978313292}
   - component: {fileID: 978313291}
   - component: {fileID: 978313290}
-  - component: {fileID: 978313292}
   m_Layer: 0
   m_Name: Ring (3)
   m_TagString: Untagged
@@ -8133,8 +8148,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: -263}
-  m_SizeDelta: {x: 208.34, y: 185.12}
+  m_AnchoredPosition: {x: 0, y: -265}
+  m_SizeDelta: {x: 189.59, y: 168.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &978313289
 CanvasRenderer:
@@ -8225,6 +8240,11 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1871497591}
   distanceToFit: 1
+  normalColorful: {fileID: 5118899080287681479, guid: f6d264f23ad1ae44d8d7d2a3d909c766, type: 3}
+  lockedColorful: {fileID: 3357031670552654311, guid: f8eb8dce328292a4aa54e957112c5da5, type: 3}
+  normalBlackAndWhite: {fileID: -7233756406479531647, guid: 8800b4962010ee841a351834c2126d82, type: 3}
+  lockedBlackAndWhite: {fileID: 4079860230333852376, guid: 3f61a44f143354547acb4f4730fba2e7, type: 3}
+  myImage: {fileID: 978313292}
   ringSound:
     Guid:
       Data1: 205590175
@@ -8242,11 +8262,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 978313286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621aa8c513cfa7847974e8005bc6a66c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RealityObjects
-  objectBlackAndWhite: {fileID: 896890304}
-  objectColorful: {fileID: 1195513190}
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -7233756406479531647, guid: 8800b4962010ee841a351834c2126d82, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &993157040
 GameObject:
   m_ObjectHideFlags: 0
@@ -8534,7 +8570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1048934543
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8931,9 +8967,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1077474754}
   - component: {fileID: 1077474756}
+  - component: {fileID: 1077474759}
   - component: {fileID: 1077474758}
   - component: {fileID: 1077474757}
-  - component: {fileID: 1077474759}
   m_Layer: 0
   m_Name: Ring (4)
   m_TagString: Untagged
@@ -8959,8 +8995,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 270, y: -263}
-  m_SizeDelta: {x: 208.34, y: 185.12}
+  m_AnchoredPosition: {x: 250, y: -265}
+  m_SizeDelta: {x: 189.59, y: 168.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1077474756
 CanvasRenderer:
@@ -9051,6 +9087,11 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1855828686}
   distanceToFit: 1
+  normalColorful: {fileID: 897835008702582570, guid: 6ee96a64fb5aa8f42b23be4aee9a3cbf, type: 3}
+  lockedColorful: {fileID: 3920123615306262505, guid: a3b41681a23faae45b502bcc60202734, type: 3}
+  normalBlackAndWhite: {fileID: -7233756406479531647, guid: 8800b4962010ee841a351834c2126d82, type: 3}
+  lockedBlackAndWhite: {fileID: 4079860230333852376, guid: 3f61a44f143354547acb4f4730fba2e7, type: 3}
+  myImage: {fileID: 1077474759}
   ringSound:
     Guid:
       Data1: -130503275
@@ -9068,11 +9109,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1077474753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621aa8c513cfa7847974e8005bc6a66c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RealityObjects
-  objectBlackAndWhite: {fileID: 1206924224}
-  objectColorful: {fileID: 1436166071}
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -7233756406479531647, guid: 8800b4962010ee841a351834c2126d82, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1101628418
 GameObject:
   m_ObjectHideFlags: 0
@@ -9761,7 +9818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1195513191
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10142,7 +10199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1206924225
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11500,7 +11557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1436166072
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13449,6 +13506,7 @@ GameObject:
   - component: {fileID: 1690683360}
   - component: {fileID: 1690683362}
   - component: {fileID: 1690683361}
+  - component: {fileID: 1690683363}
   m_Layer: 0
   m_Name: RingHolder (4)
   m_TagString: Untagged
@@ -13472,9 +13530,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 374, y: 323.3199}
-  m_SizeDelta: {x: 189.2, y: 155.36}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 330, y: 383.34393}
+  m_SizeDelta: {x: 207, y: 170}
+  m_Pivot: {x: 0.5, y: 0.89}
 --- !u!114 &1690683361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13513,6 +13571,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690683359}
   m_CullTransparentMesh: 1
+--- !u!114 &1690683363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690683359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8e27ac26b989c44ab56dc3b1893253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RealitySprites
+  spriteBlackAndWhite: {fileID: -2533871447564209614, guid: d767343502ca68a4c919c80f04c01690, type: 3}
+  spriteColorful: {fileID: 4778079602250274511, guid: 4894681b4b4a0874bbae30432c34c695, type: 3}
 --- !u!1 &1703788942
 GameObject:
   m_ObjectHideFlags: 0
@@ -13673,9 +13745,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1739171980}
   - component: {fileID: 1739171984}
+  - component: {fileID: 1739171985}
   - component: {fileID: 1739171982}
   - component: {fileID: 1739171981}
-  - component: {fileID: 1739171985}
   m_Layer: 0
   m_Name: Ring (5)
   m_TagString: Untagged
@@ -13701,8 +13773,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 554, y: -263}
-  m_SizeDelta: {x: 208.34, y: 185.12}
+  m_AnchoredPosition: {x: 500, y: -265}
+  m_SizeDelta: {x: 189.59, y: 168.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1739171981
 MonoBehaviour:
@@ -13785,6 +13857,11 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 827770346}
   distanceToFit: 1
+  normalColorful: {fileID: 1267939574456320472, guid: 8b8460f24c985884f9cc194eadb3146e, type: 3}
+  lockedColorful: {fileID: -3633646339528774953, guid: 0fa978b180e502a44af6fae1d263d2eb, type: 3}
+  normalBlackAndWhite: {fileID: -7233756406479531647, guid: 8800b4962010ee841a351834c2126d82, type: 3}
+  lockedBlackAndWhite: {fileID: 4079860230333852376, guid: 3f61a44f143354547acb4f4730fba2e7, type: 3}
+  myImage: {fileID: 1739171985}
   ringSound:
     Guid:
       Data1: 362477389
@@ -13810,11 +13887,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1739171979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621aa8c513cfa7847974e8005bc6a66c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RealityObjects
-  objectBlackAndWhite: {fileID: 124691827}
-  objectColorful: {fileID: 567553236}
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -7233756406479531647, guid: 8800b4962010ee841a351834c2126d82, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1742168225
 GameObject:
   m_ObjectHideFlags: 0
@@ -14034,6 +14127,7 @@ GameObject:
   - component: {fileID: 1760702477}
   - component: {fileID: 1760702479}
   - component: {fileID: 1760702478}
+  - component: {fileID: 1760702480}
   m_Layer: 0
   m_Name: RingHolder (2)
   m_TagString: Untagged
@@ -14057,9 +14151,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -357.99994, y: 323.3199}
-  m_SizeDelta: {x: 189.2, y: 155.36}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -330, y: 383.34393}
+  m_SizeDelta: {x: 207, y: 170}
+  m_Pivot: {x: 0.5, y: 0.89}
 --- !u!114 &1760702478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14098,6 +14192,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760702476}
   m_CullTransparentMesh: 1
+--- !u!114 &1760702480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760702476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8e27ac26b989c44ab56dc3b1893253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RealitySprites
+  spriteBlackAndWhite: {fileID: -2533871447564209614, guid: d767343502ca68a4c919c80f04c01690, type: 3}
+  spriteColorful: {fileID: 4778079602250274511, guid: 4894681b4b4a0874bbae30432c34c695, type: 3}
 --- !u!1 &1774061162
 GameObject:
   m_ObjectHideFlags: 0
@@ -14866,6 +14974,7 @@ GameObject:
   - component: {fileID: 1855828686}
   - component: {fileID: 1855828688}
   - component: {fileID: 1855828687}
+  - component: {fileID: 1855828689}
   m_Layer: 0
   m_Name: RingHolder (3)
   m_TagString: Untagged
@@ -14889,9 +14998,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000061035156, y: 323.3199}
-  m_SizeDelta: {x: 189.2, y: 155.36}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 383.34393}
+  m_SizeDelta: {x: 207, y: 170}
+  m_Pivot: {x: 0.5, y: 0.89}
 --- !u!114 &1855828687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14930,6 +15039,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855828685}
   m_CullTransparentMesh: 1
+--- !u!114 &1855828689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855828685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8e27ac26b989c44ab56dc3b1893253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RealitySprites
+  spriteBlackAndWhite: {fileID: -2533871447564209614, guid: d767343502ca68a4c919c80f04c01690, type: 3}
+  spriteColorful: {fileID: 4778079602250274511, guid: 4894681b4b4a0874bbae30432c34c695, type: 3}
 --- !u!1 &1871497590
 GameObject:
   m_ObjectHideFlags: 0
@@ -14941,6 +15064,7 @@ GameObject:
   - component: {fileID: 1871497591}
   - component: {fileID: 1871497593}
   - component: {fileID: 1871497592}
+  - component: {fileID: 1871497594}
   m_Layer: 0
   m_Name: RingHolder (1)
   m_TagString: Untagged
@@ -14964,9 +15088,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -690.39984, y: 323.3199}
-  m_SizeDelta: {x: 189.2, y: 155.36}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -660, y: 383.34393}
+  m_SizeDelta: {x: 207, y: 170}
+  m_Pivot: {x: 0.5, y: 0.89}
 --- !u!114 &1871497592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15005,6 +15129,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871497590}
   m_CullTransparentMesh: 1
+--- !u!114 &1871497594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871497590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8e27ac26b989c44ab56dc3b1893253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RealitySprites
+  spriteBlackAndWhite: {fileID: -2533871447564209614, guid: d767343502ca68a4c919c80f04c01690, type: 3}
+  spriteColorful: {fileID: 4778079602250274511, guid: 4894681b4b4a0874bbae30432c34c695, type: 3}
 --- !u!1 &1888461660
 GameObject:
   m_ObjectHideFlags: 0
@@ -15288,9 +15426,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1934566306}
   - component: {fileID: 1934566308}
+  - component: {fileID: 1934566311}
   - component: {fileID: 1934566310}
   - component: {fileID: 1934566309}
-  - component: {fileID: 1934566311}
   m_Layer: 0
   m_Name: Ring (1)
   m_TagString: Untagged
@@ -15316,8 +15454,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -556.77, y: -263}
-  m_SizeDelta: {x: 208.34, y: 185.12}
+  m_AnchoredPosition: {x: -500, y: -265}
+  m_SizeDelta: {x: 189.59, y: 168.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1934566308
 CanvasRenderer:
@@ -15408,6 +15546,11 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1760702477}
   distanceToFit: 1
+  normalColorful: {fileID: -1611758503223421755, guid: ae831b02d8e0e6c4590b1b6d875e96a3, type: 3}
+  lockedColorful: {fileID: 1296552362155990913, guid: 5a5783fc5da345e41b688fb2d1fcc466, type: 3}
+  normalBlackAndWhite: {fileID: -7233756406479531647, guid: 8800b4962010ee841a351834c2126d82, type: 3}
+  lockedBlackAndWhite: {fileID: 4079860230333852376, guid: 3f61a44f143354547acb4f4730fba2e7, type: 3}
+  myImage: {fileID: 1934566311}
   ringSound:
     Guid:
       Data1: 786835676
@@ -15425,11 +15568,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1934566305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621aa8c513cfa7847974e8005bc6a66c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RealityObjects
-  objectBlackAndWhite: {fileID: 1048934542}
-  objectColorful: {fileID: 541114931}
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -7233756406479531647, guid: 8800b4962010ee841a351834c2126d82, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1935808598
 GameObject:
   m_ObjectHideFlags: 0
@@ -15475,9 +15634,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1951670863}
   - component: {fileID: 1951670865}
+  - component: {fileID: 1951670868}
   - component: {fileID: 1951670867}
   - component: {fileID: 1951670866}
-  - component: {fileID: 1951670868}
   m_Layer: 0
   m_Name: Ring (2)
   m_TagString: Untagged
@@ -15503,8 +15662,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -268, y: -263}
-  m_SizeDelta: {x: 208.34, y: 185.12}
+  m_AnchoredPosition: {x: -250, y: -266}
+  m_SizeDelta: {x: 189.59, y: 168.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1951670865
 CanvasRenderer:
@@ -15595,6 +15754,11 @@ MonoBehaviour:
   - {fileID: 827770346}
   correctHolder: {fileID: 1690683360}
   distanceToFit: 1
+  normalColorful: {fileID: -5901001112684851505, guid: 39ebc2ea46ed97644b7f61b037771bcf, type: 3}
+  lockedColorful: {fileID: -2749569095830297983, guid: 975a08b20b6f709468be10a9a61ac25c, type: 3}
+  normalBlackAndWhite: {fileID: -7233756406479531647, guid: 8800b4962010ee841a351834c2126d82, type: 3}
+  lockedBlackAndWhite: {fileID: 4079860230333852376, guid: 3f61a44f143354547acb4f4730fba2e7, type: 3}
+  myImage: {fileID: 1951670868}
   ringSound:
     Guid:
       Data1: 1654699212
@@ -15612,11 +15776,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1951670862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621aa8c513cfa7847974e8005bc6a66c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RealityObjects
-  objectBlackAndWhite: {fileID: 2004746399}
-  objectColorful: {fileID: 827743046}
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -7233756406479531647, guid: 8800b4962010ee841a351834c2126d82, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1985736790
 GameObject:
   m_ObjectHideFlags: 0
@@ -15879,7 +16059,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2004746400
 RectTransform:
   m_ObjectHideFlags: 0
