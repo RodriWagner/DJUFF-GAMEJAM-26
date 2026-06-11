@@ -96,7 +96,11 @@ MonoBehaviour:
   Path: Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 639167178244546361
+=======
+  lastModified: 639167121132874046
+>>>>>>> Stashed changes
   FileSizes:
   - Name: 
     Value: 1570
@@ -116,7 +120,11 @@ MonoBehaviour:
   Path: Banks/Desktop/BackgroundsMusics.bank
   Name: BackgroundsMusics
   StudioPath: bank:/BackgroundsMusics
+<<<<<<< Updated upstream
   lastModified: 639167178242665434
+=======
+  lastModified: 639167121132794615
+>>>>>>> Stashed changes
   FileSizes: []
   Exists: 1
 --- !u!114 &-3481341748690683287
@@ -161,7 +169,11 @@ MonoBehaviour:
   Path: Banks/Desktop/Interactions.bank
   Name: Interactions
   StudioPath: bank:/Interactions
+<<<<<<< Updated upstream
   lastModified: 639167178243097209
+=======
+  lastModified: 639167121132864041
+>>>>>>> Stashed changes
   FileSizes: []
   Exists: 1
 --- !u!114 &-2321343083515619040
@@ -206,7 +218,11 @@ MonoBehaviour:
   Path: Banks/Desktop/Ball.bank
   Name: Ball
   StudioPath: bank:/Ball
+<<<<<<< Updated upstream
   lastModified: 639167178242863788
+=======
+  lastModified: 639167121132818904
+>>>>>>> Stashed changes
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -250,7 +266,11 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -4680859050065663350}
   cacheVersion: 131859
+<<<<<<< Updated upstream
   cacheTime: 639167178244546361
+=======
+  cacheTime: 639167121132874046
+>>>>>>> Stashed changes
   SerializableEventsDict:
   - key: event:/GameMusic
     index: 0
@@ -324,7 +344,11 @@ MonoBehaviour:
   Path: Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< Updated upstream
   lastModified: 639167178243178243
+=======
+  lastModified: 639167121132874046
+>>>>>>> Stashed changes
   FileSizes: []
   Exists: 1
 --- !u!114 &2849243048769385558
@@ -504,7 +528,11 @@ MonoBehaviour:
   Path: Banks/Desktop/Book.bank
   Name: Book
   StudioPath: bank:/Book
+<<<<<<< Updated upstream
   lastModified: 639167178242982391
+=======
+  lastModified: 639167121132854056
+>>>>>>> Stashed changes
   FileSizes: []
   Exists: 1
 --- !u!114 &7856700793215724192

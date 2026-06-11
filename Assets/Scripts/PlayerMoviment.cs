@@ -95,7 +95,6 @@ public class PlayerMoviment : MonoBehaviour
         float obj_distance = Vector2.Distance(transform.position, target.transform.position);
         if(obj_distance > interaction_range)
         {
-            Debug.Log("Objeto muito longe para ser interagido.");
             return;
         }
         DoAction(target);

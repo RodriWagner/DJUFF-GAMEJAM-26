@@ -28,6 +28,7 @@ public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE RE
         //configurar a instancia
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+        
     }
 
     void Update()

@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 7aeb17e3199dfc9418a4055f083095eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6040492051058418661
+    second: Fundo Transparente (1)_0
+  - first:
+      213: -46334725667919830
+    second: Fundo Transparente (1)_1
+  - first:
+      213: -5874925572141835866
+    second: Fundo Transparente (1)_2
+  - first:
+      213: -4564316978013653342
+    second: Fundo Transparente (1)_3
+  - first:
+      213: 1299947010404543410
+    second: Fundo Transparente (1)_4
+  - first:
+      213: 5276349129875020051
+    second: Fundo Transparente (1)_5
+  - first:
+      213: 270195722416011408
+    second: Fundo Transparente (1)_6
+  - first:
+      213: -5608586434811004353
+    second: Fundo Transparente (1)_7
+  - first:
+      213: -6108303544330407641
+    second: Fundo Transparente (1)_8
+  - first:
+      213: -292316758535008036
+    second: Fundo Transparente (1)_9
+  - first:
+      213: -1112587663830022273
+    second: Fundo Transparente (1)_10
+  - first:
+      213: -5494037054133425093
+    second: Fundo Transparente (1)_11
+  - first:
+      213: -3497493548008491811
+    second: Fundo Transparente (1)_12
+  - first:
+      213: -7826336331630588507
+    second: Fundo Transparente (1)_13
+  - first:
+      213: -2028332503952915304
+    second: Fundo Transparente (1)_14
+  - first:
+      213: 8724560781109901636
+    second: Fundo Transparente (1)_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_0
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1127
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e368eb348324d350800000000000000
+      internalID: 6040492051058418661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_1
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 637
+        width: 370
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a286ccfffc26b5ff0800000000000000
+      internalID: -46334725667919830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 637
+        width: 196
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a990ae9152187ea0800000000000000
+      internalID: -5874925572141835866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 1086
+        width: 89
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6363b24e948a0c0800000000000000
+      internalID: -4564316978013653342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 505
+        height: 1098
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb6ef52be65a0210800000000000000
+      internalID: 1299947010404543410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 673
+        width: 219
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319542d049b593940800000000000000
+      internalID: 5276349129875020051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 638
+        width: 141
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098bf66f39defb300800000000000000
+      internalID: 270195722416011408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 638
+        width: 280
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3af3056a5c4a22b0800000000000000
+      internalID: -5608586434811004353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_8
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 459
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7213de32a42fa3ba0800000000000000
+      internalID: -6108303544330407641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_9
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 12
+        width: 329
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd090a5f47b71fbf0800000000000000
+      internalID: -292316758535008036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 459
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f770eeb1a6b4f80f0800000000000000
+      internalID: -1112587663830022273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 86
+        width: 220
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c2b8d686241c3b0800000000000000
+      internalID: -5494037054133425093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 13
+        width: 370
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4bbba0628667fc0800000000000000
+      internalID: -3497493548008491811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_13
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 8
+        width: 140
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adcc647294436390800000000000000
+      internalID: -7826336331630588507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_14
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 9
+        width: 140
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 894028f855ae9d3e0800000000000000
+      internalID: -2028332503952915304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo Transparente (1)_15
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 9
+        width: 222
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4493c534ecdd31970800000000000000
+      internalID: 8724560781109901636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Fundo Transparente (1)_0: 6040492051058418661
+      Fundo Transparente (1)_1: -46334725667919830
+      Fundo Transparente (1)_10: -1112587663830022273
+      Fundo Transparente (1)_11: -5494037054133425093
+      Fundo Transparente (1)_12: -3497493548008491811
+      Fundo Transparente (1)_13: -7826336331630588507
+      Fundo Transparente (1)_14: -2028332503952915304
+      Fundo Transparente (1)_15: 8724560781109901636
+      Fundo Transparente (1)_2: -5874925572141835866
+      Fundo Transparente (1)_3: -4564316978013653342
+      Fundo Transparente (1)_4: 1299947010404543410
+      Fundo Transparente (1)_5: 5276349129875020051
+      Fundo Transparente (1)_6: 270195722416011408
+      Fundo Transparente (1)_7: -5608586434811004353
+      Fundo Transparente (1)_8: -6108303544330407641
+      Fundo Transparente (1)_9: -292316758535008036
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

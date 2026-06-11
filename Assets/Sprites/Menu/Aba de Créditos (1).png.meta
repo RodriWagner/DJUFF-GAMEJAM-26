@@ -1,10 +1,70 @@
 fileFormatVersion: 2
-guid: 647dadc6fd4170545855a9352b481f64
+guid: 37c7b63ed200b094c85775edd8cc0836
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1487492267338024459
-    second: "Mudan\xE7a colorido-para-incolor_0"
+      213: 1878256994315740845
+    second: "Aba de Cr\xE9ditos (1)_0"
+  - first:
+      213: -3111623362418542612
+    second: "Aba de Cr\xE9ditos (1)_1"
+  - first:
+      213: -1320797351760947560
+    second: "Aba de Cr\xE9ditos (1)_2"
+  - first:
+      213: -784128992737374344
+    second: "Aba de Cr\xE9ditos (1)_3"
+  - first:
+      213: 6427680304018339324
+    second: "Aba de Cr\xE9ditos (1)_4"
+  - first:
+      213: -6134700105122241681
+    second: "Aba de Cr\xE9ditos (1)_5"
+  - first:
+      213: 6190456997136848395
+    second: "Aba de Cr\xE9ditos (1)_6"
+  - first:
+      213: -7085863684972113310
+    second: "Aba de Cr\xE9ditos (1)_7"
+  - first:
+      213: 691251952802381180
+    second: "Aba de Cr\xE9ditos (1)_8"
+  - first:
+      213: -8460529527654504366
+    second: "Aba de Cr\xE9ditos (1)_9"
+  - first:
+      213: 2482078988819709677
+    second: "Aba de Cr\xE9ditos (1)_10"
+  - first:
+      213: -7490195658965681970
+    second: "Aba de Cr\xE9ditos (1)_11"
+  - first:
+      213: 427624174084083929
+    second: "Aba de Cr\xE9ditos (1)_12"
+  - first:
+      213: -7551293860515910478
+    second: "Aba de Cr\xE9ditos (1)_13"
+  - first:
+      213: -998054928005083451
+    second: "Aba de Cr\xE9ditos (1)_14"
+  - first:
+      213: -7859593781801411717
+    second: "Aba de Cr\xE9ditos (1)_15"
+  - first:
+      213: -4316120384620345276
+    second: "Aba de Cr\xE9ditos (1)_16"
+  - first:
+      213: 6918234957122197209
+    second: "Aba de Cr\xE9ditos (1)_17"
+  - first:
+      213: 6245439133312974787
+    second: "Aba de Cr\xE9ditos (1)_18"
+  - first:
+      213: 6724791918456110934
+    second: "Aba de Cr\xE9ditos (1)_19"
+  - first:
+      213: -1090347023730966533
+    second: "Aba de Cr\xE9ditos (1)_20"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +160,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Mudan\xE7a colorido-para-incolor_0"
+      name: "Aba de Cr\xE9ditos (1)_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 23040
-        height: 1080
+        width: 1147
+        height: 858
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f93d27f9ad5b5be0800000000000000
-      internalID: -1487492267338024459
+      spriteID: da6251fe8c8e01a10800000000000000
+      internalID: 1878256994315740845
       vertices: []
       indices: 
       edges: []
@@ -125,7 +185,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +193,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1147.0,"y":858.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "Mudan\xE7a colorido-para-incolor_0": -1487492267338024459
+      "Aba de Cr\xE9ditos (1)_0": 1878256994315740845
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
