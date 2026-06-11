@@ -1084,6 +1084,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210840290}
   - component: {fileID: 210840291}
+  - component: {fileID: 210840292}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -1142,6 +1143,20 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &210840292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210840289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abad08a18d6ed1645a02e22f792e3d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneManager
+  playerMoviment: {fileID: 289252382}
+  bGMusic: {fileID: 650776132}
 --- !u!1 &216605522
 GameObject:
   m_ObjectHideFlags: 0
