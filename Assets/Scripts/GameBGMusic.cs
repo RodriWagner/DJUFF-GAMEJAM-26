@@ -6,12 +6,7 @@ public class GameBGMusic : MonoBehaviour
     public EventReference musicBlackandWhite;
     public EventReference musicColored;
 
-    void Start()
-    {
-        if (RealityManager.Instance != null) //aloca no invoke do onRealityChanged
-            RealityManager.Instance.onRealityChanged.AddListener(ChangeMusic);
-        AudioManager.Instance.StartMusic(musicBlackandWhite);
-    }
+    
 
     public void ChangeMusic()
     {
@@ -25,6 +20,13 @@ public class GameBGMusic : MonoBehaviour
             StopBGMusic();
             AudioManager.Instance.StartMusic(musicColored);
         }
+    }
+
+    public void FirstStartBGMusic()
+    {
+        if (RealityManager.Instance != null) //aloca no invoke do onRealityChanged
+            RealityManager.Instance.onRealityChanged.AddListener(ChangeMusic);
+        AudioManager.Instance.StartMusic(musicBlackandWhite);
     }
 
     public void StopBGMusic()
