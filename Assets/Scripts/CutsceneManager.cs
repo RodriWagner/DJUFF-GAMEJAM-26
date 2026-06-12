@@ -35,7 +35,7 @@ public class CutsceneManager : MonoBehaviour
         {
             if (!Starter) FimDaCutscene();
             else NextScene();
-            this.enabled = false; // Desliga o script para parar o Update
+            // this.enabled = false; // Desliga o script para parar o Update
         }
     }
 
