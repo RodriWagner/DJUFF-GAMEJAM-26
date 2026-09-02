@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Ball.bank
   Name: Ball
   StudioPath: bank:/Ball
-  lastModified: 639167121132818904
+  lastModified: 639239031017206761
   FileSizes: []
   Exists: 1
 --- !u!114 &-5334647018135840928
@@ -114,7 +114,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639167121132874046
+  lastModified: 639239031017269955
   FileSizes: []
   Exists: 1
 --- !u!114 &-4132902820677196175
@@ -186,7 +186,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Interactions.bank
   Name: Interactions
   StudioPath: bank:/Interactions
-  lastModified: 639167121132864041
+  lastModified: 639239031017249948
   FileSizes: []
   Exists: 1
 --- !u!114 &-2434927046729510160
@@ -311,7 +311,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 6035303818904200031}
   cacheVersion: 131859
-  cacheTime: 639167121132874046
+  cacheTime: 639239031017285073
   SerializableEventsDict:
   - key: event:/GameMusic
     index: 0
@@ -385,7 +385,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Book.bank
   Name: Book
   StudioPath: bank:/Book
-  lastModified: 639167121132854056
+  lastModified: 639239031017236683
   FileSizes: []
   Exists: 1
 --- !u!114 &2932517883864149303
@@ -457,7 +457,7 @@ MonoBehaviour:
   Path: Banks/Desktop/BackgroundsMusics.bank
   Name: BackgroundsMusics
   StudioPath: bank:/BackgroundsMusics
-  lastModified: 639167121132794615
+  lastModified: 639239031017171305
   FileSizes: []
   Exists: 1
 --- !u!114 &5202550559108369494
@@ -529,7 +529,7 @@ MonoBehaviour:
   Path: Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639167121132874046
+  lastModified: 639239031017285073
   FileSizes:
   - Name: 
     Value: 1570
