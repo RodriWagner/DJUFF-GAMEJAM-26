@@ -42,7 +42,7 @@ public class PlayerMoviment : MonoBehaviour
     }
     private void MovePlayer()
     {
-        if (RealityManager.Instance.cooldownTime > 0.0f)
+        if (RealityManager.Instance.isInCooldown())
         {
             return;
         }

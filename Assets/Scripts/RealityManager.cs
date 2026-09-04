@@ -13,7 +13,7 @@ public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE RE
 
     [Header("Tempo de Cooldown para Transições")]
     [Tooltip("Tempo, em segundos, que o jogador deve esperar para trocar de realidade")]
-    public float cooldownTime = 1.0f;
+    private float cooldownTime = 1.0f;
 
     [Header("Objetos (Lista Automática)")]
     [Tooltip("Não é necessário adicionar manualmente, todos os objetos são adicionados aqui em suas funções de 'Start'!")]
@@ -70,5 +70,10 @@ public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE RE
         cooldownTime = 1.0f;
         ShakeTimer = 0;
         cameraShake.StopShake();
+    }
+
+    public bool isInCooldown()
+    {
+        return cooldownTime > 0.0f;
     }
 }
