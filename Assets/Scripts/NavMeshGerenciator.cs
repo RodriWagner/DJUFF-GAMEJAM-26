@@ -5,13 +5,15 @@ using UnityEngine.InputSystem;
 using UnityEngine.AI;
 using NUnit.Framework;
 using System.Security.Cryptography;
+using Unity.VisualScripting;
 
 public class NavMeshGerenciator : MonoBehaviour
 {
-    [SerializeField] private Vector2 destine;
-    [SerializeField] private float interactionRange = 1.2f;
+    [Header("Moviment")]
     [SerializeField] private float moveToRange = 0.1f;
     [SerializeField] private float maxDistanceToFindSamplePoint = 1.0f;
+    [Header("Interaction")]
+    [SerializeField] private float interactionRange = 1.2f;
 
     //==[Captadas no Start]==
     private Camera mainCamera;
@@ -22,6 +24,7 @@ public class NavMeshGerenciator : MonoBehaviour
     private bool hasDestination;
     private bool interactionExecuted;
     private bool canMove = true;
+    private Vector2 destine;
     private Collider2D targetObject = null;
 
     void Start()
@@ -32,74 +35,114 @@ public class NavMeshGerenciator : MonoBehaviour
 
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        agent.stoppingDistance = moveToRange;
+        agent.isStopped = true;
     }
 
     void FixedUpdate()
     {
-        MovePlayer();
-        CheckDirection();
-        CheckInteraction();
+        UpdateMoviment();
+        UpdateDiraction();
     }
-    
+
+
     //Chamado no evento "Interact" do inputSystem
     public void OnInteract(InputAction.CallbackContext context)
     {
-        if (!context.started || !canMove)return;
-
+        if (!context.started || !canMove) return;
+        
         Vector2 mousePos = Mouse.current.position.ReadValue();
-        Vector3 clickPoint = mainCamera.ScreenToWorldPoint(mousePos);
+        Vector3 clickedPoint = mainCamera.ScreenToWorldPoint(mousePos);
 
-        targetObject = DetectCollision();
+        Collider2D clickedCollider = DetectCollision();
+
+        Interactable interactable = null;
+
+        if (clickedCollider != null) clickedCollider.TryGetComponent<Interactable>(out interactable);
+
         interactionExecuted = false;
+        agent.isStopped = false;
 
         //LOGICA PARA DETECTAR "QUAL CLIQUE" FOI FEITO (pra interagir ou somente pra andar?)
 
-        if (targetObject != null &&
-            targetObject.TryGetComponent<Interactable>(out Interactable interactable))
-        {
+        if (interactable != null){
             //o destino é um puzzle (para antes)
-            destine = targetObject.transform.position;
+            targetObject = clickedCollider;
+            destine = interactable.transform.position;
             agent.stoppingDistance = interactionRange;
         }
         else{
             //o destino é um ponto no chao
             targetObject = null;
+            destine = clickedPoint;
             agent.stoppingDistance = moveToRange;
-            destine = clickPoint;
         }
 
-        //LOGICA PARA ENCONTRAR O PONTO VALIDO MAIS PROXIMO DO CLICADO
-
-        NavMeshHit navMeshHit; //variavel pra guardar infos sobre o ponto
-
-        bool pointIsValid = NavMesh.SamplePosition(destine, out navMeshHit, maxDistanceToFindSamplePoint, NavMesh.AllAreas); //SamplePosition encontra a posicao valida mais proxima do destine
-        //se nao for um ponto valido na malha, "cancela" o click
-        if (!pointIsValid){
-            hasDestination = false;
-            agent.ResetPath(); //remove o caminho atual
+        //Capta o ponto valido mais proximo
+        if (!TryFindValidDestination(ref destine)) //obs: ref passa como referencia (ponteiro)
+        {
+            CancelMovement();
             return;
         }
-        destine = navMeshHit.position; //substitui o ponto de clique pela posicao valida proxima encontrada no SamplePosition
+
         hasDestination = agent.SetDestination(destine); //calcula o caminho ate o destino e retona se é valido ou nao
+
+        if (!hasDestination) CancelMovement();
     }
 
-    private void MovePlayer()
+
+    private void UpdateMoviment()
     {
-        //Verifica o cooldown de troca de mundos
-        if (!hasDestination || RealityManager.Instance.isInCooldown())
+        if (!hasDestination)
         {
-            anim.SetBool("Moving", false);
+            SetMovingAnimation(false);
             return;
+        }
+
+        if (RealityManager.Instance.isInCooldown()){
+            agent.isStopped = true;
+            SetMovingAnimation(false);
+            return;
+        }
+
+        if (agent.pathPending){
+            SetMovingAnimation(false);
+            return;
+        }
+
+        if (agent.pathStatus != NavMeshPathStatus.PathComplete){
+            CancelMovement();
+            return;
+        }
+
+        if (agent.remainingDistance <= agent.stoppingDistance){
+            SetMovingAnimation(false);
+            if (targetObject == null){
+                
+            }
         }
 
         bool isMoving = agent.pathPending ||
                         (agent.hasPath && agent.remainingDistance > agent.stoppingDistance);
         anim.SetBool("Moving", isMoving);
-        Debug.Log(isMoving);
         if (!isMoving)
         {
             agent.SetDestination(destine);
         }
+    }
+
+
+    //Encontrar se existe (e qual é) o ponto valido mais proximo do clicado
+    private bool TryFindValidDestination(ref Vector2 destine){
+        NavMeshHit navMeshHit; //variavel pra guardar infos sobre o ponto
+
+        bool pointIsValid = NavMesh.SamplePosition(destine, out navMeshHit, maxDistanceToFindSamplePoint, NavMesh.AllAreas); //SamplePosition encontra a posicao valida mais proxima do destine
+
+        //se nao for um ponto valido na malha, "cancela" o click
+        if (!pointIsValid) return false;
+
+        destine = navMeshHit.position; //substitui o ponto de clique pela posicao valida proxima encontrada no SamplePosition
+        return true;
     }
 
     private Collider2D DetectCollision()
@@ -137,7 +180,7 @@ public class NavMeshGerenciator : MonoBehaviour
         }
     }
 
-    private void CheckInteraction()
+    private void UpdateDiraction()
     {
         if (targetObject == null || 
             interactionExecuted || 
@@ -146,12 +189,10 @@ public class NavMeshGerenciator : MonoBehaviour
         {
             return;
         }
-
+        
+        //path.complete retorna true se existir um caminho inteiro valido, caso nao haja, cancela o movimento
         if (agent.pathStatus != NavMeshPathStatus.PathComplete){
-            agent.ResetPath();
-            hasDestination = false;
-            targetObject = null;
-            anim.SetBool("Moving", false);
+            CancelMovement();
             return;
         }
 
@@ -162,6 +203,7 @@ public class NavMeshGerenciator : MonoBehaviour
         anim.SetBool("Moving", false);
 
         Interactable interactable = targetObject.GetComponent<Interactable>();
+        
         if (interactable.interactive)
         {
             interactable.Action();
@@ -174,13 +216,39 @@ public class NavMeshGerenciator : MonoBehaviour
 
         if (interactable.zoom)
         {
+            Debug.Log(interactable.zoom);
             interactable.Amplify();
             canMove = false;
+        }
+
+        //USANDO SO PRA PORTA
+        if (targetObject.gameObject.TryGetComponent<WindowClose>(out WindowClose Script))
+        {
+            Script.Close();
+            canMove = true;
         }
 
         interactionExecuted = true;
         targetObject = null;
         hasDestination = false;
+    }
+
+    public void CancelMovement()
+    {
+        agent.isStopped = true;
+        agent.ResetPath();
+
+        hasDestination = false;
+        interactionExecuted = false;
+        targetObject = null;
+        
+        SetMovingAnimation(false);
+    }
+    
+    //Apenas para modularizacao
+    private void SetMovingAnimation(bool isMoving)
+    {
+        anim.SetBool("Moving", isMoving);
     }
 }
 

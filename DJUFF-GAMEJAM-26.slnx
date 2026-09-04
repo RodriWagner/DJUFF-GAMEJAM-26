@@ -1,7 +1,7 @@
 ﻿<Solution>
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="NavMeshPlusEditor.csproj" />
   <Project Path="NavMeshPlus.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="com.daburo.smoothshakefree.csproj" />
   <Project Path="FMODUnityResonanceEditor.csproj" />
   <Project Path="FMODUnityEditor.csproj" />
