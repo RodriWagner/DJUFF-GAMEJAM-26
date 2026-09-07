@@ -57,14 +57,14 @@ public class PlayerNavigation : MonoBehaviour
         hasDestination = false;
     }
     
-    public bool TryMoveTo(Vector3 requestedPosition, bool isInteraction)
-    {
-        if (!movementEnabled) return false;
-        if (destinationValidator == null)
-        {
-            CancelMovement();
-            return false;
-        }
-    }
+    // public bool TryMoveTo(Vector3 requestedPosition, bool isInteraction)
+    // {
+    //     if (!movementEnabled) return false;
+    //     if (destinationValidator == null)
+    //     {
+    //         CancelMovement();
+    //         return false;
+    //     }
+    // }
 
 }
