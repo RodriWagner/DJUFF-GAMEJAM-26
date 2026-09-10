@@ -72,7 +72,7 @@ public class RealityManager : MonoBehaviour //MANUTENÇÃO GLOBAL DA TROCA DE RE
         cameraShake.StopShake();
     }
 
-    public bool isInCooldown()
+    public bool IsInCooldown()
     {
         return cooldownTime > 0.0f;
     }

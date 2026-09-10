@@ -1,57 +1,122 @@
-// using UnityEngine;
-// using UnityEngine.InputSystem;
+using System;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
-// public class PlayerClickInput : MonoBehaviour
-// {
-//     private Camera mainCamera;
+public class PlayerClickInput : MonoBehaviour
+{
+    //===[REFERENCIAS]===
+    private Camera mainCamera;
+    private PlayerNavMeshMovement movement;
 
-//     private void Awake()
-//     {
-//         mainCamera = Camera.main;
-//     }
+    [Header("Interacoes")]
+    [Tooltip("Layer das Interações")]
+    [SerializeField] private LayerMask clickableLayers;
+    [SerializeField] private float interactionDistance = 1.2f;
+    private Interactable pendingInteraction;
 
-//     //Chamado no evento "Interact" do inputSystem
-//     public void OnInteract(InputAction.CallbackContext context)
-//     {
-//         if (!context.started) return;
+    private void Awake()
+    {
+        mainCamera = Camera.main;
+        movement = GetComponent<PlayerNavMeshMovement>();
+    }
+    
+    void Update()
+    {
+        CheckPendingInteraction();
+    }
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (!context.started) return;
+
+        CancelPendingInteraction(); //se houve um novo clique, a interação pendente é cancelada
+
+        Ray mouseRay = GetMouseRay();
+
+        if (TryGetClickedObject(mouseRay, out Collider2D collider))
+        {
+            OnClickedObject(collider);
+            return;
+        }
+
+        if (TryGetGroundPosition(mouseRay, out Vector3 groundPosition))
+            movement.TryMoveTo(groundPosition, movement.DefaultStoppingDistance);
+    }
+
+    private bool TryGetClickedObject(Ray mouseRay, out Collider2D collider)
+    {
+        RaycastHit2D hit = Physics2D.GetRayIntersection(mouseRay, Mathf.Infinity, clickableLayers);
+        collider = hit.collider;
+
+        return collider != null;
+    }
+
+    private void OnClickedObject(Collider2D collider)
+    {
+        Debug.Log("INTERAGIVEL");
+        Interactable interactable =
+            collider.GetComponentInParent<Interactable>();
+
+        if (interactable == null)
+            return;
+
+        Vector3 targetPosition = interactable.transform.position;
+
+        bool canGoToPuzzle = movement.TryMoveTo(targetPosition, interactionDistance);
+
+        if(!canGoToPuzzle)
+            return;
         
-//         Vector2 mousePos = Mouse.current.position.ReadValue();
-//         Vector3 clickedPoint = mainCamera.ScreenToWorldPoint(mousePos);
+        pendingInteraction = interactable;
+    }
+    
+    //Checa se a interação pendente ja pode ser executada
+    private void CheckPendingInteraction()
+    {
+        if (pendingInteraction == null)
+            return;
 
-//         Collider2D clickedCollider = DetectCollision();
+        if (!movement.HasReachedDestination())
+            return;
+        
+        ExecutePendingInteraction();
+    }
 
-//         Interactable interactable = null;
+    //Executa a interação pendente
+    private void ExecutePendingInteraction()
+    {
+        Interactable interactable = pendingInteraction;
+        CancelPendingInteraction(); //reseta a interacao que estava pendente
 
-//         if (clickedCollider != null) clickedCollider.TryGetComponent<Interactable>(out interactable);
+        if (interactable.interactive)
+            interactable.Action();
 
-//         interactionExecuted = false;
-//         agent.isStopped = false;
+        if (interactable.informative)
+            interactable.ShowText();
 
-//         //LOGICA PARA DETECTAR "QUAL CLIQUE" FOI FEITO (pra interagir ou somente pra andar?)
+        if (interactable.zoom)
+            interactable.Amplify();
+    }
 
-//         if (interactable != null){
-//             //o destino é um puzzle (para antes)
-//             targetObject = clickedCollider;
-//             destine = interactable.transform.position;
-//             agent.stoppingDistance = interactionRange;
-//         }
-//         else{
-//             //o destino é um ponto no chao
-//             targetObject = null;
-//             destine = clickedPoint;
-//             agent.stoppingDistance = moveToRange;
-//         }
+    private void CancelPendingInteraction()
+    {
+        pendingInteraction = null;
+    }
+    private bool TryGetGroundPosition(Ray mouseRay, out Vector3 groundPosition)
+    {
+        Plane playerPlane = new Plane(Vector3.forward, transform.position);
+        if (!playerPlane.Raycast(mouseRay, out float distance))
+        {
+            groundPosition = Vector3.zero;
+            return false;
+        }
+        
+        groundPosition = mouseRay.GetPoint(distance);
+        return true;
+    }
 
-//         //Capta o ponto valido mais proximo
-//         if (!TryFindValidDestination(ref destine)) //obs: ref passa como referencia (ponteiro)
-//         {
-//             CancelMovement();
-//             return;
-//         }
-
-//         hasDestination = agent.SetDestination(destine); //calcula o caminho ate o destino e retona se é valido ou nao
-
-//         if (!hasDestination) CancelMovement();
-//     }
-
-// }
+    private Ray GetMouseRay()
+    {
+        Vector2 mousePosition = Mouse.current.position.ReadValue();
+        return mainCamera.ScreenPointToRay(mousePosition);
+    }
+}

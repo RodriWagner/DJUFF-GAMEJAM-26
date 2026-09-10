@@ -42,7 +42,7 @@ public class PlayerMovimentOLD : MonoBehaviour
     }
     private void MovePlayer()
     {
-        if (RealityManager.Instance.isInCooldown())
+        if (RealityManager.Instance.IsInCooldown())
         {
             return;
         }
@@ -115,7 +115,6 @@ public class PlayerMovimentOLD : MonoBehaviour
         //USANDO SO PRA PORTA
         if (target.gameObject.TryGetComponent<WindowClose>(out WindowClose Script))
         {
-            Script.Close();
             canMove = true;
         }
     }

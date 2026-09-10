@@ -10,7 +10,7 @@ public class LevelTransition : Interactable
     public override void Action()
     {
         base.Action();
-        if (player.TryGetComponent<PlayerMoviment>(out PlayerMoviment script))
+        if (player.TryGetComponent<PlayerMovimentOLD>(out PlayerMovimentOLD script))
         {
             script.destino = new Vector2(playerNextPosition.transform.position.x, playerNextPosition.transform.position.y);
         }
@@ -21,7 +21,7 @@ public class LevelTransition : Interactable
     public override void FadeOut()
     {
         base.FadeOut();
-        if (player.TryGetComponent<PlayerMoviment>(out PlayerMoviment script))
+        if (player.TryGetComponent<PlayerMovimentOLD>(out PlayerMovimentOLD script))
         {
             script.canMove = true;
         }

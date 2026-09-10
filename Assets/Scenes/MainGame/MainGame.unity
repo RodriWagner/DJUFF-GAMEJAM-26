@@ -2002,13 +2002,13 @@ GameObject:
   m_Component:
   - component: {fileID: 289252380}
   - component: {fileID: 289252378}
-  - component: {fileID: 289252382}
   - component: {fileID: 289252383}
   - component: {fileID: 289252384}
   - component: {fileID: 289252385}
   - component: {fileID: 289252386}
-  - component: {fileID: 289252387}
   - component: {fileID: 289252388}
+  - component: {fileID: 289252390}
+  - component: {fileID: 289252389}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -2058,22 +2058,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &289252382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289252377}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf225705ae326f4098aed0c6864354c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMoviment
-  velocidade: 5
-  destino: {x: 0, y: 0}
-  canMove: 1
-  interaction_range: 3.5
 --- !u!114 &289252383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2101,8 +2085,8 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 289252387}
-        m_TargetAssemblyTypeName: NavMeshGerenciator, Assembly-CSharp
+      - m_Target: {fileID: 289252390}
+        m_TargetAssemblyTypeName: PlayerClickInput, Assembly-CSharp
         m_MethodName: OnInteract
         m_Mode: 0
         m_Arguments:
@@ -2229,22 +2213,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
---- !u!114 &289252387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289252377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed14ade5417418a4ca0873acbe890929, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NavMeshGerenciator
-  destine: {x: 5.53, y: -2}
-  interactionRange: 1.2
-  moveToRange: 0.1
-  maxDistanceToFindSamplePoint: 1
 --- !u!195 &289252388
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2267,6 +2235,35 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &289252389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289252377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed14ade5417418a4ca0873acbe890929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerNavMeshMovement
+  stoppingDistance: 0.1
+  sampleDistance: 1
+--- !u!114 &289252390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289252377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e41b82479b52643aae673c408c9f85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerClickInput
+  clickableLayers:
+    serializedVersion: 2
+    m_Bits: 1025
 --- !u!1 &290901336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3782,8 +3779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36489cfb09ca2745bb240bb1edfa5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
-  pai: {fileID: 834348708}
-  player: {fileID: 289252377}
 --- !u!114 &453480831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4176,8 +4171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36489cfb09ca2745bb240bb1edfa5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
-  pai: {fileID: 521992320}
-  player: {fileID: 289252377}
 --- !u!1 &558561915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4724,8 +4717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36489cfb09ca2745bb240bb1edfa5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
-  pai: {fileID: 1664173262}
-  player: {fileID: 289252377}
 --- !u!114 &611826400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8659,8 +8650,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36489cfb09ca2745bb240bb1edfa5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
-  pai: {fileID: 952382563}
-  player: {fileID: 289252377}
 --- !u!114 &1003242026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8900,8 +8889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36489cfb09ca2745bb240bb1edfa5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
-  pai: {fileID: 753235906}
-  player: {fileID: 289252377}
 --- !u!1 &1035863726
 GameObject:
   m_ObjectHideFlags: 0
@@ -10093,8 +10080,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36489cfb09ca2745bb240bb1edfa5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
-  pai: {fileID: 0}
-  player: {fileID: 0}
 --- !u!1 &1142978903
 GameObject:
   m_ObjectHideFlags: 0
@@ -11926,8 +11911,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36489cfb09ca2745bb240bb1edfa5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
-  pai: {fileID: 1074674476}
-  player: {fileID: 289252377}
 --- !u!114 &1386621049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12529,8 +12512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36489cfb09ca2745bb240bb1edfa5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
-  pai: {fileID: 1101628418}
-  player: {fileID: 289252377}
 --- !u!114 &1486970629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15458,7 +15439,7 @@ GameObject:
   - component: {fileID: 1774061163}
   - component: {fileID: 1774061165}
   - component: {fileID: 1774061166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "Ch\xE3o_0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21061,8 +21042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36489cfb09ca2745bb240bb1edfa5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowClose
-  pai: {fileID: 433341738}
-  player: {fileID: 289252377}
 --- !u!4 &5810408614225409708
 Transform:
   m_ObjectHideFlags: 0

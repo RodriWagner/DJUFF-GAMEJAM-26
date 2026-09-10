@@ -2,17 +2,30 @@ using UnityEngine;
 
 public class WindowClose : MonoBehaviour
 {
-    [Tooltip("Manager")] public GameObject pai; 
-    [Tooltip("Player")] public GameObject player;
-    public void Close()
-    {
-        if (pai.TryGetComponent<Interactable>(out Interactable ActionObject))
-        {
-            ActionObject.ExitZoom();
-            if (player.TryGetComponent<PlayerMoviment>(out PlayerMoviment script))
-            {
-                script.canMove = true;
-            }
-        }
-    }
+    // [Tooltip("Manager")] public GameObject pai; 
+
+
+    // private void Awake()
+    // {
+    //     if (navigation == null)
+    //     {
+    //         GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+    //         if (player != null)
+    //             navigation = player.GetComponent<PlayerNavigation>();
+    //     }
+    // }
+
+    // public void Close()
+    // {
+    //     Interactable interactable = pai != null
+    //         ? pai.GetComponentInParent<Interactable>()
+    //         : GetComponentInParent<Interactable>();
+
+    //     if (interactable != null)
+    //         interactable.ExitZoom();
+
+    //     if (navigation != null)
+    //         navigation.SetMovementEnabled(true);
+    // }
 }
